@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# VeraNav local data and generated outputs
+.venv/
+data/raw/
+data/processed/
+data/generated/
+outputs/
+reports/
+artifacts/
