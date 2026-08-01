@@ -1,0 +1,66 @@
+{
+  "calibration_evaluation": {
+    "convergence_hold_s": 10.0,
+    "convergence_threshold_ms": 1.0,
+    "tail_window_s": 20.0
+  },
+  "experiment": "openvins-camera-timestamp-offset",
+  "frame_mapping": "openvins-global-xyz-to-veranav-ned",
+  "online_time_calibration_required": true,
+  "reference_policy": {
+    "calibration_aware": "ground truth at reported camera time plus current estimated camera-to-IMU offset",
+    "nominal_clock": "ground truth at reported camera time plus simulator true camera-to-IMU offset",
+    "physical_time": "ground truth at original physical camera time plus simulator true camera-to-IMU offset"
+  },
+  "release_tag": "v2.7",
+  "schema_version": 1,
+  "scenarios": [
+    {
+      "camera_timestamp_offset_ms": 0.0,
+      "name": "baseline",
+      "seed": 20260802
+    },
+    {
+      "camera_timestamp_offset_ms": -50.0,
+      "name": "neg-50ms",
+      "seed": 20260802
+    },
+    {
+      "camera_timestamp_offset_ms": -20.0,
+      "name": "neg-20ms",
+      "seed": 20260802
+    },
+    {
+      "camera_timestamp_offset_ms": -10.0,
+      "name": "neg-10ms",
+      "seed": 20260802
+    },
+    {
+      "camera_timestamp_offset_ms": -5.0,
+      "name": "neg-5ms",
+      "seed": 20260802
+    },
+    {
+      "camera_timestamp_offset_ms": 5.0,
+      "name": "pos-5ms",
+      "seed": 20260802
+    },
+    {
+      "camera_timestamp_offset_ms": 10.0,
+      "name": "pos-10ms",
+      "seed": 20260802
+    },
+    {
+      "camera_timestamp_offset_ms": 20.0,
+      "name": "pos-20ms",
+      "seed": 20260802
+    },
+    {
+      "camera_timestamp_offset_ms": 50.0,
+      "name": "pos-50ms",
+      "seed": 20260802
+    }
+  ],
+  "sign_convention": "positive means the camera measurement is reported later than its physical acquisition time",
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea"
+}

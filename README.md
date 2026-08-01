@@ -270,3 +270,16 @@ The protocol is documented in
 `docs/openvins_visual_burst_sweep_protocol.md`. Compact evidence is
 stored in `experiments/openvins/visual_burst_sweep/`; raw trajectories
 and the GPL-linked runner remain external.
+
+## OpenVINS camera timestamp-offset evaluation
+
+A deterministic camera timestamp-bias sweep now evaluates ±5 ms,
+±10 ms, ±20 ms and ±50 ms offsets under the official OpenVINS online
+temporal-calibration configuration. The experiment separates
+nominal-clock, calibration-aware and physical-time position errors and
+records temporal-calibration convergence.
+
+The protocol is documented in
+`docs/openvins_camera_time_offset_protocol.md`. Compact evidence is
+stored in `experiments/openvins/camera_time_offset/`; raw trajectories
+and the GPL-linked runner remain external.

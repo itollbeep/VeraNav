@@ -71,3 +71,12 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Added matched-window RMSE, peak-error, positive excess-area and
   recovery-time metrics.
 - Required deterministic replay and byte-identical paired references.
+
+## OpenVINS camera timestamp offsets
+
+- Added a deterministic external camera timestamp-offset runner.
+- Evaluated baseline and eight signed offsets from 5 ms to 50 ms.
+- Verified common camera and IMU measurement realizations with
+  fingerprints.
+- Added nominal-clock, calibration-aware and physical-time errors.
+- Added online temporal-calibration residual and convergence metrics.
