@@ -246,3 +246,15 @@ boundary through a deterministic, position-level simulation adapter.
 The committed record in `reproductions/openvins/simulation/` contains
 the pinned revision, trajectory hashes and baseline position metrics.
 GPL-linked adapter code and binaries remain outside this repository.
+
+## OpenVINS visual-observation degradation
+
+The first real OpenVINS degradation sweep evaluates complete camera
+feature loss under fixed random frame-drop rates and continuous visual
+outages. Every scenario is replayed twice, and all scenarios share the
+same byte-identical simulated reference trajectory.
+
+The protocol is documented in
+`docs/openvins_visual_dropout_protocol.md`. Compact experiment evidence
+is stored in `experiments/openvins/visual_dropout/`; the GPL-linked
+runner and raw trajectories remain external.

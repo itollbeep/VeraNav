@@ -51,3 +51,14 @@ This milestone is a synthetic verification framework. It is not a real-world ben
   VeraNav common schema.
 - Added a strict import record, baseline metrics and validation tests.
 - Kept GPL-linked source and binaries outside the Apache-2.0 repository.
+
+## OpenVINS visual-observation dropout
+
+- Added an external deterministic OpenVINS visual-observation loss
+  runner.
+- Evaluated baseline, three random whole-frame loss rates and two
+  continuous visual outages.
+- Added paired-reference verification, common-schema metrics and strict
+  committed evidence validation.
+- Preserved the official OpenVINS source tree and kept GPL-linked code
+  outside the repository.

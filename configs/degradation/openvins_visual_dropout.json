@@ -1,0 +1,58 @@
+{
+  "experiment": "openvins-visual-observation-dropout",
+  "frame_mapping": "openvins-global-xyz-to-veranav-ned",
+  "reference_policy": "all scenarios must use byte-identical reference trajectories",
+  "release_tag": "v2.7",
+  "schema_version": 1,
+  "scenarios": [
+    {
+      "burst_duration_s": 0.0,
+      "burst_start_s": 0.0,
+      "mode": "baseline",
+      "name": "baseline",
+      "probability": 0.0,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 0.0,
+      "burst_start_s": 0.0,
+      "mode": "bernoulli-frame-drop",
+      "name": "random-10",
+      "probability": 0.1,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 0.0,
+      "burst_start_s": 0.0,
+      "mode": "bernoulli-frame-drop",
+      "name": "random-30",
+      "probability": 0.3,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 0.0,
+      "burst_start_s": 0.0,
+      "mode": "bernoulli-frame-drop",
+      "name": "random-50",
+      "probability": 0.5,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 1.0,
+      "burst_start_s": 30.0,
+      "mode": "burst-frame-drop",
+      "name": "burst-1s",
+      "probability": 0.0,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 3.0,
+      "burst_start_s": 30.0,
+      "mode": "burst-frame-drop",
+      "name": "burst-3s",
+      "probability": 0.0,
+      "seed": 20260801
+    }
+  ],
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea"
+}
