@@ -1,62 +1,118 @@
-# VeraNav V0.1 Architecture
+# VeraNav architecture
 
-VeraNav V0.1 is planned as a Python-first framework for evaluating navigation state estimators under controlled sensor degradation and fault scenarios.
+## Objective
 
-## Planned Module Boundaries
+VeraNav separates navigation estimation from reliability evaluation. The estimator produces states, covariances, innovations, and consistency statistics. The reliability layer controls degradation scenarios, paired random seeds, failure criteria, uncertainty intervals, adaptive boundary search, and evidence export.
 
-### Trajectory generation
+This separation allows a future estimator adapter to replace the V0.1 ESKF without changing the study protocol.
 
-Produces deterministic ground-truth motion trajectories with explicit timestamps, coordinate frames, and physical units.
+## Data flow
 
-### IMU simulation
+```text
+analytic truth
+    |
+    +-- simulated IMU --------------------+
+    |                                     |
+    +-- simulated GNSS --> degradation --> estimator --> run metrics
+                                                  |
+paired seeds: baseline ---------------------------+
+paired seeds: degraded ---------------------------+
+                                                  |
+                                    paired differences and failures
+                                                  |
+                              bootstrap and Wilson confidence intervals
+                                                  |
+                                  adaptive reliability-boundary search
+                                                  |
+                                   JSON / CSV / Markdown / SVG reports
+```
 
-Generates synthetic accelerometer and gyroscope measurements from approved motion and sensor-error models.
+## Core modules
 
-### GNSS simulation
+### Estimation
 
-Generates position measurements and associated uncertainty information using approved coordinate-frame and noise conventions.
+- `state.py`: immutable nominal navigation state
+- `math.py`: quaternion and rotation primitives
+- `imu.py`: nominal inertial propagation
+- `linearization.py`: continuous 15-state error dynamics
+- `covariance.py`: Van Loan discretization and covariance propagation
+- `measurement.py`: GNSS position measurement model
+- `update.py`: Joseph update, error injection, and reset
+- `eskf.py`: composed propagation and measurement-update operations
+- `consistency.py`: right-error vector and NEES
 
-### Fault injection
+### Simulation and degradation
 
-Applies reproducible sensor degradation and fault scenarios without modifying the underlying estimator implementation.
+- `simulation.py`: analytic circular trajectory and deterministic sensor generation
+- `degradation.py`: structured GNSS outage and position bias
+- `experiment.py`: one complete synthetic estimator run
 
-### Minimal ESKF
+### Reliability evaluation
 
-Provides the initial error-state Kalman filter reference implementation after its state definition and mathematical conventions have been approved.
+- `metrics.py`: RMSE, maximum error, NIS and NEES summaries
+- `monte_carlo.py`: repeated experiments and failure classification
+- `reliability.py`: fixed-grid reliability envelope
+- `statistics.py`: confidence intervals and paired bootstrap
+- `comparison.py`: common-random-number baseline/degraded comparison
+- `boundary.py`: adaptive reliable-to-unreliable boundary search
+- `report.py`: deterministic JSON, CSV, and Markdown output
 
-### Estimator interface
+### Entry points
 
-Defines a common boundary for supplying measurements and collecting state estimates, covariance information, innovations, and health indicators.
+- `scripts/run_reliability_demo.py`: compact fixed-grid demonstration
+- `scripts/run_reliability_study.py`: paired comparison and adaptive boundary report
+- `scripts/render_study_svg.py`: deterministic standard-library SVG rendering
 
-### Metrics
+## State and frame conventions
 
-Computes trajectory accuracy and statistical consistency metrics, including trajectory error, NIS, and NEES.
+V0.1 uses:
 
-### Experiment runner
+- NED navigation coordinates
+- FRD body coordinates
+- `R_nb` and `q_nb` for body-to-navigation rotation
+- Hamilton scalar-first quaternions
+- right local attitude error
+- 16 stored nominal parameters
+- 15 error-state dimensions
 
-Loads configuration, initializes deterministic random seeds, executes experiments, and records provenance.
+The error-state ordering is:
 
-### Reporting
+```text
+delta p_n, delta v_n, delta theta_b, delta b_a, delta b_g
+```
 
-Produces reproducible machine-readable results and human-readable summaries from completed experiments.
+The convention is fixed in `docs/scientific_conventions.md`. The propagation and update equations are fixed in `docs/eskf_model.md`.
 
-## Current Status
+## Adapter boundary
 
-No estimator, simulator, fault model, metric implementation, or experiment runner has been implemented yet.
+A future estimator adapter should consume a versioned scenario containing truth, IMU samples, GNSS measurements, degradation metadata, and random seeds. It should return at minimum:
 
-Before estimator implementation begins, the following scientific conventions must be explicitly reviewed and approved:
+- timestamps
+- estimated states
+- covariance or an explicit declaration that covariance is unavailable
+- accepted and rejected measurement information
+- estimator status and failure reason
 
-- navigation and sensor coordinate frames
-- rotation-matrix direction
-- quaternion ordering and multiplication convention
-- state-vector ordering
-- nominal-state and error-state definitions
-- perturbation convention
-- error-injection and reset convention
-- covariance ordering and dimensions
-- timestamp and synchronization conventions
-- physical units
+The study layer should not reach into estimator-internal caches or tune an estimator differently for each random seed.
 
-External estimators must remain in separate upstream repositories or run as independent processes. Their source code must not be copied into VeraNav without a compatible license and explicit approval.
+## Reproducibility boundary
 
-Generated datasets, logs, plots, reports, caches, and experiment outputs are not source files and must not be committed unless explicitly approved.
+A report is reproducible only when it records:
+
+- scenario configuration
+- degradation coordinates
+- estimator identity and configuration
+- seed sequence
+- failure criteria
+- confidence level
+- bootstrap seed and resample count
+- boundary tolerance and iteration limit
+- software version
+
+Generated outputs are deterministic for a fixed environment and recorded configuration. V0.1 pins NumPy and SciPy ranges in `pyproject.toml` and verifies stable serialization in tests.
+
+## Current limitations
+
+The circular trajectory and GNSS faults are controlled verification cases. They do not represent the full dynamics, multipath, non-line-of-sight behavior, vibration, clock effects, time synchronization errors, or calibration uncertainty of a real platform.
+
+The reliability boundary is therefore an experimental boundary for the configured synthetic system, not a universal operating limit.

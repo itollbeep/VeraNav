@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+  <title id="title">VeraNav paired RMSE effects</title>
+  <desc id="desc">Deterministic figure generated from a VeraNav reliability study.</desc>
+  <rect width="900" height="500" fill="#ffffff"/>
+  <text x="92" y="34" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172033">Paired RMSE effect by random seed</text>
+  <text x="92" y="57" font-family="Arial, sans-serif" font-size="13" fill="#5b6578">Degraded minus baseline; positive values indicate worse RMSE</text>
+  <rect x="92" y="80" width="762" height="338" fill="#f7f9fc" stroke="#c9d1df"/>
+  <line x1="92" y1="418.000" x2="854" y2="418.000" stroke="#dce2ec" stroke-width="1"/>
+  <text x="80" y="422.000" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#5b6578">-0.076</text>
+  <line x1="92" y1="350.400" x2="854" y2="350.400" stroke="#dce2ec" stroke-width="1"/>
+  <text x="80" y="354.400" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#5b6578">-0.015</text>
+  <line x1="92" y1="282.800" x2="854" y2="282.800" stroke="#dce2ec" stroke-width="1"/>
+  <text x="80" y="286.800" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#5b6578">0.046</text>
+  <line x1="92" y1="215.200" x2="854" y2="215.200" stroke="#dce2ec" stroke-width="1"/>
+  <text x="80" y="219.200" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#5b6578">0.107</text>
+  <line x1="92" y1="147.600" x2="854" y2="147.600" stroke="#dce2ec" stroke-width="1"/>
+  <text x="80" y="151.600" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#5b6578">0.169</text>
+  <line x1="92" y1="80.000" x2="854" y2="80.000" stroke="#dce2ec" stroke-width="1"/>
+  <text x="80" y="84.000" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#5b6578">0.230</text>
+  <line x1="92" y1="333.852" x2="854" y2="333.852" stroke="#334155" stroke-width="1.5"/>
+  <rect x="113.625" y="280.581" width="52.000" height="53.272" fill="#2563eb" rx="3"/>
+  <text x="139.625" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">0</text>
+  <rect x="208.875" y="157.598" width="52.000" height="176.254" fill="#2563eb" rx="3"/>
+  <text x="234.875" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">1</text>
+  <rect x="304.125" y="112.710" width="52.000" height="221.143" fill="#2563eb" rx="3"/>
+  <text x="330.125" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">2</text>
+  <rect x="399.375" y="284.542" width="52.000" height="49.310" fill="#2563eb" rx="3"/>
+  <text x="425.375" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">3</text>
+  <rect x="494.625" y="233.177" width="52.000" height="100.676" fill="#2563eb" rx="3"/>
+  <text x="520.625" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">4</text>
+  <rect x="589.875" y="333.852" width="52.000" height="51.438" fill="#64748b" rx="3"/>
+  <text x="615.875" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">5</text>
+  <rect x="685.125" y="179.796" width="52.000" height="154.056" fill="#2563eb" rx="3"/>
+  <text x="711.125" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">6</text>
+  <rect x="780.375" y="248.496" width="52.000" height="85.357" fill="#2563eb" rx="3"/>
+  <text x="806.375" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">7</text>
+  <line x1="92" y1="235.274" x2="854" y2="235.274" stroke="#b45309" stroke-width="2" stroke-dasharray="7 5"/>
+  <rect x="664" y="179.295" width="180" height="110.649" fill="#f59e0b" fill-opacity="0.16"/>
+  <text x="846" y="228.274" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#92400e">mean 0.089 m, 95% CI [0.040, 0.140]</text>
+  <text x="473.000" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#172033">Paired random seed</text>
+  <text x="24" y="249.000" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#172033" transform="rotate(-90 24 249.000)">RMSE difference (m)</text>
+</svg>

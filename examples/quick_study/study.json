@@ -1,0 +1,290 @@
+{
+  "adaptive_boundary": {
+    "max_bias_m": 12.0,
+    "points": [
+      {
+        "bracket_width_m": 0.375,
+        "evaluation_count": 7,
+        "evaluations": [
+          {
+            "bias_magnitude_m": 0.0,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 0.0,
+              "lower": 0.0,
+              "upper": 0.32440756488388023
+            },
+            "divergence_rate": 0.0,
+            "reliable": true
+          },
+          {
+            "bias_magnitude_m": 6.0,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 0.0,
+              "lower": 0.0,
+              "upper": 0.32440756488388023
+            },
+            "divergence_rate": 0.0,
+            "reliable": true
+          },
+          {
+            "bias_magnitude_m": 9.0,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 0.0,
+              "lower": 0.0,
+              "upper": 0.32440756488388023
+            },
+            "divergence_rate": 0.0,
+            "reliable": true
+          },
+          {
+            "bias_magnitude_m": 9.75,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 0.0,
+              "lower": 0.0,
+              "upper": 0.32440756488388023
+            },
+            "divergence_rate": 0.0,
+            "reliable": true
+          },
+          {
+            "bias_magnitude_m": 10.125,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 0.0,
+              "lower": 0.0,
+              "upper": 0.32440756488388023
+            },
+            "divergence_rate": 0.0,
+            "reliable": true
+          },
+          {
+            "bias_magnitude_m": 10.5,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 0.375,
+              "lower": 0.13684428582359742,
+              "upper": 0.6942576053973727
+            },
+            "divergence_rate": 0.375,
+            "reliable": false
+          },
+          {
+            "bias_magnitude_m": 12.0,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 1.0,
+              "lower": 0.6755924351161198,
+              "upper": 1.0
+            },
+            "divergence_rate": 1.0,
+            "reliable": false
+          }
+        ],
+        "lower_reliable_bias_m": 10.125,
+        "outage_duration_s": 0.0,
+        "status": "bounded",
+        "upper_unreliable_bias_m": 10.5
+      },
+      {
+        "bracket_width_m": null,
+        "evaluation_count": 2,
+        "evaluations": [
+          {
+            "bias_magnitude_m": 0.0,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 0.0,
+              "lower": 0.0,
+              "upper": 0.32440756488388023
+            },
+            "divergence_rate": 0.0,
+            "reliable": true
+          },
+          {
+            "bias_magnitude_m": 12.0,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 0.0,
+              "lower": 0.0,
+              "upper": 0.32440756488388023
+            },
+            "divergence_rate": 0.0,
+            "reliable": true
+          }
+        ],
+        "lower_reliable_bias_m": 12.0,
+        "outage_duration_s": 0.5,
+        "status": "all_reliable",
+        "upper_unreliable_bias_m": null
+      },
+      {
+        "bracket_width_m": null,
+        "evaluation_count": 2,
+        "evaluations": [
+          {
+            "bias_magnitude_m": 0.0,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 0.0,
+              "lower": 0.0,
+              "upper": 0.32440756488388023
+            },
+            "divergence_rate": 0.0,
+            "reliable": true
+          },
+          {
+            "bias_magnitude_m": 12.0,
+            "divergence_interval": {
+              "confidence": 0.95,
+              "estimate": 0.0,
+              "lower": 0.0,
+              "upper": 0.32440756488388023
+            },
+            "divergence_rate": 0.0,
+            "reliable": true
+          }
+        ],
+        "lower_reliable_bias_m": 12.0,
+        "outage_duration_s": 1.0,
+        "status": "all_reliable",
+        "upper_unreliable_bias_m": null
+      }
+    ],
+    "requirement": {
+      "confidence": 0.95,
+      "max_divergence_rate": 0.0,
+      "use_upper_confidence_bound": false
+    },
+    "tolerance_m": 0.5
+  },
+  "comparison_name": "bias=8.000 m, outage=2.000 s",
+  "paired_comparison": {
+    "baseline_failure_rate": 0.0,
+    "degraded_failure_rate": 0.0,
+    "degraded_only_failure_count": 0,
+    "maximum_error_difference_interval_m": {
+      "confidence": 0.95,
+      "estimate": 0.026293968854845265,
+      "lower": -0.0108605789812517,
+      "resamples": 300,
+      "seed": 20260802,
+      "upper": 0.09517277503641335
+    },
+    "recovered_failure_count": 0,
+    "rmse_difference_interval_m": {
+      "confidence": 0.95,
+      "estimate": 0.08929119172466819,
+      "lower": 0.03977220604362977,
+      "resamples": 300,
+      "seed": 20260801,
+      "upper": 0.13999618067104613
+    },
+    "rmse_worsening_probability": 0.875,
+    "runs": [
+      {
+        "baseline_failed": false,
+        "baseline_position_max_m": 2.0325427867462653,
+        "baseline_position_rmse_m": 0.9496475649717259,
+        "degraded_failed": false,
+        "degraded_position_max_m": 2.0325427867462653,
+        "degraded_position_rmse_m": 0.9979002910599387,
+        "maximum_error_difference_m": 0.0,
+        "rmse_difference_m": 0.04825272608821285,
+        "seed": 0
+      },
+      {
+        "baseline_failed": false,
+        "baseline_position_max_m": 1.5298622839641445,
+        "baseline_position_rmse_m": 1.0177349274384464,
+        "degraded_failed": false,
+        "degraded_position_max_m": 1.5298622839641445,
+        "degraded_position_rmse_m": 1.1773836692352317,
+        "maximum_error_difference_m": 0.0,
+        "rmse_difference_m": 0.15964874179678534,
+        "seed": 1
+      },
+      {
+        "baseline_failed": false,
+        "baseline_position_max_m": 1.6245983882137667,
+        "baseline_position_rmse_m": 0.8482603476243271,
+        "degraded_failed": false,
+        "degraded_position_max_m": 1.6245983882137667,
+        "degraded_position_rmse_m": 1.0485683994553174,
+        "maximum_error_difference_m": 0.0,
+        "rmse_difference_m": 0.20030805183099032,
+        "seed": 2
+      },
+      {
+        "baseline_failed": false,
+        "baseline_position_max_m": 1.3431764953813023,
+        "baseline_position_rmse_m": 0.8024905802442809,
+        "degraded_failed": false,
+        "degraded_position_max_m": 1.3431764953813023,
+        "degraded_position_rmse_m": 0.8471550596335464,
+        "maximum_error_difference_m": 0.0,
+        "rmse_difference_m": 0.04466447938926554,
+        "seed": 3
+      },
+      {
+        "baseline_failed": false,
+        "baseline_position_max_m": 1.0416827191943527,
+        "baseline_position_rmse_m": 0.7025405007223922,
+        "degraded_failed": false,
+        "degraded_position_max_m": 1.0416827191943527,
+        "degraded_position_rmse_m": 0.7937310306384384,
+        "maximum_error_difference_m": 0.0,
+        "rmse_difference_m": 0.09119052991604626,
+        "seed": 4
+      },
+      {
+        "baseline_failed": false,
+        "baseline_position_max_m": 0.7224065461688254,
+        "baseline_position_rmse_m": 0.48526200579679246,
+        "degraded_failed": false,
+        "degraded_position_max_m": 0.6789642302438186,
+        "degraded_position_rmse_m": 0.4386702883572999,
+        "maximum_error_difference_m": -0.0434423159250068,
+        "rmse_difference_m": -0.046591717439492586,
+        "seed": 5
+      },
+      {
+        "baseline_failed": false,
+        "baseline_position_max_m": 0.731811840636824,
+        "baseline_position_rmse_m": 0.4884219460690445,
+        "degraded_failed": false,
+        "degraded_position_max_m": 0.985605907400593,
+        "degraded_position_rmse_m": 0.6279639333674168,
+        "maximum_error_difference_m": 0.2537940667637689,
+        "rmse_difference_m": 0.13954198729837236,
+        "seed": 6
+      },
+      {
+        "baseline_failed": false,
+        "baseline_position_max_m": 1.742214819078205,
+        "baseline_position_rmse_m": 0.8857979540285064,
+        "degraded_failed": false,
+        "degraded_position_max_m": 1.742214819078205,
+        "degraded_position_rmse_m": 0.9631126889456718,
+        "maximum_error_difference_m": 0.0,
+        "rmse_difference_m": 0.07731473491716545,
+        "seed": 7
+      }
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "schema_version": 1,
+  "title": "VeraNav Structured GNSS Degradation Reliability Study"
+}

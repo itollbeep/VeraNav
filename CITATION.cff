@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use VeraNav in research, please cite the software."
+title: "VeraNav: Verification and Reliability Assessment for Navigation Estimators"
+type: software
+authors:
+  - family-names: Cheng
+    given-names: Ximing
+repository-code: "https://github.com/itollbeep/VeraNav"
+license: Apache-2.0
+version: 0.1.0
