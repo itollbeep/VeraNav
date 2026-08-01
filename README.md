@@ -230,3 +230,11 @@ VeraNav is licensed under the Apache License 2.0. See [LICENSE](LICENSE).
 ## External estimator reproduction
 
 VeraNav includes a deterministic importer and compact evidence for the official KF-GINS demonstration. The integration records the pinned upstream revision, source and data hashes, GPS-week normalization, duplicate truth timestamp handling, local NED conversion and aligned 3D position metrics. See [`docs/kf_gins_reproduction.md`](docs/kf_gins_reproduction.md) and [`examples/kf_gins_official`](examples/kf_gins_official).
+
+## OpenVINS v2.7 external baseline
+
+The official OpenVINS v2.7 ROS-free simulator is pinned, built and
+executed through its upstream repeatability and simulation entry
+points. Compact provenance and execution evidence is stored in
+`examples/openvins_official/`; scope and compatibility details are in
+`docs/openvins_reproduction.md`.

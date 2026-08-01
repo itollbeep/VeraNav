@@ -1,0 +1,105 @@
+{
+  "build": {
+    "backend": "micromamba-release-compatible-ros-free",
+    "binaries": {
+      "run_simulation_sha256": "44f1540739f2b16b35c6171b7bf5a0594eda9c825addae7c94f19311e7e0ecf3",
+      "test_sim_meas_sha256": "2882b56dae052c768fe4ed4ba5001f9df50b850f00bef5e6164e97ca257429d6",
+      "test_sim_repeat_sha256": "d37d80836736586238ae7075b632dcf4ec4e688bc5185fb305ce510df151b370"
+    },
+    "cmake": "cmake version 3.25.1",
+    "compatibility_overlay": {
+      "cmake_project_include": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/OpenVINSLinkCompatibility.cmake",
+      "cmake_project_include_sha256": "6d46a9e0566fe4f7967704c30f63b0a0726c8b34c48b7639cd6ca8f081985ac7",
+      "compiler_flags": [
+        "-include cassert"
+      ],
+      "libgl_path": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/env-v2.7/lib/libGL.so.1.7.0",
+      "libgl_sha256": "6b7b1f6e5c5f949a7e5e2f49ffde1322d93469c9994d0c5ebfeaff93808bb415",
+      "linker_flags": [
+        "-Wl,-rpath-link,<isolated-prefix>/lib"
+      ],
+      "reason": "The pinned v2.7 source uses assert without directly including <cassert>, and the conda OpenCV 4.5 Qt build requires an explicit isolated libGL link path. Both are build and runtime compatibility overlays; the upstream source tree is not edited.",
+      "runtime_environment": {
+        "LIBGL_ALWAYS_SOFTWARE": "1",
+        "QT_QPA_PLATFORM": "offscreen"
+      }
+    },
+    "compiler": "x86_64-conda-linux-gnu-g++ (conda-forge gcc 10.4.0-19) 10.4.0",
+    "docker_used": false,
+    "environment_package_list": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/environment-packages.txt",
+    "environment_package_list_sha256": "6bddfc2cee5e1469c288cd8cd00984038f830577c5b8489fa5369e8b85350227",
+    "environment_profile": "official-era-opencv-4.5",
+    "host_system_packages_modified": false,
+    "micromamba_sha256": "77b7790ec97f64581118f103585b175df4306f95829b0fa6bfe4a19cc88a1182",
+    "ninja": "1.13.2",
+    "opencv": "4.5.5",
+    "schema_version": 1,
+    "sudo_used": false
+  },
+  "configuration": {
+    "build_type": "RelWithDebInfo",
+    "disable_matplotlib": true,
+    "enable_aruco_tags": false,
+    "enable_ros": false,
+    "official_configuration_modified": false,
+    "path_in_upstream": "config/rpng_sim/estimator_config.yaml",
+    "sha256": "37e2d29790355eb71c9daf32027748c7c2a93b6ab5caba31020126650774a7b9"
+  },
+  "estimator": "OpenVINS",
+  "reproduction_scope": "official-v2.7-ros-free-simulator",
+  "schema_version": 1,
+  "upstream": {
+    "commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+    "commit_date": "2023-06-19T23:55:01Z",
+    "commit_subject": "Merge pull request #337 from rpng/develop_v2.7",
+    "license": "GPL-3.0",
+    "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "release_tag": "v2.7",
+    "repository": "https://github.com/rpng/open_vins",
+    "source_archive": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/archive/open_vins-93adc241390d13e99232652cf05cbe18a93c7bea.tar.gz",
+    "source_archive_sha256": "aa7be7b18824dc53af4ae79ca3c771c721b7b0951a0cd9ee874f04034358033e",
+    "source_tree_sha256_before_build": "a1feaf1b20a08305b0e61264b36fb83235610b36a69345acf480687727a47692"
+  },
+  "verification": {
+    "log_summary": {
+      "run_a_normalized_line_count": 32110,
+      "run_a_normalized_sha256": "3769a063bd0e5e8649624247a98c04a418c56e83bc919220cf16de5f8bc56843",
+      "run_b_normalized_line_count": 32110,
+      "run_b_normalized_sha256": "3769a063bd0e5e8649624247a98c04a418c56e83bc919220cf16de5f8bc56843",
+      "run_logs_normalized_byte_identical": true,
+      "schema_version": 1,
+      "test_sim_repeat_required_marker_found": true
+    },
+    "official_source_modified": false,
+    "run_simulation_a": {
+      "line_count": 32110,
+      "path": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/evidence/run-a/run_simulation.log",
+      "sha256": "958cc0740cafcf13b9e3c53b509f63bdce30296fb0d31ea3ac09aac8441edf20",
+      "size_bytes": 2042356,
+      "status": "PASS"
+    },
+    "run_simulation_b": {
+      "line_count": 32110,
+      "path": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/evidence/run-b/run_simulation.log",
+      "sha256": "958cc0740cafcf13b9e3c53b509f63bdce30296fb0d31ea3ac09aac8441edf20",
+      "size_bytes": 2042356,
+      "status": "PASS"
+    },
+    "test_sim_meas": {
+      "line_count": 23,
+      "path": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/evidence/run-a/test_sim_meas.log",
+      "sha256": "f3a9ac64a68d2db4cc3867cb9a6788a373470169322578ed7ec1f0c980e4e67b",
+      "size_bytes": 1618,
+      "status": "PASS"
+    },
+    "test_sim_repeat": {
+      "line_count": 44,
+      "path": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/evidence/run-a/test_sim_repeat.log",
+      "required_marker": "success! they all are the same!",
+      "sha256": "b0d9c730f33dc717c59ca80bc1cdb84dc43fab07058d125279f9fa612ee19d83",
+      "size_bytes": 3236,
+      "status": "PASS"
+    },
+    "veranav_used_for_estimator_execution": false
+  }
+}

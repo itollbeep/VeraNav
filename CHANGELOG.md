@@ -35,3 +35,11 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Added duplicate truth timestamp consolidation and spatial-radius rejection.
 - Added deterministic JSON, CSV and Markdown reproduction evidence.
 - Added geodesy and KF-GINS integration tests.
+
+## OpenVINS v2.7 ROS-free baseline
+
+- Pinned official OpenVINS v2.7 at `93adc241390d13e99232652cf05cbe18a93c7bea`.
+- Built the ROS-free simulator in an isolated compatibility toolchain.
+- Passed `test_sim_repeat`, `test_sim_meas`, and two independent
+  `run_simulation` executions.
+- Added strict committed evidence loading and validation.

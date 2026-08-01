@@ -1,0 +1,9 @@
+{
+  "run_a_normalized_line_count": 32110,
+  "run_a_normalized_sha256": "3769a063bd0e5e8649624247a98c04a418c56e83bc919220cf16de5f8bc56843",
+  "run_b_normalized_line_count": 32110,
+  "run_b_normalized_sha256": "3769a063bd0e5e8649624247a98c04a418c56e83bc919220cf16de5f8bc56843",
+  "run_logs_normalized_byte_identical": true,
+  "schema_version": 1,
+  "test_sim_repeat_required_marker_found": true
+}

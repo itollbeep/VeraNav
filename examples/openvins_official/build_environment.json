@@ -1,0 +1,32 @@
+{
+  "backend": "micromamba-release-compatible-ros-free",
+  "cmake": "cmake version 3.25.1",
+  "compatibility_overlay": {
+    "cmake_project_include": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/OpenVINSLinkCompatibility.cmake",
+    "cmake_project_include_sha256": "6d46a9e0566fe4f7967704c30f63b0a0726c8b34c48b7639cd6ca8f081985ac7",
+    "compiler_flags": [
+      "-include cassert"
+    ],
+    "libgl_path": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/env-v2.7/lib/libGL.so.1.7.0",
+    "libgl_sha256": "6b7b1f6e5c5f949a7e5e2f49ffde1322d93469c9994d0c5ebfeaff93808bb415",
+    "linker_flags": [
+      "-Wl,-rpath-link,<isolated-prefix>/lib"
+    ],
+    "reason": "The pinned v2.7 source uses assert without directly including <cassert>, and the conda OpenCV 4.5 Qt build requires an explicit isolated libGL link path. Both are build and runtime compatibility overlays; the upstream source tree is not edited.",
+    "runtime_environment": {
+      "LIBGL_ALWAYS_SOFTWARE": "1",
+      "QT_QPA_PLATFORM": "offscreen"
+    }
+  },
+  "compiler": "x86_64-conda-linux-gnu-g++ (conda-forge gcc 10.4.0-19) 10.4.0",
+  "docker_used": false,
+  "environment_package_list": "/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/environment-packages.txt",
+  "environment_package_list_sha256": "6bddfc2cee5e1469c288cd8cd00984038f830577c5b8489fa5369e8b85350227",
+  "environment_profile": "official-era-opencv-4.5",
+  "host_system_packages_modified": false,
+  "micromamba_sha256": "77b7790ec97f64581118f103585b175df4306f95829b0fa6bfe4a19cc88a1182",
+  "ninja": "1.13.2",
+  "opencv": "4.5.5",
+  "schema_version": 1,
+  "sudo_used": false
+}
