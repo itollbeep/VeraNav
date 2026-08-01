@@ -19,3 +19,4 @@ jobs:
       - run: PYTHONPATH=src python -m compileall -q src tests scripts
       - run: PYTHONPATH=src python scripts/run_reliability_study.py --quick --seeds 2 --output-dir /tmp/veranav-study
       - run: PYTHONPATH=src python scripts/render_study_svg.py /tmp/veranav-study/study.json /tmp/veranav-study
+      - run: PYTHONPATH=src python scripts/run_adapter_smoke.py --output-dir /tmp/veranav-adapter --seed 0

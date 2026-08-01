@@ -1,0 +1,11 @@
+{
+  "candidate_revision": null,
+  "estimator_family": "filter-based loosely coupled GNSS/INS",
+  "integration_status": "planned",
+  "license_id": "GPL-3.0",
+  "name": "KF-GINS",
+  "output_schema": "veranav-position-trajectory-v1",
+  "repository_url": "https://github.com/i2Nav-WHU/KF-GINS",
+  "revision_policy": "Pin an exact upstream commit after the first successful clean build and retain the upstream source in a separate checkout.",
+  "schema_version": 1
+}

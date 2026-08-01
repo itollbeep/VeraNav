@@ -76,7 +76,7 @@ Not claimed in V0.1:
 - aviation, automotive, or robotic safety certification
 - protection-level or integrity-risk guarantees
 - production-time synchronization or calibration
-- ROS, PX4, OpenVINS, KF-GINS, or other external estimator integration
+- completed OpenVINS, KF-GINS, or other external estimator reproduction
 - visual, LiDAR, radar, or wheel-odometry measurement models
 
 ## Quick start
@@ -134,6 +134,25 @@ For the committed quick study, the degraded-minus-baseline mean position-RMSE di
 
 The example uses a short synthetic trajectory and eight seeds to keep repository verification fast. It should be interpreted as an executable method demonstration, not a statistically mature benchmark.
 
+
+## Estimator adapter boundary
+
+VeraNav now defines a versioned position-trajectory boundary for estimator adapters:
+
+```text
+timestamp_s,north_m,east_m,down_m
+```
+
+The internal ESKF is exposed through this boundary, and a shell-free command runner validates external CSV output before evaluation. Run the adapter smoke test with:
+
+```bash
+PYTHONPATH=src .venv/bin/python scripts/run_adapter_smoke.py \
+  --output-dir outputs/adapter_smoke \
+  --seed 0
+```
+
+The planned KF-GINS and OpenVINS baselines are described in `configs/baselines/`. Their status remains `planned`: the repository contains the interface, validation, and licensing boundary, but does not yet claim a successful external build or dataset reproduction. See [docs/adapter_protocol.md](docs/adapter_protocol.md).
+
 ## Scientific conventions
 
 The core convention set is frozen in [docs/scientific_conventions.md](docs/scientific_conventions.md):
@@ -185,7 +204,7 @@ A more detailed statement of contribution, limitations, and extension targets is
 
 Near-term work:
 
-- estimator-adapter interface for KF-GINS and OpenVINS baselines
+- complete clean builds and dataset reproductions for KF-GINS and OpenVINS
 - additional GNSS faults, IMU bias drift, scale-factor errors, and timing offsets
 - multidimensional reliability surfaces
 - real-dataset replay and simulator-to-real comparison
