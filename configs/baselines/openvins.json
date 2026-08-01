@@ -1,11 +1,11 @@
 {
-  "candidate_revision": "v2.7",
+  "candidate_revision": "93adc241390d13e99232652cf05cbe18a93c7bea",
   "estimator_family": "filter-based visual-inertial MSCKF",
-  "integration_status": "planned",
+  "integration_status": "integrated",
   "license_id": "GPL-3.0",
   "name": "OpenVINS",
   "output_schema": "veranav-position-trajectory-v1",
   "repository_url": "https://github.com/rpng/open_vins",
-  "revision_policy": "Start from the v2.7 release and pin the exact tested commit before publishing benchmark results.",
+  "revision_policy": "Pinned to OpenVINS v2.7 commit 93adc241390d13e99232652cf05cbe18a93c7bea after a verified ROS-free build, official simulation run, external GPL-isolated trajectory adapter, and deterministic VeraNav common-schema import.",
   "schema_version": 1
 }

@@ -43,3 +43,11 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Passed `test_sim_repeat`, `test_sim_meas`, and two independent
   `run_simulation` executions.
 - Added strict committed evidence loading and validation.
+
+## OpenVINS simulation adapter
+
+- Added a deterministic external OpenVINS v2.7 position adapter.
+- Recorded estimated and simulated reference trajectories in the
+  VeraNav common schema.
+- Added a strict import record, baseline metrics and validation tests.
+- Kept GPL-linked source and binaries outside the Apache-2.0 repository.

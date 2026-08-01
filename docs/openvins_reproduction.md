@@ -36,3 +36,22 @@ Compact evidence is stored in `examples/openvins_official/`. Large
 source archives, dependency environments, binaries and raw logs remain
 outside the repository under
 `/home/itoll/GitHub/VeraNavExternal/OpenVINSStable`.
+
+## VeraNav common-trajectory adapter
+
+A GPL-linked C++ recorder is maintained outside the Apache-2.0
+repository under
+`/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/adapter`.
+It mirrors the official ROS-free simulation loop, reads the public
+OpenVINS filter state and simulator ground truth, and writes the
+`veranav-position-trajectory-v1` schema.
+
+The adapter maps OpenVINS simulation global x/y/z to VeraNav N/E/D.
+This is explicit because the OpenVINS simulator uses positive global
+z gravity. Two independent adapter executions must produce
+byte-identical estimate and reference trajectories before the record is
+accepted.
+
+The committed result is stored in
+`reproductions/openvins/simulation/`. The upstream source tree remains
+unchanged, and the GPL-linked source and binary remain external.

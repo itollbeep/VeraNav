@@ -1,0 +1,37 @@
+{
+  "adapter_build": {
+    "binary_sha256": "5a691e1b522700b707e68d65efd6d5868dc884e621aa967095e339500beb7dda",
+    "cmake_sha256": "9f59fae69519195ff2dbd3ccc429a4f2539454c1a8e0b24f1d3e09cddc9ededf",
+    "source_sha256": "3a15ea6623552bfeea178c9be5338cfcfce25a41c291b174aea90f802ea7f745"
+  },
+  "adapter_source_location": "external-only",
+  "configuration_sha256": "37e2d29790355eb71c9daf32027748c7c2a93b6ab5caba31020126650774a7b9",
+  "estimator": "OpenVINS",
+  "frame_convention": {
+    "mapping": "OpenVINS global x/y/z to VeraNav N/E/D",
+    "reason": "The OpenVINS simulator uses positive global z gravity; the synthetic global axes are recorded as NED."
+  },
+  "integration_scope": "v2.7-ros-free-simulation-position-adapter",
+  "official_reproduction_manifest_sha256": "d4528e6597f9a658d57c2e00ffe76361461054e72f3907f7b1f7a6c12cb84dff",
+  "official_source_modified": false,
+  "outputs": {
+    "estimate_sha256": "418861265fe481d8c0ba85e1415b2778808979256a175c293ff65cac02b55bce",
+    "reference_sha256": "f698bcf3e6e2711b32a3e5f33cfb4e21253c60df92467badbfc7292f46756e7a"
+  },
+  "release_tag": "v2.7",
+  "schema_version": 1,
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "frame_mapping": "openvins-global-xyz-to-veranav-ned",
+    "output_schema": "veranav-position-trajectory-v1",
+    "run_a": {
+      "log_sha256": "3c0ad20be50746cde5399e5f8cad579cec2f4d74938d83dd100df874b829b2d8",
+      "status": "PASS"
+    },
+    "run_b": {
+      "log_sha256": "3c0ad20be50746cde5399e5f8cad579cec2f4d74938d83dd100df874b829b2d8",
+      "status": "PASS"
+    },
+    "trajectory_outputs_byte_identical": true
+  }
+}

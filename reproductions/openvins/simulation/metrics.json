@@ -1,0 +1,12 @@
+{
+  "estimator": "OpenVINS",
+  "metrics": {
+    "end_time_s": 1520532128.300862,
+    "position_max_m": 0.10714518758827477,
+    "position_mean_m": 0.03941590285884345,
+    "position_rmse_m": 0.04541064427158661,
+    "sample_count": 2921,
+    "start_time_s": 1520531836.3011405
+  },
+  "schema_version": 1
+}

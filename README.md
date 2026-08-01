@@ -238,3 +238,11 @@ executed through its upstream repeatability and simulation entry
 points. Compact provenance and execution evidence is stored in
 `examples/openvins_official/`; scope and compatibility details are in
 `docs/openvins_reproduction.md`.
+
+## OpenVINS common-trajectory integration
+
+OpenVINS v2.7 is now connected to the VeraNav external-estimator
+boundary through a deterministic, position-level simulation adapter.
+The committed record in `reproductions/openvins/simulation/` contains
+the pinned revision, trajectory hashes and baseline position metrics.
+GPL-linked adapter code and binaries remain outside this repository.

@@ -30,7 +30,8 @@ class BaselineDescriptorTest(unittest.TestCase):
         ov = load_baseline_descriptor(root / "configs/baselines/openvins.json")
         self.assertEqual(kf.name, "KF-GINS")
         self.assertEqual(ov.name, "OpenVINS")
-        self.assertEqual(ov.candidate_revision, "v2.7")
+        self.assertEqual(ov.candidate_revision, "93adc241390d13e99232652cf05cbe18a93c7bea")
+        self.assertEqual(ov.integration_status, "integrated")
         self.assertEqual(kf.integration_status, "planned")
 
     def test_accepts_valid_descriptor(self) -> None:
