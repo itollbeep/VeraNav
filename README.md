@@ -258,3 +258,15 @@ The protocol is documented in
 `docs/openvins_visual_dropout_protocol.md`. Compact experiment evidence
 is stored in `experiments/openvins/visual_dropout/`; the GPL-linked
 runner and raw trajectories remain external.
+
+## OpenVINS visual-outage timing audit
+
+The fixed 3 s outage result is now audited at four trajectory
+locations. One-second and three-second complete visual outages are
+paired against matched baseline windows, with local RMSE, peak error,
+positive excess-error integral and recovery-time measurements.
+
+The protocol is documented in
+`docs/openvins_visual_burst_sweep_protocol.md`. Compact evidence is
+stored in `experiments/openvins/visual_burst_sweep/`; raw trajectories
+and the GPL-linked runner remain external.

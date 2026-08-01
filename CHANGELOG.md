@@ -62,3 +62,12 @@ This milestone is a synthetic verification framework. It is not a real-world ben
   committed evidence validation.
 - Preserved the official OpenVINS source tree and kept GPL-linked code
   outside the repository.
+
+## OpenVINS visual-outage timing sensitivity
+
+- Reused the verified OpenVINS visual-dropout runner without changes.
+- Evaluated 1 s and 3 s complete visual outages at four trajectory
+  locations.
+- Added matched-window RMSE, peak-error, positive excess-area and
+  recovery-time metrics.
+- Required deterministic replay and byte-identical paired references.

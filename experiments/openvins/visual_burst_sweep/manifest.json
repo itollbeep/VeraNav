@@ -1,0 +1,78 @@
+{
+  "experiment": "openvins-visual-burst-timing-sensitivity",
+  "experiment_config_sha256": "61dc19551066d01cf2d774f48e33d652e3f6e056231fc5eed03766832626c1ef",
+  "official_configuration_sha256": "37e2d29790355eb71c9daf32027748c7c2a93b6ab5caba31020126650774a7b9",
+  "official_reproduction_manifest_sha256": "d4528e6597f9a658d57c2e00ffe76361461054e72f3907f7b1f7a6c12cb84dff",
+  "official_source_modified": false,
+  "release_tag": "v2.7",
+  "runner": {
+    "binary_sha256": "c2b46aa02fa6fbb1e6eab848619b772095905888c7828ae0f2653a32a5a187e0",
+    "cmake_sha256": "48af913e44c52498c324ae763bfacf7a7b51e9a57e4da18fc68045306d039e62",
+    "source_sha256": "9bf48b10526146c6d7ef264715984975acf638d3a3b59a286689310df64f9efd"
+  },
+  "runner_source_location": "external-only",
+  "scenario_artifacts": {
+    "baseline": {
+      "estimate_sha256": "418861265fe481d8c0ba85e1415b2778808979256a175c293ff65cac02b55bce",
+      "reference_sha256": "f698bcf3e6e2711b32a3e5f33cfb4e21253c60df92467badbfc7292f46756e7a",
+      "run_log_sha256": "83d7c2debf9b99446c5c81b91ee2e50df04fdcd5cbeaff52f8703bd4943fe615",
+      "summary_sha256": "769d5ccd59f260634ffdb08bd1ccd7d865866feb2c89ab51d747bcefaa5e103b"
+    },
+    "burst-t030-d1": {
+      "estimate_sha256": "54fda074ee89280743a3ede0f900d87a810fa7ea184abbcc672982e97edf184f",
+      "reference_sha256": "f698bcf3e6e2711b32a3e5f33cfb4e21253c60df92467badbfc7292f46756e7a",
+      "run_log_sha256": "816f112674eb63f3fe53452b23e9629c993f681ab4d4e49892adb89734fa261c",
+      "summary_sha256": "fbf0ab2963d4314d31ec5bed775cb282a45f12b09f038a3cd30eea24790c0f4b"
+    },
+    "burst-t030-d3": {
+      "estimate_sha256": "43988adfd2d415f318c6f6af066d8f6efa3f2d50745ffee4750cd9da423e9cdf",
+      "reference_sha256": "f698bcf3e6e2711b32a3e5f33cfb4e21253c60df92467badbfc7292f46756e7a",
+      "run_log_sha256": "35c8caa866fcf27f097d2473cefedf5d0b0753b29cc20094e0bcae893ba9f752",
+      "summary_sha256": "e1d6bfdc1749f0ee915d6f7d7ec5afb6c331354878aef6ac68ba6948f47edcd0"
+    },
+    "burst-t090-d1": {
+      "estimate_sha256": "d071d618454239089e686569cb2476bb8ac01243b0d2e50ca19886c55cf52605",
+      "reference_sha256": "f698bcf3e6e2711b32a3e5f33cfb4e21253c60df92467badbfc7292f46756e7a",
+      "run_log_sha256": "f6760aa4b9ca54c1d473991c150c600a0f4032d753331da59e0bf43361284c22",
+      "summary_sha256": "a70d70850333f0d0259e553581341f46930a447aa4c86c683f77ca6ea30619a3"
+    },
+    "burst-t090-d3": {
+      "estimate_sha256": "a4e1cf0b6896b02b2a4f140938dc961815c237501d04ef30840ab518c5c7ef83",
+      "reference_sha256": "f698bcf3e6e2711b32a3e5f33cfb4e21253c60df92467badbfc7292f46756e7a",
+      "run_log_sha256": "75c5ef27b2f72f7077e436ae080b4f70d09c5fdc77a00c317acd3adb35165438",
+      "summary_sha256": "e0bd11abea374b5a1adc37fc734a9a651b21bf94df11c8bd6de7aed98251a87d"
+    },
+    "burst-t150-d1": {
+      "estimate_sha256": "50041508cabdf8855e568bf1a4921ea2c8ca8f0ff23ae2a2dea7b5c33bfb926f",
+      "reference_sha256": "f698bcf3e6e2711b32a3e5f33cfb4e21253c60df92467badbfc7292f46756e7a",
+      "run_log_sha256": "4ad14d5e0313e0c8d82a1953b898d5bc6bff9306b51c8559785574706bd496a3",
+      "summary_sha256": "b369d5c107cd3d9af2dd448b29687ccc105e07f3beb0e791d03f3317c0330c4b"
+    },
+    "burst-t150-d3": {
+      "estimate_sha256": "a5dd8ee2aa9afabc2b61e848481c3cf0753739c7329040c489cb65dab231a43b",
+      "reference_sha256": "f698bcf3e6e2711b32a3e5f33cfb4e21253c60df92467badbfc7292f46756e7a",
+      "run_log_sha256": "ea98d25fed742ae1a68bcf3de9821a09f7c5cb64ca9427f491d6c4d9fc383299",
+      "summary_sha256": "fa126acc09b31fb96be14a48cc75729f5433041229dad0e95c4d7594d282a07f"
+    },
+    "burst-t210-d1": {
+      "estimate_sha256": "e290e86d6ecef83d3c978450d07e932f486fa8c0e3684ea99f546b6fa9a0c3fa",
+      "reference_sha256": "f698bcf3e6e2711b32a3e5f33cfb4e21253c60df92467badbfc7292f46756e7a",
+      "run_log_sha256": "12be92649d39fc47b0ba864a4f2abf6a840af765e319e9f5f5fd2db619d3ef28",
+      "summary_sha256": "d3098cf151f8860acae60061231ca9b204ce9a7e25a8ce17ba1494dd8a9bb011"
+    },
+    "burst-t210-d3": {
+      "estimate_sha256": "6c2b1b5f2abafa94093b0f8da752f5b9c4a833641ce9bc02a58d7faec692e651",
+      "reference_sha256": "f698bcf3e6e2711b32a3e5f33cfb4e21253c60df92467badbfc7292f46756e7a",
+      "run_log_sha256": "583c62da71cede889be6c82f564dd5c2f9aaac554c1ca26124b660a5c27c786c",
+      "summary_sha256": "ef0383db39dacaf0f82e13509dc93d024ed0fbfb1f248fb0bfe33b11758eb0da"
+    }
+  },
+  "schema_version": 1,
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "all_scenario_replays_byte_identical": true,
+    "frame_mapping": "openvins-global-xyz-to-veranav-ned",
+    "output_schema": "veranav-position-trajectory-v1",
+    "paired_reference_trajectories_byte_identical": true
+  }
+}

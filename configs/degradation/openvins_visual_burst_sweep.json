@@ -1,0 +1,90 @@
+{
+  "experiment": "openvins-visual-burst-timing-sensitivity",
+  "frame_mapping": "openvins-global-xyz-to-veranav-ned",
+  "local_metrics": {
+    "post_window_s": 10.0,
+    "pre_window_s": 10.0,
+    "recovery_hold_s": 3.0,
+    "recovery_horizon_s": 30.0,
+    "recovery_threshold_fraction_of_baseline_rmse": 0.1,
+    "rolling_window_s": 1.0
+  },
+  "reference_policy": "all scenarios must use byte-identical reference trajectories",
+  "release_tag": "v2.7",
+  "schema_version": 1,
+  "scenarios": [
+    {
+      "burst_duration_s": 0.0,
+      "burst_start_s": 0.0,
+      "mode": "baseline",
+      "name": "baseline",
+      "probability": 0.0,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 1.0,
+      "burst_start_s": 30.0,
+      "mode": "burst-frame-drop",
+      "name": "burst-t030-d1",
+      "probability": 0.0,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 3.0,
+      "burst_start_s": 30.0,
+      "mode": "burst-frame-drop",
+      "name": "burst-t030-d3",
+      "probability": 0.0,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 1.0,
+      "burst_start_s": 90.0,
+      "mode": "burst-frame-drop",
+      "name": "burst-t090-d1",
+      "probability": 0.0,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 3.0,
+      "burst_start_s": 90.0,
+      "mode": "burst-frame-drop",
+      "name": "burst-t090-d3",
+      "probability": 0.0,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 1.0,
+      "burst_start_s": 150.0,
+      "mode": "burst-frame-drop",
+      "name": "burst-t150-d1",
+      "probability": 0.0,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 3.0,
+      "burst_start_s": 150.0,
+      "mode": "burst-frame-drop",
+      "name": "burst-t150-d3",
+      "probability": 0.0,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 1.0,
+      "burst_start_s": 210.0,
+      "mode": "burst-frame-drop",
+      "name": "burst-t210-d1",
+      "probability": 0.0,
+      "seed": 20260801
+    },
+    {
+      "burst_duration_s": 3.0,
+      "burst_start_s": 210.0,
+      "mode": "burst-frame-drop",
+      "name": "burst-t210-d3",
+      "probability": 0.0,
+      "seed": 20260801
+    }
+  ],
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea"
+}
