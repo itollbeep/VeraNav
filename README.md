@@ -226,3 +226,7 @@ Citation metadata are provided in [CITATION.cff](CITATION.cff). Project changes 
 ## License
 
 VeraNav is licensed under the Apache License 2.0. See [LICENSE](LICENSE).
+
+## External estimator reproduction
+
+VeraNav includes a deterministic importer and compact evidence for the official KF-GINS demonstration. The integration records the pinned upstream revision, source and data hashes, GPS-week normalization, duplicate truth timestamp handling, local NED conversion and aligned 3D position metrics. See [`docs/kf_gins_reproduction.md`](docs/kf_gins_reproduction.md) and [`examples/kf_gins_official`](examples/kf_gins_official).

@@ -1,0 +1,59 @@
+{
+  "estimator": "KF-GINS",
+  "evaluation_anchor": {
+    "height_m": 20.91,
+    "latitude_deg": 30.4447873697,
+    "longitude_deg": 114.4718632477
+  },
+  "reference_timestamp_normalization": {
+    "duplicate_groups": 2799,
+    "duplicate_rows": 2799,
+    "maximum_duplicate_position_radius_m": 0.003554337189344626,
+    "maximum_group_size": 2,
+    "policy": "mean-geodetic-with-circular-longitude",
+    "radius_limit_m": 5.0,
+    "raw_rows": 685811,
+    "unique_timestamps": 683012
+  },
+  "schema_version": 1,
+  "source_archive_sha256": "6ca9032ad344bb635c74fb9d142c65da0a5fed92a2d2e8e028fb58c2e8d15f42",
+  "sources": {
+    "config": {
+      "path": "/home/itoll/GitHub/VeraNavExternal/KF-GINS/dataset/kf-gins.yaml",
+      "sha256": "47d2b7b888cf01e9f0e04f47901d7851cee1b92abe114b5b61eea8e66a47e1e0",
+      "size_bytes": 3127
+    },
+    "estimate": {
+      "path": "/home/itoll/GitHub/VeraNavExternal/KF-GINS/dataset/KF_GINS_Navresult.nav",
+      "sha256": "465c551fcbe7817b6905c26b7c7dd23cd1c008343c40161194d0e18cfba84df9",
+      "size_bytes": 119780294
+    },
+    "gnss": {
+      "path": "/home/itoll/GitHub/VeraNavExternal/KF-GINS/dataset/GNSS-RTK.txt",
+      "sha256": "3c1ecf6d03121d695f59ea8383af5ec4233ef9ff1c33939b7c42caa609a94521",
+      "size_bytes": 286692
+    },
+    "imu": {
+      "path": "/home/itoll/GitHub/VeraNavExternal/KF-GINS/dataset/Leador-A15.txt",
+      "sha256": "47d3d5136dc9494a2eb12bbf1c3206ab02b8e19cacad9eabab3eb8b700f93b78",
+      "size_bytes": 67441050
+    },
+    "reference": {
+      "path": "/home/itoll/GitHub/VeraNavExternal/KF-GINS/dataset/truth.nav",
+      "sha256": "25582530dbeac47e014e350d53dae984fe53ffc47b2304d893a243c885c96012",
+      "size_bytes": 94641918
+    }
+  },
+  "time_normalization": {
+    "absolute_gps_time_offset_s": 1219881600.0,
+    "estimate_effective_week": 2017,
+    "estimate_original_week": 0,
+    "policy": "infer-zero-estimate-week-from-reference",
+    "reference_week": 2017,
+    "sow_overlap_duration_s": 3361.9865879709832,
+    "sow_overlap_end_s": 459661.996,
+    "sow_overlap_start_s": 456300.009412029
+  },
+  "upstream_commit": "8291a93e49de513fe9d21f819500d39082ded611",
+  "upstream_repository": "https://github.com/i2Nav-WHU/KF-GINS"
+}

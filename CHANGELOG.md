@@ -27,3 +27,11 @@ All notable changes to VeraNav are documented in this file.
 ### Scope
 
 This milestone is a synthetic verification framework. It is not a real-world benchmark, integrity-certified navigation system, or safety-critical product.
+
+## KF-GINS official demo reproduction
+
+- Added WGS84 ECEF and anchor-centred NED conversion utilities.
+- Added an audited KF-GINS result importer with safe zero-week inference.
+- Added duplicate truth timestamp consolidation and spatial-radius rejection.
+- Added deterministic JSON, CSV and Markdown reproduction evidence.
+- Added geodesy and KF-GINS integration tests.
