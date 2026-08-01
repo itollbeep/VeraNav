@@ -1,0 +1,109 @@
+{
+  "configuration_change": "calib_cam_timeoffset:true-to-false",
+  "configurations": {
+    "fixed_config_sha256": "25849401f599a85aef2b3c9fa80d95687ea38d2a63e3aba2074b3e0f199e7a76",
+    "official_config_sha256": "37e2d29790355eb71c9daf32027748c7c2a93b6ab5caba31020126650774a7b9"
+  },
+  "experiment": "openvins-camera-timestamp-offset-fixed-calibration",
+  "experiment_config_sha256": "b4f9ee659c78d7bd1a2578082ea58e3ea8b9c57d6cb17abe4fd5afc65bccf366",
+  "measurement_realization": {
+    "camera_fingerprint": "d597653de692ad1e",
+    "imu_fingerprint": "ccb4ebaa091921ef"
+  },
+  "official_reproduction_manifest_sha256": "d4528e6597f9a658d57c2e00ffe76361461054e72f3907f7b1f7a6c12cb84dff",
+  "official_source_modified": false,
+  "online_experiment_manifest_sha256": "e6b2b805f982bab52b5c56eb1c3aba5118b001cb1c36150d76551e662a0da215",
+  "online_experiment_results_sha256": "30fe36c6b3f213717db4ece41eb99bda51cf6fa9a98d45059bc7d4aa25558e42",
+  "online_time_calibration_enabled": false,
+  "release_tag": "v2.7",
+  "runner": {
+    "binary_sha256": "0c66742ace19b6ec5ffed7121478e794ece0d9ef836ff6f76e83eea49ec8d707",
+    "cmake_sha256": "456a0147eb5a2b3cfdf26a3b509a7c2ab049d4ea93c78778194279e2f4afd6ca",
+    "source_sha256": "f4036fa3a9f400c6314d7ff80d11f2c5399532dbdea0d9501132fd53908c27cc"
+  },
+  "runner_source_location": "external-only",
+  "scenario_artifacts": {
+    "baseline": {
+      "calibration_sha256": "87c39b85ecae4ba58c1461e4425a7bcdc46e633dff058adf9e34f688a98a22d6",
+      "estimate_sha256": "2155bcd07e0d1e112ee04d9ca5a26115ef686b5eec8ae8fbee965087cccbd5fe",
+      "reference_nominal_sha256": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "reference_physical_sha256": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "run_log_sha256": "df8c29ca04c6e07d98332e41faa005cd336ce1ccb78fad03d99f0bfff46bf6f6",
+      "summary_sha256": "50eadf3535e2566ef4e4d38568b36fb07b9b64ea73ac16af1b58adf637c954b5"
+    },
+    "neg-10ms": {
+      "calibration_sha256": "3981e763b09f6c1b8e547d3e9bb97e0d138782af5c4259ea7e771cbde92008c9",
+      "estimate_sha256": "184447d171105c9f1fed1d656fd2c36c8dc5a9361bbad7fec01bc45b8d2bce6c",
+      "reference_nominal_sha256": "0016fca163c0720779aa2d30b629b01c88d5295bf35a21dd89b555fbb1679172",
+      "reference_physical_sha256": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "run_log_sha256": "6629ceaaad8b6ddaf9290bcf4f79302376bf163494d5844044e6566b63cc1237",
+      "summary_sha256": "28eff2b03b45105acd40dcee114300aaffde905d8611d442506f1409d30b7301"
+    },
+    "neg-20ms": {
+      "calibration_sha256": "1549f512e560c6b7b96e75bab76acac7f70ec274dd69dfe3c78fe27fdab75615",
+      "estimate_sha256": "a19e47aeeb5a08fd4949af6ad0cbe3ce315fd0b71d078913c21cffd258b2cbe8",
+      "reference_nominal_sha256": "e9473e80b1cd943c169bab3ab68b08d10062efd8e5e02a9c70a7d3919156745a",
+      "reference_physical_sha256": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "run_log_sha256": "fa79da53fbdd68c7ce6d4b582428fdfd890db5096e08aaf9bad896832d5e0121",
+      "summary_sha256": "3530a57aba4f09d469704c4bba430c6c00403c7863f91819eebb91ba55a8b9fe"
+    },
+    "neg-50ms": {
+      "calibration_sha256": "2eb560e61359614edb5fa0fbe82535ad957b380d3724d60dc059726b4a5f7945",
+      "estimate_sha256": "6fa7f4565aaf860961e1e6a23849dc0e97abb4be78ea34778bafd7021944690d",
+      "reference_nominal_sha256": "4317a85988dadd030889d2bf99eda100a99baa18d52a06c984b8f1e4bf63471d",
+      "reference_physical_sha256": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "run_log_sha256": "29eafec0d34020e9a9279a72052e5650fbc338a6fc6ca06e2f57f78598d785d3",
+      "summary_sha256": "221288500f6567f6ceecf05e0a7d40f2e7ad2def9f590bf572d587b881785a23"
+    },
+    "neg-5ms": {
+      "calibration_sha256": "a8637534ac97c379e39aa218a4f9e7152f895465d703a14b2ff321047103d510",
+      "estimate_sha256": "1ad7b44399c1ed60cf4e23daac8e82ef448c1cb0429a5835683fac2c39cf9e2c",
+      "reference_nominal_sha256": "76769447c1686609b0e7856857153a5a80d1ab77d1f8d9d7274b5bb110b63573",
+      "reference_physical_sha256": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "run_log_sha256": "15b7750fe98bbd39598b3dd8fbcad2212f4d27a4e9b6209a3ae3c11dcb050e00",
+      "summary_sha256": "6388eb0ecb1910f0d587fe4c1afe878bfca5e0de5252dfb09377f1e7a90a1b4c"
+    },
+    "pos-10ms": {
+      "calibration_sha256": "efde813420a7848177644b00dfa769965ca2cc8b8169dcb8ee067d9bec38e42e",
+      "estimate_sha256": "5569757cb5aa50452b964651c0619462ca3399d635e01a06b491336ec7b1b25e",
+      "reference_nominal_sha256": "54ed6590566b1f668f021b34236299591072f084d4ccc2045265f6407933da78",
+      "reference_physical_sha256": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "run_log_sha256": "3c7b638e05c27f7fa6adc45abfaa783f602deeaf7e050a9ac8aede3519b4057d",
+      "summary_sha256": "379e708bbbec789c001b44ce8967640da635c14e6266355580a10844a20cc01c"
+    },
+    "pos-20ms": {
+      "calibration_sha256": "dc4897b1f4b2280d326cbdf3ded9ca549b3a169601dd043dde3138ac15f465b5",
+      "estimate_sha256": "d712e5232bc7ba57cbe259ad354407d02f13ea951b6eb6187b41720ddeaa5b7b",
+      "reference_nominal_sha256": "a92317b330d86808840142cae135347860e11997b2ccf0b50bbac653512faa88",
+      "reference_physical_sha256": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "run_log_sha256": "53ef51135a703c431975d9acbff4b21e9fde2e37d85c3878d17e78afc98c5c18",
+      "summary_sha256": "a0b3bc86473511071c94e498661015e40f999a8bcecb1d1118c3ec08d46f367f"
+    },
+    "pos-50ms": {
+      "calibration_sha256": "6c4654505bb770d4da3ac0aa647c8307982e4ccd475e7a243151570c6f362fe9",
+      "estimate_sha256": "e37de772f87da05a0d309136b333ec40aa0a68912e033888c50fc64c96b9a2c5",
+      "reference_nominal_sha256": "2456c266036d25faa45e20a03fd5c7074247d14522619d17b58ea8d1b124ed74",
+      "reference_physical_sha256": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "run_log_sha256": "5f7f7f537c9844a3b684764a9a5fa082c4a3929177e08f55a2674d43c2db413c",
+      "summary_sha256": "3d06586bdcf4fd14a5c2fcfbd873f72e1cec238ad6fb1955806b26730ac0891c"
+    },
+    "pos-5ms": {
+      "calibration_sha256": "1daee2fdbb3c0042a2ebfa70ab8a69dcd26496886aa86fd19206af7d1f60554e",
+      "estimate_sha256": "9333d802a2cefe1b29b157fb99f1319edbcb38cc34d1a2be5e951d02f27b915a",
+      "reference_nominal_sha256": "492cc2b8647235bf839bbf78a451a52f3ca2acb4e846f162e56400b1a85c1e44",
+      "reference_physical_sha256": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "run_log_sha256": "018c50697f38d56c3591d63c37ce32d394366c0185671daf46a8be635abc7fda",
+      "summary_sha256": "8adb44d9a852fc89cff0e99913d1a70ef663d0550ab5119de2c6587ee2849d9e"
+    }
+  },
+  "schema_version": 1,
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "all_scenario_replays_byte_identical": true,
+    "fixed_calibrated_and_nominal_references_byte_identical": true,
+    "frame_mapping": "openvins-global-xyz-to-veranav-ned",
+    "online_fixed_physical_references_byte_identical": true,
+    "output_schema": "veranav-position-trajectory-v1",
+    "paired_online_fixed_measurement_realization": true
+  }
+}

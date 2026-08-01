@@ -80,3 +80,12 @@ This milestone is a synthetic verification framework. It is not a real-world ben
   fingerprints.
 - Added nominal-clock, calibration-aware and physical-time errors.
 - Added online temporal-calibration residual and convergence metrics.
+
+## OpenVINS fixed time calibration comparison
+
+- Derived an external OpenVINS configuration with temporal calibration
+  disabled by one audited field change.
+- Repeated the nine signed timestamp-offset scenarios twice.
+- Enforced measurement fingerprints and physical references shared with
+  the online-calibration experiment.
+- Added per-scenario RMSE and temporal-parameter compensation metrics.

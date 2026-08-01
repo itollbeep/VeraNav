@@ -283,3 +283,16 @@ The protocol is documented in
 `docs/openvins_camera_time_offset_protocol.md`. Compact evidence is
 stored in `experiments/openvins/camera_time_offset/`; raw trajectories
 and the GPL-linked runner remain external.
+
+## OpenVINS fixed versus online temporal calibration
+
+The signed camera timestamp-offset sweep is now repeated with online
+camera-to-IMU time calibration disabled. The fixed runs use the same
+measurement realizations and physical reference trajectories as the
+online experiment, allowing direct per-scenario compensation analysis.
+
+The protocol is documented in
+`docs/openvins_camera_time_offset_fixed_protocol.md`. Compact evidence
+is stored in `experiments/openvins/camera_time_offset_fixed/`; the
+derived OpenVINS configuration, GPL-linked runner and raw trajectories
+remain external.
