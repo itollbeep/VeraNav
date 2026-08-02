@@ -378,3 +378,13 @@ unique physical scenarios and 134 planned estimator executions.
 
 The protocol and machine-readable design are in
 `experiments/openvins/temporal_visual_interaction_replication/`.
+
+
+## V2-E01b five-seed result
+
+The preregistered five-seed temporal–visual interaction replication is
+complete with status `replicated_supported`. It contains 105 unique physical
+scenarios and 134 estimator executions.
+
+Results are in
+`experiments/openvins/temporal_visual_interaction_replication/`.

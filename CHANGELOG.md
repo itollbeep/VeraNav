@@ -150,3 +150,15 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Preregistered 134 estimator executions and a strict replicated
   two-metric criterion.
 - Kept VeraNav v2 progress unchanged before new evidence is generated.
+
+
+## V2-E01b five-seed replication result
+
+- Executed 105 physical scenarios and 134 OpenVINS runs.
+- Verified five distinct nested-dropout masks with identical raw
+  camera, IMU and physical-reference evidence.
+- Added 80 seed-level interactions and 16 preregistered cell summaries.
+- Recorded replication status `replicated_supported` without suppressing null or
+  antagonistic cells.
+- Completed the VeraNav v2 cross-factor interaction stage and advanced
+  v2 overall progress to 35.0%.

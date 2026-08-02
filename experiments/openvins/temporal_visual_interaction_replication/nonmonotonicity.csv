@@ -1,0 +1,5 @@
+offset_ms,global_peak_dropout_fraction,global_peak_ratio,local_peak_dropout_fraction,local_peak_ratio,global_ratio_nondecreasing,global_ratio_nonincreasing,local_ratio_nondecreasing,local_ratio_nonincreasing
+-20,0.2,1.00057844524,0.2,1.23177810388,False,False,False,False
+-10,0.1,1.56354699799,0.1,1.88045169904,False,False,False,False
+10,0.2,1.37866817349,0.2,1.37977927883,False,False,False,False
+20,0.2,1.51092609218,0.2,1.70833215001,False,False,False,False

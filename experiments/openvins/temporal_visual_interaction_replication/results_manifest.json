@@ -1,0 +1,26 @@
+{
+  "analysis_cells_sha256": "7576b355b505d0e28b512aef3e5bdd6e7929aeb5414ce86ac6cb07f20d377383",
+  "evidence_audit_sha256": "5c4ac1032751fbbc76a2fb0d3f3ae5f3cc53f4657296abe36564a95f78387e7d",
+  "execution_plan_sha256": "83d4ac360dbb44f1cc91c17773133b8db52ca32cb14e52ab2d9fdba18ea0a96d",
+  "experiment": "openvins-temporal-visual-interaction-replication",
+  "experiment_config_sha256": "2af1be02b48b586d80ac8d6b2b18a58ef2ee39c61c489dfb1e015ea4763257f1",
+  "official_source_modified": false,
+  "parent_results_sha256": "a3cc3644ab604bafc49d36d339a0ea346db5dc5a17cf19efda4a1fdbe23c4dd7",
+  "preregistration_sha256": "1111b80df2379d6d277547cc183c0d125ec5d5b6deeede93bd55f2c988eae5ef",
+  "runner": {
+    "binary_sha256": "ca827ad048977754a61d564dadbb91b83a0261cd8574a40f362a7036d8ec20e0",
+    "cmake_sha256": "c20605e7532030f1a66c60bd0b1911a45a900e7f40a62af6850f1bf612118f15",
+    "source_sha256": "c894041e947b2011ed17a6440466d84cfaed13f6697cd4a180fbd21f03719d30"
+  },
+  "schema_version": 1,
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "five_seed_masks_distinct": true,
+    "masks_equal_across_offsets": true,
+    "masks_nested_within_seed": true,
+    "physical_references_byte_identical": true,
+    "preregistration_preceded_execution": true,
+    "raw_measurement_fingerprints_identical": true,
+    "resume_safe_execution_complete": true
+  }
+}

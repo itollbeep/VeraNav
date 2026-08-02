@@ -138,3 +138,15 @@ dropout seeds:
 The primary result is a strict five-seed replicated interaction
 criterion. Sign asymmetry and nonmonotonic boundary location remain
 secondary analyses.
+
+
+## V2-E01b completed result
+
+Status: `replicated_supported`
+
+The preregistered low-dropout temporal–visual interaction replicated across five nested-dropout masks on the official trajectory.
+
+The cross-factor interaction stage is complete. The next experiment is
+`V2-E02`, which will replace constant timestamp offsets with controlled
+clock drift and evaluate estimator tracking bandwidth, residual lag and
+service degradation.

@@ -165,3 +165,44 @@ Evidence and design:
 - `experiments/openvins/temporal_visual_interaction/results.json`
 - `experiments/openvins/temporal_visual_interaction_replication/preregistration.json`
 - `experiments/openvins/temporal_visual_interaction_replication/analysis_plan.md`
+
+
+## V2-E01b five-seed replication result
+
+Status: `replicated_supported`
+
+Claim class: experimentally verified within one trajectory and five dropout seeds.
+
+The preregistered low-dropout temporal–visual interaction replicated across five nested-dropout masks on the official trajectory.
+
+- supported joint cells: `4`
+- partially supported joint cells: `1`
+- strongest offset: `-10 ms`
+- strongest dropout: `10%`
+- seed support: `5/5`
+- mean global interaction ratio: `1.563546998`
+- mean local interaction ratio: `1.880451699`
+- global additive 95% CI lower bound: `0.003194761 m`
+- local additive 95% CI lower bound: `0.028554745 m`
+
+Exact evidence:
+
+- `experiments/openvins/temporal_visual_interaction_replication/results_manifest.json`
+- `experiments/openvins/temporal_visual_interaction_replication/results.json`
+- `experiments/openvins/temporal_visual_interaction_replication/seed_interactions.csv`
+- `experiments/openvins/temporal_visual_interaction_replication/cell_summary.csv`
+- `experiments/openvins/temporal_visual_interaction_replication/report.md`
+
+Scope:
+
+- one official OpenVINS simulation trajectory
+- five deterministic nested-dropout seeds
+- offsets from -20 ms to +20 ms
+- dropout from 5% to 20%
+- online temporal calibration enabled
+
+Counterclaim boundary:
+
+Do not describe the result as multi-trajectory, real-world, universal or literature-novel.
+
+Literature novelty remains unverified.
