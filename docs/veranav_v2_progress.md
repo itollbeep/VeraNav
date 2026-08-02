@@ -78,3 +78,17 @@ evidence has been generated.
 - VeraNav v2 overall: 35.0%
 
 Preregistration does not advance experimental progress.
+
+## V2-E02 execution status
+
+The preregistered dynamic clock drift pilot is complete.
+
+- pilot status: `pilot_supported`
+- VeraNav v1 overall: 100.0%
+- VeraNav v2 stage 1: 100%
+- VeraNav v2 stage 2: 100%
+- VeraNav v2 stage 3: 100%
+- VeraNav v2 overall: 55.0%
+
+Stage 3 completion records experimental execution and analysis regardless
+of whether the preregistered hypothesis was supported.

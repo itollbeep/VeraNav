@@ -172,3 +172,11 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Preregistered 30 scenarios and 60 estimator executions.
 - Added dynamic tracking RMSE, lag and early-warning-gap outcomes.
 - Kept VeraNav v2 progress unchanged until estimator evidence exists.
+
+## V2-E02 dynamic clock drift result
+
+- Executed 30 preregistered scenarios twice for 60 OpenVINS runs.
+- Evaluated global, local and temporal-tracking degradation.
+- Recorded pilot status `pilot_supported`.
+- Recorded `2` early-warning-gap cells.
+- Completed VeraNav v2 stage 3 and advanced overall v2 progress to 55.0%.

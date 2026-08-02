@@ -398,3 +398,9 @@ and 20 ms spans under clean vision and 10% visual dropout.
 
 The machine-readable design is in
 `experiments/openvins/dynamic_clock_drift_pilot/`.
+
+## V2-E02 result
+
+The 30-scenario dynamic camera-to-IMU clock drift pilot completed with
+status `pilot_supported`. Results and figures are under
+`experiments/openvins/dynamic_clock_drift_pilot/`.

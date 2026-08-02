@@ -232,3 +232,30 @@ Evidence and design:
 - `experiments/openvins/dynamic_clock_drift_pilot/preregistration.json`
 - `experiments/openvins/dynamic_clock_drift_pilot/scenario_plan.csv`
 - `experiments/openvins/dynamic_clock_drift_pilot/analysis_plan.md`
+
+## V2-E02 dynamic clock drift pilot result
+
+Verified status: `pilot_supported`.
+
+The preregistered pilot completed 30 scenarios and 60 deterministic
+OpenVINS executions. Confirmatory clean-vision profile support was found
+for `4` profile(s): `linear-positive, linear-negative, sinusoidal-slow, piecewise-random-walk`.
+
+The strongest observed cell was `linear-negative` with a
+`20.0 ms` bounded span and
+`0.0` visual dropout. Its global RMSE ratio
+was `8505.102855`, local RMSE ratio was
+`15899.569934`, and dynamic temporal-tracking RMSE was
+`8.917996 ms`.
+
+Supported dynamic cells: `24`.
+Early-warning-gap cells: `2`.
+
+Claim boundary: Single official deterministic trajectory, one deterministic profile realization and one exploratory visual-dropout mask. No multi-trajectory, real-world or literature-level generalization is claimed.
+
+Evidence:
+
+- `experiments/openvins/dynamic_clock_drift_pilot/results.json`
+- `experiments/openvins/dynamic_clock_drift_pilot/dynamic_cells.csv`
+- `experiments/openvins/dynamic_clock_drift_pilot/profile_summary.csv`
+- `/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/dynamic-clock-drift/evidence`

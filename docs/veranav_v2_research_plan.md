@@ -168,3 +168,10 @@ Total planned estimator executions: 60.
 The primary result is profile-level dynamic degradation. A secondary
 result is whether trajectory error degrades while final residual and
 service diagnostics remain nominal.
+
+## V2-E02 completed result
+
+The dynamic clock drift pilot is complete with status `pilot_supported`.
+The next active stage is V2 stage 4: monitoring and adaptive mitigation.
+Any detector design must use the committed dynamic tracking and trajectory
+error evidence rather than terminal residual alone.

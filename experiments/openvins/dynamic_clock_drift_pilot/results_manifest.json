@@ -1,0 +1,25 @@
+{
+  "experiment": "openvins-dynamic-clock-drift-pilot",
+  "official_source_modified": false,
+  "preregistration_modified": false,
+  "results_sha256": "e29dec7385180a189161f585882533e89e55a4c7667ef6a9cf79a43a33a66857",
+  "schema_version": 1,
+  "source_inputs": {
+    "evidence_audit_sha256": "89d5f82a54e0e16ce945c705e290bc0035d55189a02d272bb7961a8d9fe07053",
+    "experiment_config_sha256": "9890e0d9f30461d86e974617699f491fe7bd76abfa5d7a85b0079aa7dab05faa",
+    "official_manifest_sha256": "d4528e6597f9a658d57c2e00ffe76361461054e72f3907f7b1f7a6c12cb84dff",
+    "parent_results_sha256": "15c3d714afac21c25cee711538f2117b30681cf8dbf40d947d9ba819f50853f6",
+    "preregistration_sha256": "5d06a873cb2e7d93c47195449cf3d78703d66937a7cb87517dcea70131f0a1f2",
+    "runner_binary_sha256": "4d86778dc54a644e94f48de99235f6a989e058b6eb588c29c038419daf2b8e74",
+    "runner_cmake_sha256": "1e1c495bfc1ea73595116653d1d737e5312d847e9eb35efb1e997fdfc30ce2d5",
+    "runner_source_sha256": "4ab09d1f72e398fdc3e79f2907d304378379b81c186e1ff07c3de686a46e77ce",
+    "scenario_plan_sha256": "a353cbf39fdd300f45958736ed7764b6b4d167a9bb90c9f66688d7dc3979c132"
+  },
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "deterministic_replay_verified": true,
+    "evidence_audit_verified": true,
+    "importer_deterministic": true,
+    "preregistration_preceded_execution": true
+  }
+}

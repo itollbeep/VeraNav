@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="680" viewBox="0 0 1080 680">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1f2937}.title{font-size:25px;font-weight:700}.subtitle{font-size:14px;fill:#4b5563}.tick{font-size:12px;fill:#4b5563}.legend{font-size:13px}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="55" y="42" class="title">Dynamic clock drift trajectory degradation</text>
+<text x="55" y="68" class="subtitle">Clean-vision global RMSE ratio relative to matched zero-offset control</text>
+<line x1="105" y1="580.00" x2="1020" y2="580.00" stroke="#e5e7eb"/>
+<text x="93" y="584.00" text-anchor="end" class="tick">0.00</text>
+<line x1="105" y1="484.00" x2="1020" y2="484.00" stroke="#e5e7eb"/>
+<text x="93" y="488.00" text-anchor="end" class="tick">1956.17</text>
+<line x1="105" y1="388.00" x2="1020" y2="388.00" stroke="#e5e7eb"/>
+<text x="93" y="392.00" text-anchor="end" class="tick">3912.35</text>
+<line x1="105" y1="292.00" x2="1020" y2="292.00" stroke="#e5e7eb"/>
+<text x="93" y="296.00" text-anchor="end" class="tick">5868.52</text>
+<line x1="105" y1="196.00" x2="1020" y2="196.00" stroke="#e5e7eb"/>
+<text x="93" y="200.00" text-anchor="end" class="tick">7824.69</text>
+<line x1="105" y1="100.00" x2="1020" y2="100.00" stroke="#e5e7eb"/>
+<text x="93" y="104.00" text-anchor="end" class="tick">9780.87</text>
+<line x1="105" y1="579.93" x2="1020" y2="579.93" stroke="#111827" stroke-dasharray="8 6"/>
+<text x="1016" y="571.93" text-anchor="end" class="tick">threshold 1.50</text>
+<line x1="105.00" y1="100" x2="105.00" y2="580" stroke="#f3f4f6"/>
+<text x="105.00" y="608" text-anchor="middle" class="tick">5</text>
+<line x1="410.00" y1="100" x2="410.00" y2="580" stroke="#f3f4f6"/>
+<text x="410.00" y="608" text-anchor="middle" class="tick">10</text>
+<line x1="1020.00" y1="100" x2="1020.00" y2="580" stroke="#f3f4f6"/>
+<text x="1020.00" y="608" text-anchor="middle" class="tick">20</text>
+<polyline points="105.00,579.74 410.00,578.86 1020.00,274.88" fill="none" stroke="#2563eb" stroke-width="3"/>
+<circle cx="105.00" cy="579.74" r="5" fill="#2563eb"/>
+<circle cx="410.00" cy="578.86" r="5" fill="#2563eb"/>
+<circle cx="1020.00" cy="274.88" r="5" fill="#2563eb"/>
+<line x1="785" y1="100" x2="825" y2="100" stroke="#2563eb" stroke-width="3"/>
+<text x="835" y="105" class="legend">linear-positive</text>
+<polyline points="105.00,579.78 410.00,530.94 1020.00,162.61" fill="none" stroke="#7c3aed" stroke-width="3"/>
+<circle cx="105.00" cy="579.78" r="5" fill="#7c3aed"/>
+<circle cx="410.00" cy="530.94" r="5" fill="#7c3aed"/>
+<circle cx="1020.00" cy="162.61" r="5" fill="#7c3aed"/>
+<line x1="785" y1="128" x2="825" y2="128" stroke="#7c3aed" stroke-width="3"/>
+<text x="835" y="133" class="legend">linear-negative</text>
+<polyline points="105.00,579.78 410.00,579.46 1020.00,443.25" fill="none" stroke="#ea580c" stroke-width="3"/>
+<circle cx="105.00" cy="579.78" r="5" fill="#ea580c"/>
+<circle cx="410.00" cy="579.46" r="5" fill="#ea580c"/>
+<circle cx="1020.00" cy="443.25" r="5" fill="#ea580c"/>
+<line x1="785" y1="156" x2="825" y2="156" stroke="#ea580c" stroke-width="3"/>
+<text x="835" y="161" class="legend">sinusoidal-slow</text>
+<polyline points="105.00,579.73 410.00,321.20 1020.00,272.74" fill="none" stroke="#059669" stroke-width="3"/>
+<circle cx="105.00" cy="579.73" r="5" fill="#059669"/>
+<circle cx="410.00" cy="321.20" r="5" fill="#059669"/>
+<circle cx="1020.00" cy="272.74" r="5" fill="#059669"/>
+<line x1="785" y1="184" x2="825" y2="184" stroke="#059669" stroke-width="3"/>
+<text x="835" y="189" class="legend">piecewise-random-walk</text>
+<line x1="105" y1="580" x2="1020" y2="580" stroke="#111827"/>
+<line x1="105" y1="100" x2="105" y2="580" stroke="#111827"/>
+<text x="562.5" y="645" text-anchor="middle">Drift span (ms)</text>
+<text transform="translate(30 340.0) rotate(-90)" text-anchor="middle">global ratio</text>
+</svg>
