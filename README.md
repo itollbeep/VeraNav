@@ -356,3 +356,15 @@ registry and experiment ranking are stored in
 The first preregistered experiment is `V2-E01`, a 12-scenario factorial
 pilot studying the interaction between online temporal calibration and
 random visual dropout.
+
+
+## Temporal-calibration and visual-dropout interaction
+
+VeraNav v2 experiment `V2-E01` evaluates a preregistered 12-scenario
+factorial interaction between online camera-to-IMU temporal calibration
+and random visual frame dropout.
+
+Pilot status: `pilot_supported`.
+
+Results and deterministic evidence are in
+`experiments/openvins/temporal_visual_interaction/`.

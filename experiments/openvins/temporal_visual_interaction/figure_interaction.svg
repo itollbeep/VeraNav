@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1f2937}.title{font-size:26px;font-weight:700}.subtitle{font-size:14px;fill:#4b5563}.axis{font-size:13px}.tick{font-size:12px;fill:#4b5563}.legend{font-size:13px}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="55" y="42" class="title">Temporal calibration × visual dropout interaction</text>
+<text x="55" y="67" class="subtitle">Physical-time RMSE under shared nested dropout masks</text>
+<line x1="100" y1="530.00" x2="945" y2="530.00" stroke="#e5e7eb"/>
+<text x="88" y="534.00" text-anchor="end" class="tick">0.000</text>
+<line x1="100" y1="443.00" x2="945" y2="443.00" stroke="#e5e7eb"/>
+<text x="88" y="447.00" text-anchor="end" class="tick">0.051</text>
+<line x1="100" y1="356.00" x2="945" y2="356.00" stroke="#e5e7eb"/>
+<text x="88" y="360.00" text-anchor="end" class="tick">0.102</text>
+<line x1="100" y1="269.00" x2="945" y2="269.00" stroke="#e5e7eb"/>
+<text x="88" y="273.00" text-anchor="end" class="tick">0.153</text>
+<line x1="100" y1="182.00" x2="945" y2="182.00" stroke="#e5e7eb"/>
+<text x="88" y="186.00" text-anchor="end" class="tick">0.203</text>
+<line x1="100" y1="95.00" x2="945" y2="95.00" stroke="#e5e7eb"/>
+<text x="88" y="99.00" text-anchor="end" class="tick">0.254</text>
+<line x1="100.00" y1="95" x2="100.00" y2="530" stroke="#f3f4f6"/>
+<text x="100.00" y="554" text-anchor="middle" class="tick">0%</text>
+<line x1="269.00" y1="95" x2="269.00" y2="530" stroke="#f3f4f6"/>
+<text x="269.00" y="554" text-anchor="middle" class="tick">10%</text>
+<line x1="438.00" y1="95" x2="438.00" y2="530" stroke="#f3f4f6"/>
+<text x="438.00" y="554" text-anchor="middle" class="tick">20%</text>
+<line x1="607.00" y1="95" x2="607.00" y2="530" stroke="#f3f4f6"/>
+<text x="607.00" y="554" text-anchor="middle" class="tick">30%</text>
+<line x1="776.00" y1="95" x2="776.00" y2="530" stroke="#f3f4f6"/>
+<text x="776.00" y="554" text-anchor="middle" class="tick">40%</text>
+<line x1="945.00" y1="95" x2="945.00" y2="530" stroke="#f3f4f6"/>
+<text x="945.00" y="554" text-anchor="middle" class="tick">50%</text>
+<line x1="100" y1="530" x2="945" y2="530" stroke="#374151" stroke-width="1.5"/>
+<line x1="100" y1="95" x2="100" y2="530" stroke="#374151" stroke-width="1.5"/>
+<path d="M 100.00 413.04 L 262.58 314.54 L 597.57 230.98 L 953.97 157.44" fill="none" stroke="#2563eb" stroke-width="3"/>
+<circle cx="100.00" cy="413.04" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="262.58" cy="314.54" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="597.57" cy="230.98" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="953.97" cy="157.44" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<line x1="100" y1="585" x2="128" y2="585" stroke="#2563eb" stroke-width="3"/>
+<text x="136" y="590" class="legend">-20 ms</text>
+<path d="M 100.00 452.34 L 262.58 419.94 L 597.57 240.72 L 953.97 213.07" fill="none" stroke="#4b5563" stroke-width="3"/>
+<circle cx="100.00" cy="452.34" r="5" fill="#4b5563" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="262.58" cy="419.94" r="5" fill="#4b5563" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="597.57" cy="240.72" r="5" fill="#4b5563" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="953.97" cy="213.07" r="5" fill="#4b5563" stroke="#ffffff" stroke-width="1.5"/>
+<line x1="310" y1="585" x2="338" y2="585" stroke="#4b5563" stroke-width="3"/>
+<text x="346" y="590" class="legend">+0 ms</text>
+<path d="M 100.00 405.22 L 262.58 272.86 L 597.57 179.58 L 953.97 141.61" fill="none" stroke="#dc2626" stroke-width="3"/>
+<circle cx="100.00" cy="405.22" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="262.58" cy="272.86" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="597.57" cy="179.58" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="953.97" cy="141.61" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<line x1="520" y1="585" x2="548" y2="585" stroke="#dc2626" stroke-width="3"/>
+<text x="556" y="590" class="legend">+20 ms</text>
+<text x="522.50" y="562" text-anchor="middle" class="axis">Realized visual frame dropout</text>
+<text x="24" y="312.50" text-anchor="middle" class="axis" transform="rotate(-90 24 312.50)">Physical-time position RMSE (m)</text>
+</svg>

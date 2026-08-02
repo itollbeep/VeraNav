@@ -128,3 +128,13 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Preregistered a 12-scenario temporal-calibration and visual-dropout
   interaction pilot.
 - Added fixed VeraNav v2 stage weights and progress tracking.
+
+
+## Temporal-visual interaction pilot
+
+- Added the 12-scenario `V2-E01` factorial interaction experiment.
+- Used shared nested dropout masks across temporal offsets.
+- Reproduced both committed v1 single-factor experiment families.
+- Added additive and multiplicative interaction contrasts.
+- Recorded pilot status `pilot_supported` in the novelty ledger.
+- Advanced VeraNav v2 cross-factor stage to 40% and overall to 20.0%.

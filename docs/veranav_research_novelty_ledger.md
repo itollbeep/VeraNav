@@ -97,3 +97,40 @@ Every new conclusion must record:
 
 Negative and null results must also be retained. They prevent repeated
 dead ends and improve the credibility of the final paper.
+
+
+## V2-E01 temporal-visual interaction pilot
+
+Status: `pilot_supported`
+
+The preregistered pilot supports an interaction mechanism candidate under the tested single trajectory.
+
+Strongest tested joint scenario: `pos20-drop10`
+
+- supported preregistered metrics:
+  `2`
+- RMSE interaction ratio:
+  `1.454099904`
+- local RMSE interaction ratio:
+  `1.822894047`
+- RMSE additive interaction:
+  `0.058445294 m`
+- final residual excess:
+  `0.000833205 ms`
+
+Evidence:
+
+- `experiments/openvins/temporal_visual_interaction/manifest.json`
+- `experiments/openvins/temporal_visual_interaction/results.json`
+- `experiments/openvins/temporal_visual_interaction/report.md`
+
+Current claim boundary:
+
+- one official deterministic trajectory
+- one nested dropout realization
+- online temporal calibration enabled
+- offsets limited to ±20 ms
+- dropout limited to 50%
+
+This remains a mechanism-discovery pilot, not a generalized interaction,
+universal failure boundary or established literature innovation.

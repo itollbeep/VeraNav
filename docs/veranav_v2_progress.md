@@ -16,19 +16,24 @@ VeraNav v1 remains complete.
 
 ## VeraNav v2
 
-Fixed stage weights:
-
 | Stage | Weight | Completion | Weighted contribution |
 |---|---:|---:|---:|
 | Research registry and preregistration | 10% | 100% | 10.0% |
-| Cross-factor interactions | 25% | 0% | 0.0% |
+| Cross-factor interactions | 25% | 40% | 10.0% |
 | Dynamic clock drift | 20% | 0% | 0.0% |
 | Monitoring and adaptive mitigation | 25% | 0% | 0.0% |
 | Multi-seed and multi-trajectory validation | 15% | 0% | 0.0% |
 | Paper and benchmark packaging | 5% | 0% | 0.0% |
-| Weighted overall | 100% |  | 10.0% |
+| Weighted overall | 100% |  | 20.0% |
 
-Current v2 overall progress: **10.0%**
+Current v2 overall progress: **20.0%**
 
-Next experiment: **V2-E01 temporal-calibration and visual-degradation
-interaction pilot**.
+Completed v2 experiment:
+
+- `V2-E01`: temporal-calibration and random visual-dropout interaction
+  pilot
+
+Next branch:
+
+- supported or weak support: refine the joint failure boundary
+- unsupported: retain the null result and begin `V2-E02` clock drift

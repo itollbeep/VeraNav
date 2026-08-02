@@ -106,3 +106,19 @@ freezing under paired faults.
 Repeat the strongest effects across trajectories and independent seeds.
 Report confidence intervals and effect sizes rather than isolated
 single-run rankings.
+
+
+## V2-E01 pilot outcome
+
+Status: `pilot_supported`
+
+Strongest scenario: `pos20-drop10`
+
+Supported preregistered metrics:
+`2`
+
+The full evidence is stored in
+`experiments/openvins/temporal_visual_interaction/`.
+
+This result determines the next experiment branch according to the
+predefined expansion rule. No paper-level novelty claim is made yet.

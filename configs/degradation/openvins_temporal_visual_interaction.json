@@ -1,0 +1,121 @@
+{
+  "calibration_evaluation": {
+    "convergence_hold_s": 10.0,
+    "convergence_threshold_ms": 1.0,
+    "tail_window_s": 20.0
+  },
+  "experiment": "openvins-temporal-calibration-visual-degradation-interaction",
+  "factorial_design": {
+    "dropout_fractions": [
+      0.0,
+      0.1,
+      0.3,
+      0.5
+    ],
+    "time_offsets_ms": [
+      -20.0,
+      0.0,
+      20.0
+    ]
+  },
+  "frame_mapping": "openvins-global-xyz-to-veranav-ned",
+  "interaction_decision": {
+    "availability_shortfall_threshold": 0.05,
+    "convergence_delay_threshold_s": 5.0,
+    "final_residual_excess_threshold_ms": 0.5,
+    "local_rmse_additive_threshold_m": 0.01,
+    "local_rmse_interaction_ratio_threshold": 1.25,
+    "minimum_supported_metrics": 2,
+    "rmse_additive_threshold_m": 0.01,
+    "rmse_interaction_ratio_threshold": 1.25
+  },
+  "local_error_evaluation": {
+    "rolling_window_s": 5.0,
+    "service_rolling_window_s": 1.0,
+    "service_threshold_m": 1.0,
+    "sustained_failure_hold_s": 3.0
+  },
+  "nested_dropout_mask": {
+    "description": "all probabilities use one per-frame uniform sequence; lower-probability dropped sets must be subsets of higher-probability sets",
+    "seed": 20260801
+  },
+  "online_time_calibration_required": true,
+  "reference_policy": "physical-time reference trajectories must be byte-identical across all scenarios",
+  "release_tag": "v2.7",
+  "scenarios": [
+    {
+      "camera_timestamp_offset_ms": -20.0,
+      "dropout_fraction": 0.0,
+      "name": "neg20-drop00",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": -20.0,
+      "dropout_fraction": 0.1,
+      "name": "neg20-drop10",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": -20.0,
+      "dropout_fraction": 0.3,
+      "name": "neg20-drop30",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": -20.0,
+      "dropout_fraction": 0.5,
+      "name": "neg20-drop50",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": 0.0,
+      "dropout_fraction": 0.0,
+      "name": "zero-drop00",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": 0.0,
+      "dropout_fraction": 0.1,
+      "name": "zero-drop10",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": 0.0,
+      "dropout_fraction": 0.3,
+      "name": "zero-drop30",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": 0.0,
+      "dropout_fraction": 0.5,
+      "name": "zero-drop50",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": 20.0,
+      "dropout_fraction": 0.0,
+      "name": "pos20-drop00",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": 20.0,
+      "dropout_fraction": 0.1,
+      "name": "pos20-drop10",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": 20.0,
+      "dropout_fraction": 0.3,
+      "name": "pos20-drop30",
+      "seed": 20260801
+    },
+    {
+      "camera_timestamp_offset_ms": 20.0,
+      "dropout_fraction": 0.5,
+      "name": "pos20-drop50",
+      "seed": 20260801
+    }
+  ],
+  "schema_version": 1,
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea"
+}
