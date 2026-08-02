@@ -92,3 +92,18 @@ The preregistered dynamic clock drift pilot is complete.
 
 Stage 3 completion records experimental execution and analysis regardless
 of whether the preregistered hypothesis was supported.
+
+
+## V2-E03 preregistration status
+
+The internal clock monitor pilot is preregistered but no monitoring
+result has been generated.
+
+- VeraNav v1 overall: 100.0%
+- VeraNav v2 stage 1: 100%
+- VeraNav v2 stage 2: 100%
+- VeraNav v2 stage 3: 100%
+- VeraNav v2 stage 4: 0%
+- VeraNav v2 overall: 55.0%
+
+Preregistration does not advance progress.

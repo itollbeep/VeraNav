@@ -180,3 +180,14 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Recorded pilot status `pilot_supported`.
 - Recorded `2` early-warning-gap cells.
 - Completed VeraNav v2 stage 3 and advanced overall v2 progress to 55.0%.
+
+
+## V2-E03 internal clock monitor preregistration
+
+- Defined two slow-sinusoidal early-warning positives.
+- Restricted monitor inputs to estimator timestamps and estimated time
+  offset.
+- Added causal velocity, acceleration and range channels.
+- Calibrated thresholds exclusively from six static controls.
+- Added lead-time and static false-positive criteria.
+- Kept VeraNav v2 progress unchanged before monitoring analysis.

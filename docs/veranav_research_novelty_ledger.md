@@ -259,3 +259,29 @@ Evidence:
 - `experiments/openvins/dynamic_clock_drift_pilot/dynamic_cells.csv`
 - `experiments/openvins/dynamic_clock_drift_pilot/profile_summary.csv`
 - `/home/itoll/GitHub/VeraNavExternal/OpenVINSStable/dynamic-clock-drift/evidence`
+
+
+## V2-E03 internal clock monitor preregistration
+
+V2-E02 identified two slow-sinusoidal 5 ms early-warning gaps. Their
+trajectory error exceeded the matched static envelope, but final
+temporal residual, one-metre availability and sustained-failure
+diagnostics remained nominal.
+
+The ground-truth clock target and physical trajectory cannot serve as
+online monitors. V2-E03 preregisters a causal monitor using only the
+estimated camera-to-IMU offset history.
+
+The monitor combines estimated-offset velocity RMS, acceleration RMS and
+peak-to-peak range. Thresholds are calibrated exclusively from six
+static controls, and the monitor is evaluated against all 30 V2-E02
+scenarios.
+
+A successful pilot remains a single-trajectory monitor candidate and
+requires independent trajectory validation.
+
+Evidence and design:
+
+- `experiments/openvins/internal_clock_monitor_pilot/preregistration.json`
+- `experiments/openvins/internal_clock_monitor_pilot/scenario_labels.csv`
+- `experiments/openvins/internal_clock_monitor_pilot/analysis_plan.md`

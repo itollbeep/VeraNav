@@ -1,0 +1,72 @@
+{
+  "calibration": {
+    "static_control_scenarios": [
+      "static-neg10-drop00",
+      "static-zero-drop00",
+      "static-pos10-drop00",
+      "static-neg10-drop10",
+      "static-zero-drop10",
+      "static-pos10-drop10"
+    ],
+    "threshold_floor": {
+      "acceleration_rms_ms_per_s2": 0.0001,
+      "range_ms": 0.001,
+      "velocity_rms_ms_per_s": 0.0001
+    },
+    "threshold_multiplier_above_static_maximum": 1.1,
+    "thresholds_use_only_static_controls": true
+  },
+  "degradation_reference": {
+    "hold_s": 1.0,
+    "local_rmse_margin_above_matched_static_envelope_m": 0.2,
+    "rolling_window_s": 5.0,
+    "truth_used_for_evaluation_only": true
+  },
+  "experiment": "openvins-internal-clock-monitor-pilot",
+  "labels": {
+    "dynamic_secondary_count": 22,
+    "early_warning_positive_scenarios": [
+      "sinusoidalslow-span05-drop00",
+      "sinusoidalslow-span05-drop10"
+    ],
+    "static_negative_count": 6
+  },
+  "monitor": {
+    "alert_channel_count": 2,
+    "alert_persistence_s": 1.0,
+    "channels": [
+      "estimated_offset_velocity_rms",
+      "estimated_offset_acceleration_rms",
+      "estimated_offset_peak_to_peak"
+    ],
+    "estimated_offset_column": "estimated_cam_to_imu_s",
+    "monitor_window_s": 5.0,
+    "online_inputs": [
+      "timestamp_s",
+      "estimated_cam_to_imu_s"
+    ],
+    "warmup_s": 10.0
+  },
+  "parent_evidence": {
+    "commit": "52da5a0f8014e35911befd4db7c4fae7f762c061",
+    "early_warning_gap_count": 2,
+    "pilot_status": "pilot_supported",
+    "supported_dynamic_cell_count": 24
+  },
+  "progress": {
+    "pre_registration_does_not_change_progress": true,
+    "successful_monitor_pilot_v2_overall_percent": 65.0,
+    "successful_monitor_pilot_v2_stage_4_percent": 40,
+    "v1_overall_percent": 100.0,
+    "v2_overall_percent": 55.0,
+    "v2_stage_3_percent": 100,
+    "v2_stage_4_percent": 0
+  },
+  "schema_version": 1,
+  "success_criteria": {
+    "dynamic_secondary_detection_count_minimum": 18,
+    "early_warning_positive_detection_count": 2,
+    "early_warning_positive_lead_time_must_be_positive": true,
+    "static_false_positive_scenario_count": 0
+  }
+}

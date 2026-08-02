@@ -1,0 +1,23 @@
+{
+  "analysis_only": true,
+  "experiment": "openvins-internal-clock-monitor-pilot",
+  "new_estimator_execution": false,
+  "official_source_modified": false,
+  "schema_version": 1,
+  "source_inputs": {
+    "audit_json_sha256": "146006d409e5a8469ee413553283c29f2c98c3fe7149baa8d3d8e27062e67ecb",
+    "audit_text_sha256": "cac4dc1cdace93c30b50ca52d8aa3e0a948e9a926da493f98b6880c2eb9012da",
+    "config_sha256": "65023efd754cd32fd3655013f9c2481851b58c1204c8ecf1b7ca67a6b76afc8b",
+    "evidence_audit_sha256": "89d5f82a54e0e16ce945c705e290bc0035d55189a02d272bb7961a8d9fe07053",
+    "parent_manifest_sha256": "901a226c76c8102e97924d6f70f4579e72c4655d1468140f0f666eb22c9e078d",
+    "parent_results_sha256": "e29dec7385180a189161f585882533e89e55a4c7667ef6a9cf79a43a33a66857",
+    "parent_scenarios_sha256": "abfb9532303b69f0e209ae4d1cef3990f3e8091efad67ef092559cbd1025b649"
+  },
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "audit_hashes_verified": true,
+    "generated_twice_byte_identical": true,
+    "parent_evidence_verified": true,
+    "progress_unchanged": true
+  }
+}

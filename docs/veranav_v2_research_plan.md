@@ -175,3 +175,17 @@ The dynamic clock drift pilot is complete with status `pilot_supported`.
 The next active stage is V2 stage 4: monitoring and adaptive mitigation.
 Any detector design must use the committed dynamic tracking and trajectory
 error evidence rather than terminal residual alone.
+
+
+## V2-E03 internal clock monitor pilot
+
+The first stage-four experiment reuses the 30 V2-E02 evidence scenarios
+without rerunning OpenVINS.
+
+The causal monitor uses only estimated time-offset history. Static
+controls define all thresholds. Two slow-sinusoidal 5 ms scenarios are
+the primary early-warning positives, and the other 22 dynamic scenarios
+measure secondary coverage.
+
+A successful result advances stage four to 40% and VeraNav v2 overall to
+65%. Adaptive mitigation remains a separate preregistered experiment.

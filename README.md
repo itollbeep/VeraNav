@@ -404,3 +404,13 @@ The machine-readable design is in
 The 30-scenario dynamic camera-to-IMU clock drift pilot completed with
 status `pilot_supported`. Results and figures are under
 `experiments/openvins/dynamic_clock_drift_pilot/`.
+
+
+## V2-E03 internal clock monitor
+
+VeraNav v2 preregisters a causal dynamic-clock monitor using only the
+estimated camera-to-IMU offset history. Thresholds are calibrated from
+static controls and evaluated against all V2-E02 scenarios.
+
+The machine-readable design is in
+`experiments/openvins/internal_clock_monitor_pilot/`.
