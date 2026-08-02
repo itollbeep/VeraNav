@@ -89,3 +89,12 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Enforced measurement fingerprints and physical references shared with
   the online-calibration experiment.
 - Added per-scenario RMSE and temporal-parameter compensation metrics.
+
+## OpenVINS fixed-time divergence diagnostics
+
+- Added analysis-only diagnostics for the fixed temporal-calibration
+  trajectories.
+- Added first 1 m, 10 m, 100 m and 1000 m crossing times.
+- Added sustained failure, recovery and service-availability metrics.
+- Added error quantiles and top squared-error concentration measures.
+- Added broad-failure and catastrophic-divergence classifications.

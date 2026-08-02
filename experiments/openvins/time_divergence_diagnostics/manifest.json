@@ -1,0 +1,99 @@
+{
+  "analysis_config_sha256": "4958b37c02ecbc149f645601815b0539281c693b1c0e285b8f3fd01e0796a07e",
+  "analysis_only": true,
+  "experiment": "openvins-fixed-time-divergence-diagnostics",
+  "input_artifacts": {
+    "baseline": {
+      "fixed_estimate": "2155bcd07e0d1e112ee04d9ca5a26115ef686b5eec8ae8fbee965087cccbd5fe",
+      "fixed_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "fixed_reference": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "online_estimate": "8f2d54b9d477907fad0c00e92fd2410c5b2746b2b8009fbe30332a07fa5f1fe8",
+      "online_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "online_reference": "5d416ff01fd0603747afe23fa84feced0bb66009cd2686c20c6d2552b158cce8"
+    },
+    "neg-10ms": {
+      "fixed_estimate": "184447d171105c9f1fed1d656fd2c36c8dc5a9361bbad7fec01bc45b8d2bce6c",
+      "fixed_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "fixed_reference": "0016fca163c0720779aa2d30b629b01c88d5295bf35a21dd89b555fbb1679172",
+      "online_estimate": "69f77a7150f384db01c15c3745d684a5b9d458ed6971521d2c35eeede3bd4786",
+      "online_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "online_reference": "965393b448b8910283431ad3da45f782e44146165970fad3b2a895e76e05ac4e"
+    },
+    "neg-20ms": {
+      "fixed_estimate": "a19e47aeeb5a08fd4949af6ad0cbe3ce315fd0b71d078913c21cffd258b2cbe8",
+      "fixed_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "fixed_reference": "e9473e80b1cd943c169bab3ab68b08d10062efd8e5e02a9c70a7d3919156745a",
+      "online_estimate": "f17c65d1a36e765f5c5dbf037321b0016bd3a50765ca14c700f7c99407c43bea",
+      "online_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "online_reference": "963a04bf40f1dcd93808cbb9364d273ddec90ff36e6436685be32497f0f10f6d"
+    },
+    "neg-50ms": {
+      "fixed_estimate": "6fa7f4565aaf860961e1e6a23849dc0e97abb4be78ea34778bafd7021944690d",
+      "fixed_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "fixed_reference": "4317a85988dadd030889d2bf99eda100a99baa18d52a06c984b8f1e4bf63471d",
+      "online_estimate": "24fa868a26a8525317feb7a06cc7a8fb80109d7090fd7792abb105a7bdcdeba6",
+      "online_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "online_reference": "27ac95f407d1c24201f173091309b5937dccc83e95fb1d187645e367332913ad"
+    },
+    "neg-5ms": {
+      "fixed_estimate": "1ad7b44399c1ed60cf4e23daac8e82ef448c1cb0429a5835683fac2c39cf9e2c",
+      "fixed_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "fixed_reference": "76769447c1686609b0e7856857153a5a80d1ab77d1f8d9d7274b5bb110b63573",
+      "online_estimate": "dcc17ce4b8419a9eee0b2ddf057808e323ae3d784470255d8990f3edeb51a4a3",
+      "online_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "online_reference": "868e828ac8eee1d182164323a9742c4dbb3ece75edcc2a899833c99e960a5ff7"
+    },
+    "pos-10ms": {
+      "fixed_estimate": "5569757cb5aa50452b964651c0619462ca3399d635e01a06b491336ec7b1b25e",
+      "fixed_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "fixed_reference": "54ed6590566b1f668f021b34236299591072f084d4ccc2045265f6407933da78",
+      "online_estimate": "09229b02a47619ab949fb850f70a4deaa423cde38f40023ae40dfcabcf6bda66",
+      "online_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "online_reference": "5a300784704be9555fb42aff3d2163df8b3a78a86941cbe207a5f7274971829a"
+    },
+    "pos-20ms": {
+      "fixed_estimate": "d712e5232bc7ba57cbe259ad354407d02f13ea951b6eb6187b41720ddeaa5b7b",
+      "fixed_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "fixed_reference": "a92317b330d86808840142cae135347860e11997b2ccf0b50bbac653512faa88",
+      "online_estimate": "b2ce3ca0d2a7d9ee51168794bfabfcb8e3d28ec69830429e305c4990456c8212",
+      "online_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "online_reference": "a8c319c7fdc2626795f4e1e42f6e77a73eeb8378531c1e9bfc09f59ef323ac0e"
+    },
+    "pos-50ms": {
+      "fixed_estimate": "e37de772f87da05a0d309136b333ec40aa0a68912e033888c50fc64c96b9a2c5",
+      "fixed_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "fixed_reference": "2456c266036d25faa45e20a03fd5c7074247d14522619d17b58ea8d1b124ed74",
+      "online_estimate": "e6cb4a3d13480b47e5b37c2076439b762f6790a10aeaca32c9bc47b76a880a39",
+      "online_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "online_reference": "6dac35299f46b20afc5016da22d789e6819b504de96b771ae927df8b38930541"
+    },
+    "pos-5ms": {
+      "fixed_estimate": "9333d802a2cefe1b29b157fb99f1319edbcb38cc34d1a2be5e951d02f27b915a",
+      "fixed_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "fixed_reference": "492cc2b8647235bf839bbf78a451a52f3ca2acb4e846f162e56400b1a85c1e44",
+      "online_estimate": "25a1d07def16700b85b2371fe0395afd84a460dad0f8a458e6a250d6967107c1",
+      "online_physical": "c52d949a414bc7bcf8e6f35118dcaf3a4b1abab6b383efa463ddb1ea88347023",
+      "online_reference": "81f455c455b79c83df9967571b058fc0a70d186faed696ff7b206932ce7fa17d"
+    }
+  },
+  "inputs": {
+    "fixed_manifest_sha256": "4df6bb7932f4793eb99f221ae317468034122d0426e70357c26b414c4ed096f1",
+    "fixed_results_sha256": "65c48deeefcfbccc0a30315e4a1d925c7a287ba988651f42b84feca6adfafd1b",
+    "online_manifest_sha256": "e6b2b805f982bab52b5c56eb1c3aba5118b001cb1c36150d76551e662a0da215",
+    "online_results_sha256": "30fe36c6b3f213717db4ece41eb99bda51cf6fa9a98d45059bc7d4aa25558e42"
+  },
+  "measurement_realization": {
+    "camera_fingerprint": "d597653de692ad1e",
+    "imu_fingerprint": "ccb4ebaa091921ef"
+  },
+  "official_reproduction_manifest_sha256": "d4528e6597f9a658d57c2e00ffe76361461054e72f3907f7b1f7a6c12cb84dff",
+  "official_source_modified": false,
+  "schema_version": 1,
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "fixed_online_physical_references_byte_identical": true,
+    "input_artifact_hashes_verified": true,
+    "no_new_estimator_execution": true,
+    "paired_measurement_realization": true
+  }
+}

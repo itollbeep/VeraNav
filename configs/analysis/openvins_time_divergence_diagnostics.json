@@ -1,0 +1,46 @@
+{
+  "availability_thresholds_m": [
+    0.1,
+    0.5,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "catastrophic_classification": {
+    "broad_failure_post_onset_fraction": 0.5,
+    "required_first_crossing_m": 100.0,
+    "required_sustained_failure_m": 1.0
+  },
+  "experiment": "openvins-fixed-time-divergence-diagnostics",
+  "first_crossing_thresholds_m": [
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "paired_experiments": {
+    "fixed": "openvins-camera-timestamp-offset-fixed-calibration",
+    "online": "openvins-camera-timestamp-offset"
+  },
+  "quantiles": [
+    0.5,
+    0.9,
+    0.95,
+    0.99
+  ],
+  "recovery": {
+    "hold_s": 5.0,
+    "threshold_m": 1.0
+  },
+  "schema_version": 1,
+  "sustained_failure": {
+    "hold_s": 3.0,
+    "rolling_window_s": 1.0,
+    "threshold_m": 1.0
+  },
+  "top_squared_error_shares": [
+    0.01,
+    0.05
+  ],
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea"
+}

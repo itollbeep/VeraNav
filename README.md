@@ -296,3 +296,16 @@ The protocol is documented in
 is stored in `experiments/openvins/camera_time_offset_fixed/`; the
 derived OpenVINS configuration, GPL-linked runner and raw trajectories
 remain external.
+
+## OpenVINS fixed-time divergence diagnostics
+
+The fixed temporal-calibration trajectories now include trace-level
+failure diagnostics: first threshold crossings, sustained failure
+onset, recovery, service availability, error quantiles, maximum error
+and squared-error concentration. The analysis distinguishes broad
+trajectory divergence from isolated extreme samples without rerunning
+OpenVINS.
+
+The protocol is documented in
+`docs/openvins_time_divergence_diagnostics_protocol.md`. Compact results
+are stored in `experiments/openvins/time_divergence_diagnostics/`.
