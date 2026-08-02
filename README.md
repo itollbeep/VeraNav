@@ -368,3 +368,13 @@ Pilot status: `pilot_supported`.
 
 Results and deterministic evidence are in
 `experiments/openvins/temporal_visual_interaction/`.
+
+
+## V2-E01b replication
+
+The low-dropout temporal-visual interaction is preregistered for
+five-seed replication. The design contains 125 analytical cells, 105
+unique physical scenarios and 134 planned estimator executions.
+
+The protocol and machine-readable design are in
+`experiments/openvins/temporal_visual_interaction_replication/`.

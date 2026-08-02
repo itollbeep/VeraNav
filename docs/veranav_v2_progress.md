@@ -37,3 +37,16 @@ Next branch:
 
 - supported or weak support: refine the joint failure boundary
 - unsupported: retain the null result and begin `V2-E02` clock drift
+
+
+## V2-E01b preregistration status
+
+The replication design is preregistered but no new estimator evidence
+has been generated.
+
+- VeraNav v1 overall: 100.0%
+- VeraNav v2 stage 1: 100%
+- VeraNav v2 stage 2: 40%
+- VeraNav v2 overall: 20.0%
+
+Preregistration does not advance experimental progress.

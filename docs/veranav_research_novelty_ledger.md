@@ -134,3 +134,34 @@ Current claim boundary:
 
 This remains a mechanism-discovery pilot, not a generalized interaction,
 universal failure boundary or established literature innovation.
+
+
+## V2-E01b replication preregistration
+
+The detailed V2-E01 audit changed the mechanism interpretation.
+
+Both signed 20 ms offsets met the two-metric interaction criterion at
+approximately 10% dropout:
+
+- -20 ms: global ratio 1.299854, local ratio 1.912376
+- +20 ms: global ratio 1.454100, local ratio 1.822894
+
+At 30% and 50% dropout, all global and local interaction ratios were
+below one and no joint cell met the criterion. Temporal-calibration
+convergence, residual and one-metre service availability remained below
+their practical failure thresholds.
+
+The current candidate conclusion is therefore:
+
+> Mild visual sparsity and temporal offset may produce a reproducible,
+> nonmonotonic trajectory-error interaction without destabilizing the
+> online temporal-calibration state.
+
+This is preregistered for five-seed replication in `V2-E01b`. It is not
+yet a verified generalized conclusion or paper-level innovation.
+
+Evidence and design:
+
+- `experiments/openvins/temporal_visual_interaction/results.json`
+- `experiments/openvins/temporal_visual_interaction_replication/preregistration.json`
+- `experiments/openvins/temporal_visual_interaction_replication/analysis_plan.md`

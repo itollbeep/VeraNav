@@ -1,0 +1,21 @@
+{
+  "analysis_only": true,
+  "experiment": "openvins-temporal-visual-interaction-replication",
+  "new_estimator_execution": false,
+  "official_source_modified": false,
+  "schema_version": 1,
+  "source_inputs": {
+    "audit_json_sha256": "c05df1e0a9dc69957c5b4210291c010e35f19e0d5cbdc952d0672e1123589f77",
+    "audit_text_sha256": "01582ba69d476faf9ee595d1bbeb89aed64972c9399a10d8a6e98841e90a3db1",
+    "config_sha256": "2af1be02b48b586d80ac8d6b2b18a58ef2ee39c61c489dfb1e015ea4763257f1",
+    "parent_manifest_sha256": "6875f47b8d2d6271dd58adb27e4b3e23fcfaf88fe552da14628c8743b856c793",
+    "parent_results_sha256": "a3cc3644ab604bafc49d36d339a0ea346db5dc5a17cf19efda4a1fdbe23c4dd7"
+  },
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "audit_hashes_verified": true,
+    "generated_twice_byte_identical": true,
+    "parent_evidence_verified": true,
+    "progress_unchanged": true
+  }
+}

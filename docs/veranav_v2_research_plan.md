@@ -122,3 +122,19 @@ The full evidence is stored in
 
 This result determines the next experiment branch according to the
 predefined expansion rule. No paper-level novelty claim is made yet.
+
+
+## V2-E01b replication preregistration
+
+The next experiment uses a symmetric low-dropout grid and five nested
+dropout seeds:
+
+- offsets: -20, -10, 0, +10 and +20 ms
+- dropout: 0%, 5%, 10%, 15% and 20%
+- analytical cells: 125
+- unique physical scenarios: 105
+- estimator executions: 134
+
+The primary result is a strict five-seed replicated interaction
+criterion. Sign asymmetry and nonmonotonic boundary location remain
+secondary analyses.

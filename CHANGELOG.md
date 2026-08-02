@@ -138,3 +138,15 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Added additive and multiplicative interaction contrasts.
 - Recorded pilot status `pilot_supported` in the novelty ledger.
 - Advanced VeraNav v2 cross-factor stage to 40% and overall to 20.0%.
+
+
+## V2-E01b replication preregistration
+
+- Refined the mechanism from calibration failure to low-dropout
+  trajectory-error coupling.
+- Added a symmetric five-offset, five-dropout and five-seed design.
+- Collapsed deterministic zero-dropout duplicates to 105 physical
+  scenarios.
+- Preregistered 134 estimator executions and a strict replicated
+  two-metric criterion.
+- Kept VeraNav v2 progress unchanged before new evidence is generated.

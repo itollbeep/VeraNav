@@ -1,0 +1,86 @@
+{
+  "analysis": {
+    "cell_level_replicated_support": {
+      "lower_95_ci_additive_interaction_must_exceed_m": 0.0,
+      "mean_local_additive_interaction_threshold_m": 0.01,
+      "mean_local_interaction_ratio_threshold": 1.25,
+      "mean_rmse_additive_interaction_threshold_m": 0.01,
+      "mean_rmse_interaction_ratio_threshold": 1.25,
+      "minimum_seed_support_count": 4,
+      "seed_count": 5,
+      "seed_level_requires_both_global_and_local_metrics": true
+    },
+    "exploratory_questions": [
+      "whether interaction strength is nonmonotonic across low dropout levels",
+      "whether positive and negative temporal offsets differ after seed pairing",
+      "whether a reproducible interaction boundary exists between 5 and 20 percent dropout"
+    ],
+    "seed_level_support": {
+      "local_additive_interaction_threshold_m": 0.01,
+      "local_interaction_ratio_threshold": 1.25,
+      "rmse_additive_interaction_threshold_m": 0.01,
+      "rmse_interaction_ratio_threshold": 1.25
+    },
+    "t_critical_95_two_sided_df4": 2.7764451051977987
+  },
+  "design": {
+    "analytical_cell_count": 125,
+    "canonical_seed": 20260801,
+    "dropout_fractions": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "offsets_ms": [
+      -20.0,
+      -10.0,
+      0.0,
+      10.0,
+      20.0
+    ],
+    "seeds": [
+      20260801,
+      20260802,
+      20260803,
+      20260804,
+      20260805
+    ]
+  },
+  "execution_policy": {
+    "additional_seed_replay_audit_cell": {
+      "dropout_fraction": 0.1,
+      "offset_ms": 20.0
+    },
+    "canonical_seed_repeat_count": 2,
+    "expected_estimator_execution_count": 134,
+    "expected_unique_physical_scenario_count": 105,
+    "noncanonical_nonzero_dropout_repeat_count": 1,
+    "share_zero_dropout_anchors_across_seeds": true
+  },
+  "experiment": "openvins-temporal-visual-interaction-replication",
+  "hypothesis": {
+    "disconfirming_result": "No joint cell meets the replicated support criterion across five nested-dropout seeds, or the apparent low-dropout peak changes sign without a stable effect.",
+    "identifier": "V2-E01b",
+    "primary": "Mild random visual dropout and camera-to-IMU temporal offset produce a reproducible super-additive trajectory-error interaction even while online temporal calibration remains converged.",
+    "secondary": "The interaction is strongest in a low-dropout band and becomes submultiplicative as visual dropout dominates the total error."
+  },
+  "parent_experiment": {
+    "commit": "70c27e0957bd03eaa0a8a87f35d394d9b046241b",
+    "interaction_status": "pilot_supported",
+    "strongest_scenario": "pos20-drop10",
+    "supported_flags": [
+      "local_rmse_supported",
+      "rmse_supported"
+    ]
+  },
+  "progress_policy": {
+    "pre_registration_does_not_change_progress": true,
+    "v1_overall_percent": 100.0,
+    "v2_overall_percent": 20.0,
+    "v2_stage_2_percent": 40
+  },
+  "schema_version": 1,
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea"
+}

@@ -1,0 +1,70 @@
+{
+  "design": {
+    "analytical_cell_count": 125,
+    "dropout_fractions": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "estimator_execution_count": 134,
+    "offsets_ms": [
+      -20.0,
+      -10.0,
+      0.0,
+      10.0,
+      20.0
+    ],
+    "physical_scenario_count": 105,
+    "seeds": [
+      20260801,
+      20260802,
+      20260803,
+      20260804,
+      20260805
+    ]
+  },
+  "experiment": "openvins-temporal-visual-interaction-replication",
+  "hypothesis": {
+    "disconfirming_result": "No joint cell meets the replicated support criterion across five nested-dropout seeds, or the apparent low-dropout peak changes sign without a stable effect.",
+    "identifier": "V2-E01b",
+    "primary": "Mild random visual dropout and camera-to-IMU temporal offset produce a reproducible super-additive trajectory-error interaction even while online temporal calibration remains converged.",
+    "secondary": "The interaction is strongest in a low-dropout band and becomes submultiplicative as visual dropout dominates the total error."
+  },
+  "parent_result": {
+    "commit": "70c27e0957bd03eaa0a8a87f35d394d9b046241b",
+    "interaction_status": "pilot_supported",
+    "strongest_local_interaction_ratio": 1.8228940472944501,
+    "strongest_rmse_interaction_ratio": 1.4540999040467504,
+    "strongest_scenario": "pos20-drop10",
+    "supported_flags": [
+      "local_rmse_supported",
+      "rmse_supported"
+    ]
+  },
+  "progress": {
+    "pre_registration_does_not_change_progress": true,
+    "v1_overall_percent": 100.0,
+    "v2_overall_percent": 20.0,
+    "v2_stage_2_percent": 40
+  },
+  "replicated_support_criterion": {
+    "lower_95_ci_additive_interaction_must_exceed_m": 0.0,
+    "mean_local_additive_interaction_threshold_m": 0.01,
+    "mean_local_interaction_ratio_threshold": 1.25,
+    "mean_rmse_additive_interaction_threshold_m": 0.01,
+    "mean_rmse_interaction_ratio_threshold": 1.25,
+    "minimum_seed_support_count": 4,
+    "seed_count": 5,
+    "seed_level_requires_both_global_and_local_metrics": true,
+    "seed_level_support": {
+      "local_additive_interaction_threshold_m": 0.01,
+      "local_interaction_ratio_threshold": 1.25,
+      "rmse_additive_interaction_threshold_m": 0.01,
+      "rmse_interaction_ratio_threshold": 1.25
+    },
+    "t_critical_95_two_sided_df4": 2.7764451051977987
+  },
+  "schema_version": 1
+}
