@@ -1,0 +1,72 @@
+{
+  "consistency": {
+    "position_nees_dimension": 3,
+    "position_nees_upper_95": 7.814727903251179
+  },
+  "estimator_noise_model": "official nominal OpenVINS v2.7 IMU noise parameters for all scenarios",
+  "experiment": "openvins-imu-noise-degradation",
+  "frame_mapping": "openvins-global-xyz-to-veranav-ned",
+  "injection_model": {
+    "accelerometer_random_walk": "nominal value multiplied by random_walk_scale",
+    "accelerometer_white_noise": "nominal density multiplied by white_noise_scale",
+    "gyroscope_random_walk": "nominal value multiplied by random_walk_scale",
+    "gyroscope_white_noise": "nominal density multiplied by white_noise_scale"
+  },
+  "pairing_policy": "nominal and degraded simulators use the same trajectory, camera observations, event schedule and measurement seed",
+  "release_tag": "v2.7",
+  "schema_version": 1,
+  "scenarios": [
+    {
+      "name": "baseline",
+      "random_walk_scale": 1.0,
+      "white_noise_scale": 1.0
+    },
+    {
+      "name": "white-2x",
+      "random_walk_scale": 1.0,
+      "white_noise_scale": 2.0
+    },
+    {
+      "name": "white-5x",
+      "random_walk_scale": 1.0,
+      "white_noise_scale": 5.0
+    },
+    {
+      "name": "white-10x",
+      "random_walk_scale": 1.0,
+      "white_noise_scale": 10.0
+    },
+    {
+      "name": "randomwalk-2x",
+      "random_walk_scale": 2.0,
+      "white_noise_scale": 1.0
+    },
+    {
+      "name": "randomwalk-5x",
+      "random_walk_scale": 5.0,
+      "white_noise_scale": 1.0
+    },
+    {
+      "name": "randomwalk-10x",
+      "random_walk_scale": 10.0,
+      "white_noise_scale": 1.0
+    },
+    {
+      "name": "all-2x",
+      "random_walk_scale": 2.0,
+      "white_noise_scale": 2.0
+    },
+    {
+      "name": "all-5x",
+      "random_walk_scale": 5.0,
+      "white_noise_scale": 5.0
+    },
+    {
+      "name": "all-10x",
+      "random_walk_scale": 10.0,
+      "white_noise_scale": 10.0
+    }
+  ],
+  "sim_seed_measurements": 0,
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea"
+}

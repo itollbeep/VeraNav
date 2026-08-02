@@ -309,3 +309,15 @@ OpenVINS.
 The protocol is documented in
 `docs/openvins_time_divergence_diagnostics_protocol.md`. Compact results
 are stored in `experiments/openvins/time_divergence_diagnostics/`.
+
+## OpenVINS IMU-noise degradation
+
+A paired deterministic sweep now evaluates white-noise density, bias
+random walk and combined IMU degradation at 2×, 5× and 10× nominal
+magnitude. The estimator retains the official nominal noise model while
+a separate lockstep simulator supplies degraded IMU measurements.
+
+The experiment records position error, service availability, marginal
+position covariance and position NEES. The protocol is documented in
+`docs/openvins_imu_noise_degradation_protocol.md`, with compact evidence
+in `experiments/openvins/imu_noise_degradation/`.

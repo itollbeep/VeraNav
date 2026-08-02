@@ -98,3 +98,12 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Added sustained failure, recovery and service-availability metrics.
 - Added error quantiles and top squared-error concentration measures.
 - Added broad-failure and catastrophic-divergence classifications.
+
+## OpenVINS IMU-noise degradation
+
+- Added a GPL-isolated dual-simulator IMU-noise runner.
+- Evaluated white noise, bias random walk and combined degradation at
+  2×, 5× and 10× nominal magnitude.
+- Preserved the official nominal estimator noise model.
+- Verified common camera observations and nominal IMU realization.
+- Added position covariance, NEES and service-availability metrics.
