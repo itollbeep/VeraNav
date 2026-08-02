@@ -202,3 +202,14 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Result status: `monitor_not_supported`.
 - Kept injected clock target and trajectory truth out of online monitor
   inputs.
+
+
+## V2-E04 holdout clock monitor preregistration
+
+- Preserved the negative V2-E03 monitor result.
+- Froze the 5 s peak-to-peak feature, original threshold and 3 s
+  persistence rule.
+- Prohibited threshold recalibration.
+- Added disjoint sinusoidal phases, random-walk seeds and dropout seed.
+- Preregistered 30 holdout scenarios and 60 deterministic executions.
+- Kept VeraNav v2 progress unchanged before validation.

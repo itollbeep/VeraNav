@@ -197,3 +197,16 @@ The internal clock monitor pilot completed with status `monitor_not_supported`.
 The next stage-four action is to audit the two primary lead times,
 secondary misses and threshold margins before preregistering adaptive
 mitigation. Mitigation must remain separate from monitor discovery.
+
+
+## V2-E04 holdout clock monitor validation
+
+The second stage-four monitor experiment freezes the discovery-derived
+peak-to-peak rule before collecting holdout perturbation evidence.
+
+Thirty scenarios cover six static controls, four primary phase-shifted
+5 ms slow-sinusoidal challenges and twenty secondary dynamic cases.
+Sixty estimator executions are planned.
+
+A supported result advances stage four to 40% and VeraNav v2 overall to
+65%. Multi-trajectory validation remains part of stage five.

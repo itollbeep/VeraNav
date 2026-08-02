@@ -1,0 +1,25 @@
+{
+  "analysis_only": true,
+  "experiment": "openvins-holdout-clock-monitor-validation",
+  "new_estimator_execution": false,
+  "official_source_modified": false,
+  "schema_version": 1,
+  "source_inputs": {
+    "config_sha256": "dad8768859027f7ed8695e25ad256810285207cee2fb9fa20c53f773c83a2962",
+    "discovery_manifest_sha256": "91fbbf4724557526223acdb6cecf944706d47e649f99ff448215ab1422941141",
+    "discovery_results_sha256": "4b7c960895d1b57c0392aa0d94a0e02255ed9e0704c2e5833624d5423c514287",
+    "discovery_thresholds_sha256": "29f838e6a027b951ba968d744e568daa02a8fd0950d3e42b39ca8ddd9c8c49f9",
+    "single_channel_audit_sha256": "902ec00927c9a16a9bd5ec8a0302588233035b15d1e84424a2d38ae21cb9aa18",
+    "single_channel_audit_text_sha256": "9ae689bb80d618740485242fa050f63bc1b74703a9da1a7d05fce1d20850938d",
+    "temporal_overlap_audit_sha256": "df6860e3ecf0ac772e7034264c86d582cfae91866308b23f53f810c747b05212",
+    "temporal_overlap_audit_text_sha256": "2d431f1822ac6c60fb6368a5678122f5bcb2a20f74954a5bc7d189be776d80a1"
+  },
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "audit_hashes_verified": true,
+    "candidate_rule_frozen": true,
+    "generated_twice_byte_identical": true,
+    "holdout_seeds_disjoint_from_discovery": true,
+    "progress_unchanged": true
+  }
+}

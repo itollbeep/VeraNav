@@ -423,3 +423,13 @@ evaluates early warning against truth after alerts are frozen.
 
 Results are in
 `experiments/openvins/internal_clock_monitor_pilot/`.
+
+
+## V2-E04 holdout clock monitor
+
+VeraNav v2 freezes the discovery-derived peak-to-peak clock monitor and
+preregisters validation on new perturbation realizations. The trajectory
+remains unchanged, so this is not yet multi-trajectory validation.
+
+The machine-readable design is in
+`experiments/openvins/holdout_clock_monitor_validation/`.

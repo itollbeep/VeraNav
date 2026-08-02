@@ -1,0 +1,63 @@
+{
+  "candidate_monitor": {
+    "channel": "estimated_offset_peak_to_peak",
+    "estimated_offset_column": "estimated_cam_to_imu_s",
+    "monitor_window_s": 5.0,
+    "online_inputs": [
+      "timestamp_s",
+      "estimated_cam_to_imu_s"
+    ],
+    "persistence_s": 3.0,
+    "threshold_ms": 0.14729673122826897,
+    "threshold_recalibration_allowed": false,
+    "warmup_s": 10.0
+  },
+  "degradation_reference": {
+    "hold_s": 1.0,
+    "local_rmse_margin_above_matched_static_envelope_m": 0.2,
+    "rolling_window_s": 5.0,
+    "truth_used_for_evaluation_only": true
+  },
+  "discovery_evidence": {
+    "discovery_commit": "5fedca7333116a935f09c3089f0164965663eacb",
+    "discovery_monitor_status": "monitor_not_supported",
+    "single_channel_audit_sha256": "902ec00927c9a16a9bd5ec8a0302588233035b15d1e84424a2d38ae21cb9aa18",
+    "temporal_overlap_audit_sha256": "df6860e3ecf0ac772e7034264c86d582cfae91866308b23f53f810c747b05212"
+  },
+  "experiment": "openvins-holdout-clock-monitor-validation",
+  "holdout_design": {
+    "discovery_dropout_seed_prohibited": 20260801,
+    "discovery_profile_seed_prohibited": 20260802,
+    "holdout_dropout_seed": 20260811,
+    "holdout_random_walk_seeds": [
+      20260812,
+      20260813
+    ],
+    "holdout_sinusoidal_phase_cycles": [
+      0.25,
+      0.5
+    ],
+    "repeat_count": 2,
+    "same_official_trajectory": true
+  },
+  "online_ground_truth_input_count": 0,
+  "progress": {
+    "preregistration_does_not_change_progress": true,
+    "successful_holdout_v2_overall_percent": 65.0,
+    "successful_holdout_v2_stage_4_percent": 40,
+    "v1_overall_percent": 100.0,
+    "v2_overall_percent": 55.0,
+    "v2_stage_4_percent": 0
+  },
+  "schema_version": 1,
+  "success_criteria": {
+    "dynamic_detection_count_minimum": 20,
+    "dynamic_scenario_count": 24,
+    "primary_challenge_count": 4,
+    "primary_challenge_degradation_eligible_count_minimum": 4,
+    "primary_challenge_detection_count": 4,
+    "primary_challenge_positive_lead_count": 4,
+    "static_false_positive_scenario_count": 0,
+    "static_scenario_count": 6
+  }
+}

@@ -118,3 +118,18 @@ Preregistration does not advance progress.
 - VeraNav v2 overall: 55.0%
 
 Monitor status: `monitor_not_supported`.
+
+
+## V2-E04 preregistration status
+
+The holdout clock monitor validation is preregistered, but no holdout
+estimator execution or result has been generated.
+
+- VeraNav v1 overall: 100.0%
+- VeraNav v2 stage 1: 100%
+- VeraNav v2 stage 2: 100%
+- VeraNav v2 stage 3: 100%
+- VeraNav v2 stage 4: 0%
+- VeraNav v2 overall: 55.0%
+
+Preregistration does not advance progress.

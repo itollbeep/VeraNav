@@ -311,3 +311,26 @@ Evidence:
 - `experiments/openvins/internal_clock_monitor_pilot/results.json`
 - `experiments/openvins/internal_clock_monitor_pilot/scenario_monitor_results.csv`
 - `experiments/openvins/internal_clock_monitor_pilot/thresholds.csv`
+
+
+## V2-E04 holdout clock monitor preregistration
+
+V2-E03 rejected the preregistered three-channel synchronous monitor. A
+read-only temporal audit showed that the dominant failure was absent
+post-warm-up channel overlap rather than insufficient persistence.
+
+A descriptive single-channel audit identified a candidate monitor based
+on sustained peak-to-peak estimated time-offset range. Because this rule
+was discovered after observing V2-E03, it is not counted as confirmatory
+evidence.
+
+V2-E04 freezes the candidate rule and validates it on new sinusoidal
+phases, random-walk seeds and dropout seed. The official trajectory is
+unchanged, so the result remains perturbation-holdout evidence rather
+than multi-trajectory validation.
+
+Evidence and design:
+
+- `experiments/openvins/holdout_clock_monitor_validation/preregistration.json`
+- `experiments/openvins/holdout_clock_monitor_validation/scenario_plan.csv`
+- `experiments/openvins/holdout_clock_monitor_validation/analysis_plan.md`
