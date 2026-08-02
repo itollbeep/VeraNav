@@ -210,3 +210,7 @@ Sixty estimator executions are planned.
 
 A supported result advances stage four to 40% and VeraNav v2 overall to
 65%. Multi-trajectory validation remains part of stage five.
+
+## V2-E04 holdout result
+
+The perturbation-holdout validation status is `holdout_monitor_supported`. Adaptive mitigation remains a separate preregistered experiment. Multi-trajectory validation remains stage five.

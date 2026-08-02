@@ -213,3 +213,11 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Added disjoint sinusoidal phases, random-walk seeds and dropout seed.
 - Preregistered 30 holdout scenarios and 60 deterministic executions.
 - Kept VeraNav v2 progress unchanged before validation.
+
+## V2-E04 holdout clock monitor result
+
+- Executed 30 preregistered holdout scenarios twice.
+- Verified deterministic replay and disjoint perturbation realizations.
+- Applied the frozen peak-to-peak threshold without recalibration.
+- Recorded static false positives, primary challenge lead times and dynamic coverage.
+- Result status: `holdout_monitor_supported`.

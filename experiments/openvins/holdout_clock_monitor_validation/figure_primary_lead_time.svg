@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="720" viewBox="0 0 1160 720">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1f2937}.title{font-size:25px;font-weight:700}.label{font-size:13px}.small{font-size:12px;fill:#4b5563}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="50" y="42" class="title">Primary challenge early-warning lead time</text>
+<text x="50" y="68" class="small">Circle: online alert; square: truth-only degradation onset</text>
+<line x1="220.00" y1="100" x2="220.00" y2="650" stroke="#e5e7eb"/>
+<text x="220.00" y="675" text-anchor="middle" class="small">0.0s</text>
+<line x1="392.00" y1="100" x2="392.00" y2="650" stroke="#e5e7eb"/>
+<text x="392.00" y="675" text-anchor="middle" class="small">41.9s</text>
+<line x1="564.00" y1="100" x2="564.00" y2="650" stroke="#e5e7eb"/>
+<text x="564.00" y="675" text-anchor="middle" class="small">83.9s</text>
+<line x1="736.00" y1="100" x2="736.00" y2="650" stroke="#e5e7eb"/>
+<text x="736.00" y="675" text-anchor="middle" class="small">125.8s</text>
+<line x1="908.00" y1="100" x2="908.00" y2="650" stroke="#e5e7eb"/>
+<text x="908.00" y="675" text-anchor="middle" class="small">167.7s</text>
+<line x1="1080.00" y1="100" x2="1080.00" y2="650" stroke="#e5e7eb"/>
+<text x="1080.00" y="675" text-anchor="middle" class="small">209.6s</text>
+<text x="205" y="149" text-anchor="end" class="label">holdout-sinusoidal-phase025-span05-drop00</text>
+<line x1="220" y1="145" x2="1080" y2="145" stroke="#9ca3af" stroke-width="3"/>
+<circle cx="276.61" cy="145" r="8" fill="#374151"/>
+<rect x="635.15" y="138" width="14" height="14" fill="#9ca3af"/>
+<text x="205" y="274" text-anchor="end" class="label">holdout-sinusoidal-phase025-span05-drop10</text>
+<line x1="220" y1="270" x2="1080" y2="270" stroke="#9ca3af" stroke-width="3"/>
+<circle cx="274.15" cy="270" r="8" fill="#374151"/>
+<rect x="633.51" y="263" width="14" height="14" fill="#9ca3af"/>
+<text x="205" y="399" text-anchor="end" class="label">holdout-sinusoidal-phase050-span05-drop00</text>
+<line x1="220" y1="395" x2="1080" y2="395" stroke="#9ca3af" stroke-width="3"/>
+<circle cx="274.15" cy="395" r="8" fill="#374151"/>
+<rect x="1009.30" y="388" width="14" height="14" fill="#9ca3af"/>
+<text x="205" y="524" text-anchor="end" class="label">holdout-sinusoidal-phase050-span05-drop10</text>
+<line x1="220" y1="520" x2="1080" y2="520" stroke="#9ca3af" stroke-width="3"/>
+<circle cx="274.15" cy="520" r="8" fill="#374151"/>
+<rect x="1001.09" y="513" width="14" height="14" fill="#9ca3af"/>
+</svg>

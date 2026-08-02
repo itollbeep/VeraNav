@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="620" viewBox="0 0 1040 620">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1f2937}.title{font-size:25px;font-weight:700}.label{font-size:15px}.small{font-size:13px;fill:#4b5563}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="55" y="45" class="title">V2-E04 holdout monitor coverage</text>
+<text x="55" y="72" class="small">Frozen 5 s peak-to-peak rule; no threshold recalibration</text>
+<text x="120" y="110" class="label">Static controls</text>
+<rect x="120" y="125" width="800" height="70" fill="#e5e7eb" rx="5"/>
+<rect x="120" y="125" width="0.00" height="70" fill="#4b5563" rx="5"/>
+<text x="132.00" y="169" class="label">0/6</text>
+<text x="120" y="250" class="label">Primary challenges</text>
+<rect x="120" y="265" width="800" height="70" fill="#e5e7eb" rx="5"/>
+<rect x="120" y="265" width="800.00" height="70" fill="#4b5563" rx="5"/>
+<text x="932.00" y="309" class="label">4/4</text>
+<text x="120" y="390" class="label">Secondary dynamics</text>
+<rect x="120" y="405" width="800" height="70" fill="#e5e7eb" rx="5"/>
+<rect x="120" y="405" width="680.00" height="70" fill="#4b5563" rx="5"/>
+<text x="812.00" y="449" class="label">17/20</text>
+<text x="120" y="585" class="small">Static detections are false positives; dynamic detections are coverage.</text>
+</svg>

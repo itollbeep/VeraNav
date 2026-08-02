@@ -334,3 +334,21 @@ Evidence and design:
 - `experiments/openvins/holdout_clock_monitor_validation/preregistration.json`
 - `experiments/openvins/holdout_clock_monitor_validation/scenario_plan.csv`
 - `experiments/openvins/holdout_clock_monitor_validation/analysis_plan.md`
+
+## V2-E04 holdout clock monitor result
+
+The frozen perturbation-holdout monitor completed with status `holdout_monitor_supported`.
+
+- static false positives: `0/6`
+- primary challenges degradation eligible: `4/4`
+- primary challenges detected: `4/4`
+- primary challenges with positive lead: `4/4`
+- dynamic scenarios detected: `21/24`
+
+The threshold and 3 s persistence rule were frozen before estimator execution. This remains single-trajectory perturbation-holdout evidence.
+
+Evidence:
+
+- `experiments/openvins/holdout_clock_monitor_validation/results.json`
+- `experiments/openvins/holdout_clock_monitor_validation/scenario_results.csv`
+- `experiments/openvins/holdout_clock_monitor_validation/report.md`

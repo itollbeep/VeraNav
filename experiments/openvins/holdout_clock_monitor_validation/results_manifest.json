@@ -1,0 +1,29 @@
+{
+  "experiment": "openvins-holdout-clock-monitor-validation",
+  "new_estimator_execution": true,
+  "official_source_modified": false,
+  "online_ground_truth_input_count": 0,
+  "preregistration_modified": false,
+  "scenario_count": 30,
+  "schema_version": 1,
+  "source_inputs": {
+    "evidence_audit_sha256": "4bcf5762ef3541cc3e7029d1d9c6363d5a31314c13d6a8b2e73b3dded23d096c",
+    "experiment_config_sha256": "dad8768859027f7ed8695e25ad256810285207cee2fb9fa20c53f773c83a2962",
+    "official_manifest_sha256": "d4528e6597f9a658d57c2e00ffe76361461054e72f3907f7b1f7a6c12cb84dff",
+    "preregistration_sha256": "a3d37531efa32467397a0ad92902c1fbab1ac47e61fd1c1800dce84213e65bcc",
+    "results_sha256": "4561932e2c5a9c26732eaf6fdcc3f06e4c27e04cdcf033e804c50e0177a4efe8",
+    "runner_binary_sha256": "c80c09999b8183af2f7461c8ffc8f2eff7a6c16afc979585d30a84b76b065f6d",
+    "runner_cmake_sha256": "24ffec4919259dfac1c0562539d2a002801636fd0355c9354a39b63f607ba6e6",
+    "runner_source_sha256": "e0e11d8e880159360fdce2e340f4113950348574f3f80f53bfc199672334a53e",
+    "scenario_plan_sha256": "47520c9c344fa3d430120a5cfb52a093e4bdc2f64fd7aac50fe1b94112ecf85c"
+  },
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "candidate_rule_frozen_before_execution": true,
+    "deterministic_replay_verified": true,
+    "holdout_seeds_disjoint_from_discovery": true,
+    "importer_deterministic": true,
+    "monitor_input_boundary_verified": true,
+    "threshold_recalibration_performed": false
+  }
+}

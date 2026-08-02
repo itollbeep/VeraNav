@@ -433,3 +433,7 @@ remains unchanged, so this is not yet multi-trajectory validation.
 
 The machine-readable design is in
 `experiments/openvins/holdout_clock_monitor_validation/`.
+
+## V2-E04 holdout result
+
+The frozen clock-monitor perturbation-holdout validation completed with status `holdout_monitor_supported`. Results are in `experiments/openvins/holdout_clock_monitor_validation/`.
