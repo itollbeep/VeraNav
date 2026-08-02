@@ -191,7 +191,8 @@ class InternalClockMonitorPreregistrationTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             paths = self.write(root)
-            rows = list(csv.DictReader(paths[2].open()))
+            with paths[2].open("r", encoding="utf-8", newline="") as stream:
+                rows = list(csv.DictReader(stream))
             rows[6]["scenario_id"] = "wrong-positive"
             with paths[2].open("w", newline="") as stream:
                 writer = csv.DictWriter(

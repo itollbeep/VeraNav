@@ -191,3 +191,14 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Calibrated thresholds exclusively from six static controls.
 - Added lead-time and static false-positive criteria.
 - Kept VeraNav v2 progress unchanged before monitoring analysis.
+
+## V2-E03 internal clock monitor result
+
+- Evaluated the causal three-channel monitor on all 30 V2-E02 evidence
+  scenarios.
+- Calibrated thresholds only from six static controls.
+- Recorded static false positives, primary early-warning lead times and
+  secondary dynamic coverage.
+- Result status: `monitor_not_supported`.
+- Kept injected clock target and trajectory truth out of online monitor
+  inputs.

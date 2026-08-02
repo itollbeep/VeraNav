@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="590" viewBox="0 0 1120 590">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1f2937}.title{font-size:25px;font-weight:700}.subtitle{font-size:14px;fill:#4b5563}.tick{font-size:12px;fill:#4b5563}.label{font-size:14px}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="48" y="40" class="title">Early-warning lead time</text>
+<text x="48" y="66" class="subtitle">Alert time versus truth-only trajectory degradation onset</text>
+<line x1="125.00" y1="105" x2="125.00" y2="500" stroke="#e5e7eb"/>
+<text x="125.00" y="525" text-anchor="middle" class="tick">0.0s</text>
+<line x1="312.00" y1="105" x2="312.00" y2="500" stroke="#e5e7eb"/>
+<text x="312.00" y="525" text-anchor="middle" class="tick">44.6s</text>
+<line x1="499.00" y1="105" x2="499.00" y2="500" stroke="#e5e7eb"/>
+<text x="499.00" y="525" text-anchor="middle" class="tick">89.3s</text>
+<line x1="686.00" y1="105" x2="686.00" y2="500" stroke="#e5e7eb"/>
+<text x="686.00" y="525" text-anchor="middle" class="tick">133.9s</text>
+<line x1="873.00" y1="105" x2="873.00" y2="500" stroke="#e5e7eb"/>
+<text x="873.00" y="525" text-anchor="middle" class="tick">178.6s</text>
+<line x1="1060.00" y1="105" x2="1060.00" y2="500" stroke="#e5e7eb"/>
+<text x="1060.00" y="525" text-anchor="middle" class="tick">223.2s</text>
+<text x="107" y="225" text-anchor="end" class="label">sinusoidalslow-span05-drop00</text>
+<line x1="125" y1="220" x2="1060" y2="220" stroke="#9ca3af" stroke-width="3"/>
+<rect x="972.69" y="212" width="16" height="16" fill="#9ca3af"/>
+<text x="980.69" y="252" text-anchor="middle" class="tick">degradation 204.30s</text>
+<text x="107" y="380" text-anchor="end" class="label">sinusoidalslow-span05-drop10</text>
+<line x1="125" y1="375" x2="1060" y2="375" stroke="#9ca3af" stroke-width="3"/>
+<rect x="982.74" y="367" width="16" height="16" fill="#9ca3af"/>
+<text x="990.74" y="407" text-anchor="middle" class="tick">degradation 206.70s</text>
+<text x="125" y="562" class="tick">Circle: online monitor alert. Square: truth-only evaluation onset.</text>
+</svg>

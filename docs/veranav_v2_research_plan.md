@@ -189,3 +189,11 @@ measure secondary coverage.
 
 A successful result advances stage four to 40% and VeraNav v2 overall to
 65%. Adaptive mitigation remains a separate preregistered experiment.
+
+## V2-E03 monitor result
+
+The internal clock monitor pilot completed with status `monitor_not_supported`.
+
+The next stage-four action is to audit the two primary lead times,
+secondary misses and threshold margins before preregistering adaptive
+mitigation. Mitigation must remain separate from monitor discovery.

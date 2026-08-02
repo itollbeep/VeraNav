@@ -1,0 +1,26 @@
+{
+  "experiment": "openvins-internal-clock-monitor-pilot",
+  "new_estimator_execution": false,
+  "official_source_modified": false,
+  "online_ground_truth_input_count": 0,
+  "parent_evidence_modified": false,
+  "preregistration_modified": false,
+  "schema_version": 1,
+  "source_inputs": {
+    "evidence_audit_sha256": "89d5f82a54e0e16ce945c705e290bc0035d55189a02d272bb7961a8d9fe07053",
+    "experiment_config_sha256": "65023efd754cd32fd3655013f9c2481851b58c1204c8ecf1b7ca67a6b76afc8b",
+    "parent_manifest_sha256": "901a226c76c8102e97924d6f70f4579e72c4655d1468140f0f666eb22c9e078d",
+    "parent_results_sha256": "e29dec7385180a189161f585882533e89e55a4c7667ef6a9cf79a43a33a66857",
+    "parent_scenarios_sha256": "abfb9532303b69f0e209ae4d1cef3990f3e8091efad67ef092559cbd1025b649",
+    "preregistration_sha256": "6a1beacec0fa4ddb98a18afa93dbfbbd73b8f11021cc528a30f53a45d884f664",
+    "results_sha256": "4b7c960895d1b57c0392aa0d94a0e02255ed9e0704c2e5833624d5423c514287",
+    "scenario_labels_sha256": "65a58be5691d920fb33dc3b9569e2cdfbd98df63c1504ca1a19732a17071c420"
+  },
+  "verification": {
+    "deterministic_evidence_verified": true,
+    "importer_deterministic": true,
+    "monitor_input_boundary_verified": true,
+    "preregistration_preceded_analysis": true,
+    "static_only_threshold_calibration_verified": true
+  }
+}

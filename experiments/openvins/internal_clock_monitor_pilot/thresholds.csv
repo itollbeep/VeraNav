@@ -1,0 +1,4 @@
+channel,static_maximum,floor,multiplier,threshold,calibration_scenario_count
+estimated_offset_velocity_rms,0.15861820469592688,0.0001,1.1,0.17448002516551958,6
+estimated_offset_acceleration_rms,2.161211348782515,0.0001,1.1,2.377332483660767,6
+estimated_offset_peak_to_peak,0.13390611929842633,0.001,1.1,0.14729673122826897,6

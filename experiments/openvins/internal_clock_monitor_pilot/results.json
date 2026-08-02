@@ -1,0 +1,73 @@
+{
+  "dynamic_secondary_count": 22,
+  "dynamic_secondary_detected_count": 3,
+  "early_warning_positive_count": 2,
+  "early_warning_positive_detected_count": 0,
+  "early_warning_positive_positive_lead_count": 0,
+  "experiment": "openvins-internal-clock-monitor-pilot",
+  "monitor_status": "monitor_not_supported",
+  "parent_commit": "52da5a0f8014e35911befd4db7c4fae7f762c061",
+  "positive_scenarios": [
+    {
+      "active_channels_at_alert": "",
+      "alert_detected": false,
+      "alert_time_s": null,
+      "degradation_onset_s": 204.29980516433716,
+      "drift_span_ms": 5.0,
+      "dropout_fraction": 0.0,
+      "label": "early-warning-positive",
+      "lead_time_s": null,
+      "maximum_acceleration_rms_ms_per_s2": 455.7478145624402,
+      "maximum_peak_to_peak_ms": 4.473202772042405,
+      "maximum_velocity_rms_ms_per_s": 25.314397988465736,
+      "parent_final_abs_residual_ms": 0.1575660977234023,
+      "parent_local_max_rmse_m": 0.4643561432065812,
+      "parent_one_metre_availability": 1.0,
+      "parent_position_rmse_m": 0.2022996672276908,
+      "positive_lead_time": false,
+      "profile": "sinusoidal-slow",
+      "scenario_id": "sinusoidalslow-span05-drop00"
+    },
+    {
+      "active_channels_at_alert": "",
+      "alert_detected": false,
+      "alert_time_s": null,
+      "degradation_onset_s": 206.6998028755188,
+      "drift_span_ms": 5.0,
+      "dropout_fraction": 0.1,
+      "label": "early-warning-positive",
+      "lead_time_s": null,
+      "maximum_acceleration_rms_ms_per_s2": 873.4700644643752,
+      "maximum_peak_to_peak_ms": 8.406727267188435,
+      "maximum_velocity_rms_ms_per_s": 48.65756128133444,
+      "parent_final_abs_residual_ms": 0.13551348858372272,
+      "parent_local_max_rmse_m": 0.6106862374198133,
+      "parent_one_metre_availability": 1.0,
+      "parent_position_rmse_m": 0.25762937394753666,
+      "positive_lead_time": false,
+      "profile": "sinusoidal-slow",
+      "scenario_id": "sinusoidalslow-span05-drop10"
+    }
+  ],
+  "preregistration_commit": "6a9573b7b8406d092f0ee48b6cf7655b63290497",
+  "progress": {
+    "v1_overall_percent": 100.0,
+    "v2_overall_percent": 55.0,
+    "v2_stage_4_percent": 0
+  },
+  "scenario_count": 30,
+  "schema_version": 1,
+  "static_false_positive_count": 0,
+  "static_negative_count": 6,
+  "success_criteria": {
+    "dynamic_secondary_detection_count_minimum": 18,
+    "early_warning_positive_detection_count": 2,
+    "early_warning_positive_lead_time_must_be_positive": true,
+    "static_false_positive_scenario_count": 0
+  },
+  "thresholds": {
+    "estimated_offset_acceleration_rms": 2.377332483660767,
+    "estimated_offset_peak_to_peak": 0.14729673122826897,
+    "estimated_offset_velocity_rms": 0.17448002516551958
+  }
+}

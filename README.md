@@ -414,3 +414,12 @@ static controls and evaluated against all V2-E02 scenarios.
 
 The machine-readable design is in
 `experiments/openvins/internal_clock_monitor_pilot/`.
+
+## V2-E03 monitor result
+
+The preregistered estimator-internal clock monitor completed with status
+`monitor_not_supported`. It uses only estimated camera-to-IMU offset history and
+evaluates early warning against truth after alerts are frozen.
+
+Results are in
+`experiments/openvins/internal_clock_monitor_pilot/`.

@@ -285,3 +285,29 @@ Evidence and design:
 - `experiments/openvins/internal_clock_monitor_pilot/preregistration.json`
 - `experiments/openvins/internal_clock_monitor_pilot/scenario_labels.csv`
 - `experiments/openvins/internal_clock_monitor_pilot/analysis_plan.md`
+
+## V2-E03 internal clock monitor result
+
+The preregistered monitor status is `monitor_not_supported`.
+
+- static false-positive scenarios:
+  `0/6`
+- primary early-warning positives detected:
+  `0/2`
+- primary positives with positive lead time:
+  `0/2`
+- secondary dynamic scenarios detected:
+  `3/22`
+
+The monitor uses only estimator timestamp and estimated camera-to-IMU
+offset history. Trajectory truth is restricted to post-hoc degradation
+onset evaluation.
+
+This remains a single-trajectory monitor result. It is not a deployment
+false-alarm claim and does not establish multi-trajectory robustness.
+
+Evidence:
+
+- `experiments/openvins/internal_clock_monitor_pilot/results.json`
+- `experiments/openvins/internal_clock_monitor_pilot/scenario_monitor_results.csv`
+- `experiments/openvins/internal_clock_monitor_pilot/thresholds.csv`
