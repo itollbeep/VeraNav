@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1f2937}.title{font-size:26px;font-weight:700}.subtitle{font-size:14px;fill:#4b5563}.axis{font-size:13px;fill:#374151}.tick{font-size:12px;fill:#4b5563}.legend{font-size:13px;fill:#1f2937}.value{font-size:12px;fill:#111827}</style>
+<rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+<text x="55" y="42" class="title">Camera timestamp offset: online vs fixed calibration</text>
+<text x="55" y="67" class="subtitle">Log scale shows the orders-of-magnitude protection provided by online temporal calibration.</text>
+<line x1="100" y1="530.00" x2="945" y2="530.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="534.00" text-anchor="end" class="tick">10^-2</text>
+<line x1="100" y1="475.62" x2="945" y2="475.62" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="479.62" text-anchor="end" class="tick">10^-1</text>
+<line x1="100" y1="421.25" x2="945" y2="421.25" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="425.25" text-anchor="end" class="tick">10^0</text>
+<line x1="100" y1="366.88" x2="945" y2="366.88" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="370.88" text-anchor="end" class="tick">10^1</text>
+<line x1="100" y1="312.50" x2="945" y2="312.50" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="316.50" text-anchor="end" class="tick">10^2</text>
+<line x1="100" y1="258.12" x2="945" y2="258.12" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="262.12" text-anchor="end" class="tick">10^3</text>
+<line x1="100" y1="203.75" x2="945" y2="203.75" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="207.75" text-anchor="end" class="tick">10^4</text>
+<line x1="100" y1="149.38" x2="945" y2="149.38" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="153.38" text-anchor="end" class="tick">10^5</text>
+<line x1="100" y1="95.00" x2="945" y2="95.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="99.00" text-anchor="end" class="tick">10^6</text>
+<line x1="100.00" y1="95" x2="100.00" y2="530" stroke="#f3f4f6" stroke-width="1"/>
+<text x="100.00" y="554" text-anchor="middle" class="tick">-50</text>
+<line x1="269.00" y1="95" x2="269.00" y2="530" stroke="#f3f4f6" stroke-width="1"/>
+<text x="269.00" y="554" text-anchor="middle" class="tick">-30</text>
+<line x1="438.00" y1="95" x2="438.00" y2="530" stroke="#f3f4f6" stroke-width="1"/>
+<text x="438.00" y="554" text-anchor="middle" class="tick">-10</text>
+<line x1="607.00" y1="95" x2="607.00" y2="530" stroke="#f3f4f6" stroke-width="1"/>
+<text x="607.00" y="554" text-anchor="middle" class="tick">10</text>
+<line x1="776.00" y1="95" x2="776.00" y2="530" stroke="#f3f4f6" stroke-width="1"/>
+<text x="776.00" y="554" text-anchor="middle" class="tick">30</text>
+<line x1="945.00" y1="95" x2="945.00" y2="530" stroke="#f3f4f6" stroke-width="1"/>
+<text x="945.00" y="554" text-anchor="middle" class="tick">50</text>
+<line x1="100" y1="530" x2="945" y2="530" stroke="#374151" stroke-width="1.5"/>
+<line x1="100" y1="95" x2="100" y2="530" stroke="#374151" stroke-width="1.5"/>
+<path d="M 100.00 455.34 L 353.50 484.60 L 438.00 502.08 L 480.25 490.95 L 522.50 494.27 L 564.75 491.71 L 607.00 492.97 L 691.50 483.07 L 945.00 448.05" fill="none" stroke="#2563eb" stroke-width="3"/>
+<circle cx="100.00" cy="455.34" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="353.50" cy="484.60" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="438.00" cy="502.08" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="480.25" cy="490.95" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="522.50" cy="494.27" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="564.75" cy="491.71" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="607.00" cy="492.97" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="691.50" cy="483.07" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="945.00" cy="448.05" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="1.5"/>
+<line x1="110" y1="585" x2="138" y2="585" stroke="#2563eb" stroke-width="3"/>
+<text x="146" y="590" class="legend">Online calibration</text>
+<path d="M 100.00 155.05 L 353.50 169.17 L 438.00 227.75 L 480.25 214.50 L 522.50 487.91 L 564.75 203.34 L 607.00 230.56 L 691.50 156.56 L 945.00 129.46" fill="none" stroke="#dc2626" stroke-width="3"/>
+<circle cx="100.00" cy="155.05" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="353.50" cy="169.17" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="438.00" cy="227.75" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="480.25" cy="214.50" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="522.50" cy="487.91" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="564.75" cy="203.34" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="607.00" cy="230.56" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="691.50" cy="156.56" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="945.00" cy="129.46" r="5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+<line x1="320" y1="585" x2="348" y2="585" stroke="#dc2626" stroke-width="3"/>
+<text x="356" y="590" class="legend">Fixed calibration</text>
+<text x="522.50" y="562" text-anchor="middle" class="axis">Injected camera timestamp offset (ms)</text>
+<text x="24" y="312.50" text-anchor="middle" class="axis" transform="rotate(-90 24 312.50)">Position RMSE (m, log scale)</text>
+</svg>

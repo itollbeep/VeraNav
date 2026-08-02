@@ -1,0 +1,39 @@
+{
+  "analysis_only": true,
+  "experiment": "openvins-reliability-synthesis",
+  "figure_hashes": {
+    "figure_imu_noise.svg": "6c60248f1868c6280315d2013509f2f85f570bcc44e1a9812b8762b297c82335",
+    "figure_time_divergence.svg": "bdf412b4c65c2d4cad8061b26b3a23cf4d2013c4d48246246d78ba697df7b677",
+    "figure_time_offset.svg": "7bda36493606bd54b1513189c32baaf45ac7d53b171ddcd970b588e8c70898d3",
+    "figure_visual_dropout.svg": "6fe36cf842ec5789d954b023d6c90d12855452d93ccb181c76dbabbaad29ce8a"
+  },
+  "input_hashes": {
+    "camera_time_offset_fixed_manifest_sha256": "4df6bb7932f4793eb99f221ae317468034122d0426e70357c26b414c4ed096f1",
+    "camera_time_offset_fixed_results_sha256": "65c48deeefcfbccc0a30315e4a1d925c7a287ba988651f42b84feca6adfafd1b",
+    "camera_time_offset_online_manifest_sha256": "e6b2b805f982bab52b5c56eb1c3aba5118b001cb1c36150d76551e662a0da215",
+    "camera_time_offset_online_results_sha256": "30fe36c6b3f213717db4ece41eb99bda51cf6fa9a98d45059bc7d4aa25558e42",
+    "imu_noise_manifest_sha256": "e9cf495b1a04b5fb9830732e1d123f7d32c2a425d68b000121818d1027e5d6f5",
+    "imu_noise_results_sha256": "d492eab9148183a4a3f433912d60c6f6483c90eeda1ecd513534b69961ebfb1c",
+    "time_divergence_manifest_sha256": "92a90ca27169583300d61d67b14c1f0daea066d37bdf9b92be1be24ca3574923",
+    "time_divergence_results_sha256": "02a756707ff988d384cf28b29c6b5500b0a6c4b13db351acd0b81b7450815f21",
+    "visual_burst_manifest_sha256": "a4891c86d05f5693e9c495a951765fea8f9e98a85bb10089e5a887add915c564",
+    "visual_burst_results_sha256": "b6c1e1e998d7bad651fe460aa2b76098613f211db5f5e7bbb9bf3d223d172253",
+    "visual_dropout_manifest_sha256": "0543eec2a937264894a635c4e25d5bee786fa8ee91cbbeacb9d1a8f595ce817c",
+    "visual_dropout_results_sha256": "9ef6cfd46931f4abef494dd04c061eb8230e30bfcaa7527b7025168dec251371"
+  },
+  "measurement_realization": {
+    "camera_fingerprint": "d597653de692ad1e",
+    "imu_fingerprint": "ccb4ebaa091921ef"
+  },
+  "official_reproduction_manifest_sha256": "d4528e6597f9a658d57c2e00ffe76361461054e72f3907f7b1f7a6c12cb84dff",
+  "official_source_modified": false,
+  "schema_version": 1,
+  "synthesis_config_sha256": "87c8e092de698390c57606ddc8bec6add0501df7f7c8ae58c88fd6029f609077",
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "figures_are_deterministic_svg": true,
+    "generated_twice_byte_identical": true,
+    "input_hashes_verified": true,
+    "no_new_estimator_execution": true
+  }
+}

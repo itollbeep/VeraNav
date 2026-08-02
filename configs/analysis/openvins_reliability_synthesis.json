@@ -1,0 +1,32 @@
+{
+  "experiment": "openvins-reliability-synthesis",
+  "figure_policy": {
+    "format": "svg",
+    "height_px": 620,
+    "width_px": 1000
+  },
+  "input_experiments": [
+    "openvins-visual-dropout-degradation",
+    "openvins-visual-burst-sweep",
+    "openvins-camera-timestamp-offset",
+    "openvins-camera-timestamp-offset-fixed-calibration",
+    "openvins-fixed-time-divergence-diagnostics",
+    "openvins-imu-noise-degradation"
+  ],
+  "project_progress": {
+    "stage_1_percent": 100,
+    "stage_2_percent": 100,
+    "stage_3_percent": 100,
+    "stage_4_percent": 100,
+    "stage_5_percent": 100,
+    "stage_6_percent": 100,
+    "weighted_overall_percent": 100.0
+  },
+  "reliability_claims": {
+    "imu_service_threshold_m": 1.0,
+    "time_offset_catastrophic_threshold_m": 100.0,
+    "visual_random_dropout_breakpoint_fraction": 0.3
+  },
+  "schema_version": 1,
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea"
+}

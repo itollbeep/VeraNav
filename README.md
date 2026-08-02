@@ -321,3 +321,22 @@ The experiment records position error, service availability, marginal
 position covariance and position NEES. The protocol is documented in
 `docs/openvins_imu_noise_degradation_protocol.md`, with compact evidence
 in `experiments/openvins/imu_noise_degradation/`.
+
+## OpenVINS reliability synthesis
+
+The completed OpenVINS reliability evidence is consolidated in
+`experiments/openvins/reliability_synthesis/`. The synthesis includes a
+machine-readable manifest, cross-experiment results, a compact CSV
+summary, four deterministic SVG figures and the final technical report.
+
+The main result is that fixed camera-to-IMU timestamp mismatch is the
+strongest tested failure mode. Online temporal calibration prevents
+catastrophic failure across the tested ±5 ms to ±50 ms range. Visual
+loss becomes strongly harmful at high random dropout or adverse outage
+timing, while tested IMU-noise degradation increases error and NEES
+without crossing the 1 m service-failure threshold.
+
+The synthesis protocol is documented in
+`docs/openvins_reliability_synthesis_protocol.md`. The completed v1
+project status is recorded in
+`docs/openvins_reliability_final_status.md`.

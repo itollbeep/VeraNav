@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1f2937}.title{font-size:26px;font-weight:700}.subtitle{font-size:14px;fill:#4b5563}.axis{font-size:13px;fill:#374151}.tick{font-size:12px;fill:#4b5563}.legend{font-size:13px;fill:#1f2937}.value{font-size:12px;fill:#111827}</style>
+<rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+<text x="55" y="42" class="title">IMU noise-model mismatch</text>
+<text x="55" y="67" class="subtitle">RMSE and position NEES rise at high noise multipliers, while all tested traces remain below the 1 m threshold.</text>
+<line x1="100" y1="500.00" x2="900" y2="500.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="504.00" text-anchor="end" class="tick">0</text>
+<line x1="100" y1="365.00" x2="900" y2="365.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="369.00" text-anchor="end" class="tick">2</text>
+<line x1="100" y1="230.00" x2="900" y2="230.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="234.00" text-anchor="end" class="tick">4</text>
+<line x1="100" y1="95.00" x2="900" y2="95.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="88" y="99.00" text-anchor="end" class="tick">6</text>
+<text x="912" y="504.00" class="tick">0</text>
+<text x="912" y="369.00" class="tick">5</text>
+<text x="912" y="234.00" class="tick">10</text>
+<text x="912" y="99.00" class="tick">15</text>
+<rect x="121.60" y="432.50" width="36.80" height="67.50" rx="3" fill="#d97706"/>
+<text x="140.00" y="524" text-anchor="middle" class="tick">baseline</text>
+<rect x="201.60" y="424.31" width="36.80" height="75.69" rx="3" fill="#d97706"/>
+<text x="220.00" y="524" text-anchor="middle" class="tick">white-2x</text>
+<rect x="281.60" y="367.21" width="36.80" height="132.79" rx="3" fill="#d97706"/>
+<text x="300.00" y="524" text-anchor="middle" class="tick">white-5x</text>
+<rect x="361.60" y="218.54" width="36.80" height="281.46" rx="3" fill="#d97706"/>
+<text x="380.00" y="524" text-anchor="middle" class="tick">white-10x</text>
+<rect x="441.60" y="437.67" width="36.80" height="62.33" rx="3" fill="#d97706"/>
+<text x="460.00" y="524" text-anchor="middle" class="tick">rw-2x</text>
+<rect x="521.60" y="391.52" width="36.80" height="108.48" rx="3" fill="#d97706"/>
+<text x="540.00" y="524" text-anchor="middle" class="tick">rw-5x</text>
+<rect x="601.60" y="231.30" width="36.80" height="268.70" rx="3" fill="#d97706"/>
+<text x="620.00" y="524" text-anchor="middle" class="tick">rw-10x</text>
+<rect x="681.60" y="445.92" width="36.80" height="54.08" rx="3" fill="#d97706"/>
+<text x="700.00" y="524" text-anchor="middle" class="tick">all-2x</text>
+<rect x="761.60" y="366.18" width="36.80" height="133.82" rx="3" fill="#d97706"/>
+<text x="780.00" y="524" text-anchor="middle" class="tick">all-5x</text>
+<rect x="841.60" y="195.18" width="36.80" height="304.82" rx="3" fill="#d97706"/>
+<text x="860.00" y="524" text-anchor="middle" class="tick">all-10x</text>
+<path d="M 140.00 489.92 L 220.00 486.97 L 300.00 459.06 L 380.00 343.07 L 460.00 488.20 L 540.00 473.36 L 620.00 371.90 L 700.00 489.29 L 780.00 446.59 L 860.00 220.52" fill="none" stroke="#7c3aed" stroke-width="3"/>
+<circle cx="140.00" cy="489.92" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="220.00" cy="486.97" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="300.00" cy="459.06" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="380.00" cy="343.07" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="460.00" cy="488.20" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="540.00" cy="473.36" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="620.00" cy="371.90" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="700.00" cy="489.29" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="780.00" cy="446.59" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="860.00" cy="220.52" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+<line x1="100" y1="500" x2="900" y2="500" stroke="#374151" stroke-width="1.5"/>
+<line x1="100" y1="95" x2="100" y2="500" stroke="#374151" stroke-width="1.5"/>
+<line x1="900" y1="95" x2="900" y2="500" stroke="#374151" stroke-width="1.5"/>
+<text x="24" y="297.50" text-anchor="middle" class="axis" transform="rotate(-90 24 297.50)">RMSE ratio to baseline</text>
+<text x="976" y="297.50" text-anchor="middle" class="axis" transform="rotate(90 976 297.50)">Mean position NEES</text>
+<rect x="110" y="580" width="24" height="12" fill="#d97706"/>
+<text x="142" y="591" class="legend">RMSE ratio</text>
+<line x1="285" y1="586" x2="313" y2="586" stroke="#7c3aed" stroke-width="3"/>
+<circle cx="299" cy="586" r="4" fill="#7c3aed"/>
+<text x="322" y="591" class="legend">Mean NEES</text>
+</svg>

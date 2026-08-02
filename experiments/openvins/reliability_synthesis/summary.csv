@@ -1,0 +1,7 @@
+family,scenario_count,headline_metric,headline_value,conclusion
+visual_dropout,6,worst_rmse_ratio,4.08072778798,Random visual dropout becomes strongly harmful near 30 percent and above on the tested trajectory.
+visual_burst,9,worst_local_rmse_ratio,3.06583980034,Short visual outages are strongly timing-dependent; local metrics expose failures hidden by global RMSE.
+camera_time_offset_online,9,worst_online_rmse_m,0.321499899852,Online temporal calibration keeps every tested signed offset below one metre RMSE.
+camera_time_offset_fixed,9,catastrophic_scenario_count,8,Disabling temporal calibration causes catastrophic divergence for every nonzero tested offset.
+time_divergence,9,worst_fixed_max_error_m,506181.948762,"Trace diagnostics confirm broad persistent failure, not isolated outliers, in all fixed-offset cases."
+imu_noise,10,worst_rmse_ratio,4.515829991,Ten-times IMU degradation raises RMSE and NEES but does not cross the one-metre service threshold.

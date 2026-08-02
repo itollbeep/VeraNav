@@ -1,0 +1,492 @@
+{
+  "cross_experiment_conclusions": {
+    "imu_noise_service_failure_count": 0,
+    "imu_noise_worst_mean_nees": 10.350944254171582,
+    "random_dropout_near_30_percent_rmse_ratio": 3.724768304073532,
+    "strongest_tested_failure_mode": "fixed camera-to-IMU timestamp mismatch",
+    "time_fixed_catastrophic_nonbaseline_count": 8,
+    "time_fixed_nonbaseline_scenario_count": 8,
+    "visual_burst_unrecovered_count": 2
+  },
+  "experiment": "openvins-reliability-synthesis",
+  "family_summaries": [
+    {
+      "conclusion": "Random visual dropout becomes strongly harmful near 30 percent and above on the tested trajectory.",
+      "family": "visual_dropout",
+      "headline_metric": "worst_rmse_ratio",
+      "headline_value": 4.080727787976261,
+      "scenario_count": 6
+    },
+    {
+      "conclusion": "Short visual outages are strongly timing-dependent; local metrics expose failures hidden by global RMSE.",
+      "family": "visual_burst",
+      "headline_metric": "worst_local_rmse_ratio",
+      "headline_value": 3.0658398003383858,
+      "scenario_count": 9
+    },
+    {
+      "conclusion": "Online temporal calibration keeps every tested signed offset below one metre RMSE.",
+      "family": "camera_time_offset_online",
+      "headline_metric": "worst_online_rmse_m",
+      "headline_value": 0.3214998998517853,
+      "scenario_count": 9
+    },
+    {
+      "conclusion": "Disabling temporal calibration causes catastrophic divergence for every nonzero tested offset.",
+      "family": "camera_time_offset_fixed",
+      "headline_metric": "catastrophic_scenario_count",
+      "headline_value": 8.0,
+      "scenario_count": 9
+    },
+    {
+      "conclusion": "Trace diagnostics confirm broad persistent failure, not isolated outliers, in all fixed-offset cases.",
+      "family": "time_divergence",
+      "headline_metric": "worst_fixed_max_error_m",
+      "headline_value": 506181.94876243535,
+      "scenario_count": 9
+    },
+    {
+      "conclusion": "Ten-times IMU degradation raises RMSE and NEES but does not cross the one-metre service threshold.",
+      "family": "imu_noise",
+      "headline_metric": "worst_rmse_ratio",
+      "headline_value": 4.515829990996697,
+      "scenario_count": 10
+    }
+  ],
+  "imu_noise": [
+    {
+      "accelerometer_delta_rms_mps2": 0.0,
+      "availability_0_1m": 0.9873331051009928,
+      "availability_0_5m": 1.0,
+      "availability_1m": 1.0,
+      "covariance_trace_mean_m2": 0.1517479743928017,
+      "gyroscope_delta_rms_radps": 0.0,
+      "position_max_m": 0.10714518758827477,
+      "position_mean_m": 0.03941590285884345,
+      "position_nees_95_coverage": 1.0,
+      "position_nees_mean": 0.37327235170808265,
+      "position_nees_median": 0.3736927214640598,
+      "position_nees_p95": 0.8545240386743163,
+      "position_p95_m": 0.08101442277944987,
+      "position_rmse_m": 0.04541064427158661,
+      "random_walk_scale": 1.0,
+      "rmse_ratio": 1.0,
+      "sample_count": 2921,
+      "scenario": "baseline",
+      "sustained_failure_onset_s": null,
+      "white_noise_scale": 1.0
+    },
+    {
+      "accelerometer_delta_rms_mps2": 0.04006721062283367,
+      "availability_0_1m": 0.9585758301951387,
+      "availability_0_5m": 1.0,
+      "availability_1m": 1.0,
+      "covariance_trace_mean_m2": 0.1518381001817725,
+      "gyroscope_delta_rms_radps": 0.0033925871563514056,
+      "position_max_m": 0.12610021679289715,
+      "position_mean_m": 0.043350993105783095,
+      "position_nees_95_coverage": 1.0,
+      "position_nees_mean": 0.4824130334880922,
+      "position_nees_median": 0.40907823154829115,
+      "position_nees_p95": 1.4487474783699998,
+      "position_p95_m": 0.09875131162638162,
+      "position_rmse_m": 0.05092300559212806,
+      "random_walk_scale": 1.0,
+      "rmse_ratio": 1.1213891898906736,
+      "sample_count": 2921,
+      "scenario": "white-2x",
+      "sustained_failure_onset_s": null,
+      "white_noise_scale": 2.0
+    },
+    {
+      "accelerometer_delta_rms_mps2": 0.16026884249133466,
+      "availability_0_1m": 0.7617254364943512,
+      "availability_0_5m": 1.0,
+      "availability_1m": 1.0,
+      "covariance_trace_mean_m2": 0.15179470123882222,
+      "gyroscope_delta_rms_radps": 0.01357034862540562,
+      "position_max_m": 0.21542028240693278,
+      "position_mean_m": 0.07857863826401261,
+      "position_nees_95_coverage": 0.999657651489216,
+      "position_nees_mean": 1.5161568721910714,
+      "position_nees_median": 1.2723558167531936,
+      "position_nees_p95": 4.4078541690768835,
+      "position_p95_m": 0.16658730240765499,
+      "position_rmse_m": 0.0893371863950076,
+      "random_walk_scale": 1.0,
+      "rmse_ratio": 1.967318187795582,
+      "sample_count": 2921,
+      "scenario": "white-5x",
+      "sustained_failure_onset_s": null,
+      "white_noise_scale": 5.0
+    },
+    {
+      "accelerometer_delta_rms_mps2": 0.360604895605503,
+      "availability_0_1m": 0.20403971242725094,
+      "availability_0_5m": 0.9969188634029442,
+      "availability_1m": 1.0,
+      "covariance_trace_mean_m2": 0.1520003571320131,
+      "gyroscope_delta_rms_radps": 0.030533284407162648,
+      "position_max_m": 0.5828292267289962,
+      "position_mean_m": 0.16490802900616766,
+      "position_nees_95_coverage": 0.7579596028757275,
+      "position_nees_mean": 5.812112637326939,
+      "position_nees_median": 4.317925612877946,
+      "position_nees_p95": 16.195117063893512,
+      "position_p95_m": 0.3890503764630161,
+      "position_rmse_m": 0.18934931083565937,
+      "random_walk_scale": 1.0,
+      "rmse_ratio": 4.169712054804187,
+      "sample_count": 2921,
+      "scenario": "white-10x",
+      "sustained_failure_onset_s": null,
+      "white_noise_scale": 10.0
+    },
+    {
+      "accelerometer_delta_rms_mps2": 0.028594679120316043,
+      "availability_0_1m": 1.0,
+      "availability_0_5m": 1.0,
+      "availability_1m": 1.0,
+      "covariance_trace_mean_m2": 0.1516962904795226,
+      "gyroscope_delta_rms_radps": 0.00012226345346239307,
+      "position_max_m": 0.08285797982471345,
+      "position_mean_m": 0.03698457700805551,
+      "position_nees_95_coverage": 1.0,
+      "position_nees_mean": 0.4370896807298766,
+      "position_nees_median": 0.3592090353768296,
+      "position_nees_p95": 1.1097441584600345,
+      "position_p95_m": 0.0662986846765616,
+      "position_rmse_m": 0.04193420007773152,
+      "random_walk_scale": 2.0,
+      "rmse_ratio": 0.9234442882363971,
+      "sample_count": 2921,
+      "scenario": "randomwalk-2x",
+      "sustained_failure_onset_s": null,
+      "white_noise_scale": 1.0
+    },
+    {
+      "accelerometer_delta_rms_mps2": 0.11437871648126338,
+      "availability_0_1m": 0.8267716535433071,
+      "availability_0_5m": 1.0,
+      "availability_1m": 1.0,
+      "covariance_trace_mean_m2": 0.15159960082487584,
+      "gyroscope_delta_rms_radps": 0.0004890538138495727,
+      "position_max_m": 0.14049585146259835,
+      "position_mean_m": 0.065268789423903,
+      "position_nees_95_coverage": 1.0,
+      "position_nees_mean": 0.9867849139598169,
+      "position_nees_median": 0.5851994355691881,
+      "position_nees_p95": 3.3461205163263856,
+      "position_p95_m": 0.11899430248285967,
+      "position_rmse_m": 0.07298297820787303,
+      "random_walk_scale": 5.0,
+      "rmse_ratio": 1.6071777746949607,
+      "sample_count": 2921,
+      "scenario": "randomwalk-5x",
+      "sustained_failure_onset_s": null,
+      "white_noise_scale": 1.0
+    },
+    {
+      "accelerometer_delta_rms_mps2": 0.2573521120828428,
+      "availability_0_1m": 0.3731598767545361,
+      "availability_0_5m": 1.0,
+      "availability_1m": 1.0,
+      "covariance_trace_mean_m2": 0.15148714622446285,
+      "gyroscope_delta_rms_radps": 0.0011003710811615384,
+      "position_max_m": 0.3243725242063452,
+      "position_mean_m": 0.15724158319883755,
+      "position_nees_95_coverage": 0.7309140705237932,
+      "position_nees_mean": 4.744502947417131,
+      "position_nees_median": 3.0177204568750455,
+      "position_nees_p95": 12.332707377955696,
+      "position_p95_m": 0.2960280312695862,
+      "position_rmse_m": 0.18076983239370054,
+      "random_walk_scale": 10.0,
+      "rmse_ratio": 3.980781054604152,
+      "sample_count": 2921,
+      "scenario": "randomwalk-10x",
+      "sustained_failure_onset_s": null,
+      "white_noise_scale": 1.0
+    },
+    {
+      "accelerometer_delta_rms_mps2": 0.04920203844268863,
+      "availability_0_1m": 1.0,
+      "availability_0_5m": 1.0,
+      "availability_1m": 1.0,
+      "covariance_trace_mean_m2": 0.15181539244045464,
+      "gyroscope_delta_rms_radps": 0.003395165807642139,
+      "position_max_m": 0.08505886130218598,
+      "position_mean_m": 0.03392908137130984,
+      "position_nees_95_coverage": 1.0,
+      "position_nees_mean": 0.3965358306839199,
+      "position_nees_median": 0.3670821697903344,
+      "position_nees_p95": 0.9270931902212645,
+      "position_p95_m": 0.05425584124413856,
+      "position_rmse_m": 0.03638013141875429,
+      "random_walk_scale": 2.0,
+      "rmse_ratio": 0.8011366498386657,
+      "sample_count": 2921,
+      "scenario": "all-2x",
+      "sustained_failure_onset_s": null,
+      "white_noise_scale": 2.0
+    },
+    {
+      "accelerometer_delta_rms_mps2": 0.19680815377075406,
+      "availability_0_1m": 0.6456692913385826,
+      "availability_0_5m": 1.0,
+      "availability_1m": 1.0,
+      "covariance_trace_mean_m2": 0.15151618537664163,
+      "gyroscope_delta_rms_radps": 0.013580663230568554,
+      "position_max_m": 0.19251007562292685,
+      "position_mean_m": 0.07988088080585415,
+      "position_nees_95_coverage": 0.9982882574460801,
+      "position_nees_mean": 1.9782601908045538,
+      "position_nees_median": 1.4801684468944234,
+      "position_nees_p95": 5.301557092950126,
+      "position_p95_m": 0.14498141782127327,
+      "position_rmse_m": 0.09002503370938097,
+      "random_walk_scale": 5.0,
+      "rmse_ratio": 1.9824654583398973,
+      "sample_count": 2921,
+      "scenario": "all-5x",
+      "sustained_failure_onset_s": null,
+      "white_noise_scale": 5.0
+    },
+    {
+      "accelerometer_delta_rms_mps2": 0.4428183459841968,
+      "availability_0_1m": 0.13659705580280726,
+      "availability_0_5m": 1.0,
+      "availability_1m": 1.0,
+      "covariance_trace_mean_m2": 0.15140924497580285,
+      "gyroscope_delta_rms_radps": 0.030556492268779246,
+      "position_max_m": 0.4083066693988161,
+      "position_mean_m": 0.1881145581775749,
+      "position_nees_95_coverage": 0.5433070866141733,
+      "position_nees_mean": 10.350944254171582,
+      "position_nees_median": 6.543503474590808,
+      "position_nees_p95": 30.70228628906341,
+      "position_p95_m": 0.3213694119091747,
+      "position_rmse_m": 0.20506674931211316,
+      "random_walk_scale": 10.0,
+      "rmse_ratio": 4.515829990996697,
+      "sample_count": 2921,
+      "scenario": "all-10x",
+      "sustained_failure_onset_s": null,
+      "white_noise_scale": 10.0
+    }
+  ],
+  "project_progress": {
+    "stage_1_percent": 100,
+    "stage_2_percent": 100,
+    "stage_3_percent": 100,
+    "stage_4_percent": 100,
+    "stage_5_percent": 100,
+    "stage_6_percent": 100,
+    "weighted_overall_percent": 100.0
+  },
+  "schema_version": 1,
+  "time_comparison": [
+    {
+      "fixed_availability_1m": 1.0,
+      "fixed_calibration_rmse_m": 0.05943821430435713,
+      "fixed_catastrophic_divergence": false,
+      "fixed_max_error_m": 0.14276987948843997,
+      "fixed_sustained_failure_onset_s": null,
+      "injected_offset_ms": 0.0,
+      "online_calibration_aware_rmse_m": 0.04541151074737407,
+      "scenario": "baseline"
+    },
+    {
+      "fixed_availability_1m": 0.00890106128038343,
+      "fixed_calibration_rmse_m": 78648.11701618497,
+      "fixed_catastrophic_divergence": true,
+      "fixed_max_error_m": 187995.95910190206,
+      "fixed_sustained_failure_onset_s": 1.8999981880187988,
+      "injected_offset_ms": -50.0,
+      "online_calibration_aware_rmse_m": 0.23607886043139695,
+      "scenario": "neg-50ms"
+    },
+    {
+      "fixed_availability_1m": 0.01266689489900719,
+      "fixed_calibration_rmse_m": 43239.34921171128,
+      "fixed_catastrophic_divergence": true,
+      "fixed_max_error_m": 104777.92566687497,
+      "fixed_sustained_failure_onset_s": 3.099997043609619,
+      "injected_offset_ms": -20.0,
+      "online_calibration_aware_rmse_m": 0.06838633879265298,
+      "scenario": "neg-20ms"
+    },
+    {
+      "fixed_availability_1m": 0.029784320438206092,
+      "fixed_calibration_rmse_m": 3620.021828270663,
+      "fixed_catastrophic_divergence": true,
+      "fixed_max_error_m": 14036.080577984501,
+      "fixed_sustained_failure_onset_s": 8.099992275238037,
+      "injected_offset_ms": -10.0,
+      "online_calibration_aware_rmse_m": 0.03261470215100574,
+      "scenario": "neg-10ms"
+    },
+    {
+      "fixed_availability_1m": 0.047244094488188976,
+      "fixed_calibration_rmse_m": 6341.918785452707,
+      "fixed_catastrophic_divergence": true,
+      "fixed_max_error_m": 16835.81564172881,
+      "fixed_sustained_failure_onset_s": 13.199987411499023,
+      "injected_offset_ms": -5.0,
+      "online_calibration_aware_rmse_m": 0.05226765076797384,
+      "scenario": "neg-5ms"
+    },
+    {
+      "fixed_availability_1m": 0.04861348853132489,
+      "fixed_calibration_rmse_m": 10174.163392765715,
+      "fixed_catastrophic_divergence": true,
+      "fixed_max_error_m": 26673.43802505719,
+      "fixed_sustained_failure_onset_s": 13.699986934661865,
+      "injected_offset_ms": 5.0,
+      "online_calibration_aware_rmse_m": 0.050610686191169284,
+      "scenario": "pos-5ms"
+    },
+    {
+      "fixed_availability_1m": 0.03628894214310168,
+      "fixed_calibration_rmse_m": 3212.576139292528,
+      "fixed_catastrophic_divergence": true,
+      "fixed_max_error_m": 6047.6243324350535,
+      "fixed_sustained_failure_onset_s": 9.999990463256836,
+      "injected_offset_ms": 10.0,
+      "online_calibration_aware_rmse_m": 0.047966899020912765,
+      "scenario": "pos-10ms"
+    },
+    {
+      "fixed_availability_1m": 0.017117425539198903,
+      "fixed_calibration_rmse_m": 73766.18385798828,
+      "fixed_catastrophic_divergence": true,
+      "fixed_max_error_m": 173048.90503823428,
+      "fixed_sustained_failure_onset_s": 4.499995708465576,
+      "injected_offset_ms": 20.0,
+      "online_calibration_aware_rmse_m": 0.07295919412841735,
+      "scenario": "pos-20ms"
+    },
+    {
+      "fixed_availability_1m": 0.005819924683327628,
+      "fixed_calibration_rmse_m": 232422.80440909712,
+      "fixed_catastrophic_divergence": true,
+      "fixed_max_error_m": 506181.94876243535,
+      "fixed_sustained_failure_onset_s": 1.099998950958252,
+      "injected_offset_ms": 50.0,
+      "online_calibration_aware_rmse_m": 0.3214998998517853,
+      "scenario": "pos-50ms"
+    }
+  ],
+  "visual_burst": [
+    {
+      "burst_duration_s": 0.0,
+      "burst_start_s": 0.0,
+      "full_rmse_m": 0.04541064427158661,
+      "local_rmse_ratio": 1.0,
+      "recovery_time_s": 0.0,
+      "scenario": "baseline"
+    },
+    {
+      "burst_duration_s": 1.0,
+      "burst_start_s": 30.0,
+      "full_rmse_m": 0.060054117150151375,
+      "local_rmse_ratio": 2.118594814071554,
+      "recovery_time_s": null,
+      "scenario": "burst-t030-d1"
+    },
+    {
+      "burst_duration_s": 3.0,
+      "burst_start_s": 30.0,
+      "full_rmse_m": 0.04541479874084557,
+      "local_rmse_ratio": 3.0658398003383858,
+      "recovery_time_s": null,
+      "scenario": "burst-t030-d3"
+    },
+    {
+      "burst_duration_s": 1.0,
+      "burst_start_s": 90.0,
+      "full_rmse_m": 0.03956502252136659,
+      "local_rmse_ratio": 0.9826809525692766,
+      "recovery_time_s": 0.09991312026977539,
+      "scenario": "burst-t090-d1"
+    },
+    {
+      "burst_duration_s": 3.0,
+      "burst_start_s": 90.0,
+      "full_rmse_m": 0.04259950599955026,
+      "local_rmse_ratio": 1.0286352126581462,
+      "recovery_time_s": 20.699891567230225,
+      "scenario": "burst-t090-d3"
+    },
+    {
+      "burst_duration_s": 1.0,
+      "burst_start_s": 150.0,
+      "full_rmse_m": 0.03698042296079741,
+      "local_rmse_ratio": 0.9496555780050296,
+      "recovery_time_s": 0.09985589981079102,
+      "scenario": "burst-t150-d1"
+    },
+    {
+      "burst_duration_s": 3.0,
+      "burst_start_s": 150.0,
+      "full_rmse_m": 0.040931828305473365,
+      "local_rmse_ratio": 0.9421697594517595,
+      "recovery_time_s": 0.6998534202575684,
+      "scenario": "burst-t150-d3"
+    },
+    {
+      "burst_duration_s": 1.0,
+      "burst_start_s": 210.0,
+      "full_rmse_m": 0.042550754036522684,
+      "local_rmse_ratio": 1.1950411821435818,
+      "recovery_time_s": 13.89978551864624,
+      "scenario": "burst-t210-d1"
+    },
+    {
+      "burst_duration_s": 3.0,
+      "burst_start_s": 210.0,
+      "full_rmse_m": 0.04172658567062978,
+      "local_rmse_ratio": 1.3116560607492973,
+      "recovery_time_s": 12.799784660339355,
+      "scenario": "burst-t210-d3"
+    }
+  ],
+  "visual_dropout": [
+    {
+      "drop_fraction": 0.0,
+      "position_rmse_m": 0.04541064427158661,
+      "rmse_ratio": 1.0,
+      "scenario": "baseline"
+    },
+    {
+      "drop_fraction": 0.003423485107839781,
+      "position_rmse_m": 0.060054117150151375,
+      "rmse_ratio": 1.3224678511713426,
+      "scenario": "burst-1s"
+    },
+    {
+      "drop_fraction": 0.010270455323519343,
+      "position_rmse_m": 0.04541479874084557,
+      "rmse_ratio": 1.0000914866839175,
+      "scenario": "burst-3s"
+    },
+    {
+      "drop_fraction": 0.09619993153029785,
+      "position_rmse_m": 0.06435379020812297,
+      "rmse_ratio": 1.41715210696513,
+      "scenario": "random-10"
+    },
+    {
+      "drop_fraction": 0.29441971927422117,
+      "position_rmse_m": 0.1691441284503641,
+      "rmse_ratio": 3.724768304073532,
+      "scenario": "random-30"
+    },
+    {
+      "drop_fraction": 0.5053064019171517,
+      "position_rmse_m": 0.18530847794896846,
+      "rmse_ratio": 4.080727787976261,
+      "scenario": "random-50"
+    }
+  ]
+}

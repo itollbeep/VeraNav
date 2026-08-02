@@ -107,3 +107,13 @@ This milestone is a synthetic verification framework. It is not a real-world ben
 - Preserved the official nominal estimator noise model.
 - Verified common camera observations and nominal IMU realization.
 - Added position covariance, NEES and service-availability metrics.
+
+## OpenVINS reliability synthesis
+
+- Consolidated six committed OpenVINS reliability experiment families.
+- Added a deterministic cross-experiment manifest, JSON result set and
+  compact CSV summary.
+- Added four dependency-free SVG figures for visual dropout, temporal
+  calibration, divergence onset and IMU-noise consistency.
+- Added the final VeraNav v1 progress and completion record.
+- Marked all six fixed project stages complete.
