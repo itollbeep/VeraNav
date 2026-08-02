@@ -162,3 +162,13 @@ This milestone is a synthetic verification framework. It is not a real-world ben
   antagonistic cells.
 - Completed the VeraNav v2 cross-factor interaction stage and advanced
   v2 overall progress to 35.0%.
+
+
+## V2-E02 dynamic clock drift preregistration
+
+- Added bounded linear, sinusoidal and piecewise-random-walk clock drift
+  profiles.
+- Added matched static controls and clean versus 10% dropout conditions.
+- Preregistered 30 scenarios and 60 estimator executions.
+- Added dynamic tracking RMSE, lag and early-warning-gap outcomes.
+- Kept VeraNav v2 progress unchanged until estimator evidence exists.

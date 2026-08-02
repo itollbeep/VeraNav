@@ -206,3 +206,29 @@ Counterclaim boundary:
 Do not describe the result as multi-trajectory, real-world, universal or literature-novel.
 
 Literature novelty remains unverified.
+
+
+## V2-E02 dynamic clock drift preregistration
+
+V2-E01b established a five-seed replicated interaction in global and
+local trajectory error, but all 105 physical scenarios retained 100%
+one-metre availability, converged online temporal calibration and no
+sustained service failure.
+
+The new mechanism question is whether a time-varying temporal offset can
+degrade trajectory accuracy before terminal residual and service
+diagnostics become abnormal.
+
+V2-E02 preregisters four bounded drift profiles, three drift spans and
+two visual conditions. The largest drift remains inside the existing
+-10 ms to +10 ms static-control range.
+
+A supported pilot identifies a dynamic tracking mechanism for later
+multi-seed and multi-trajectory validation. It is not yet a generalized
+clock-drift law or literature-level novelty claim.
+
+Evidence and design:
+
+- `experiments/openvins/dynamic_clock_drift_pilot/preregistration.json`
+- `experiments/openvins/dynamic_clock_drift_pilot/scenario_plan.csv`
+- `experiments/openvins/dynamic_clock_drift_pilot/analysis_plan.md`

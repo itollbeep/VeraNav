@@ -150,3 +150,21 @@ The cross-factor interaction stage is complete. The next experiment is
 `V2-E02`, which will replace constant timestamp offsets with controlled
 clock drift and evaluate estimator tracking bandwidth, residual lag and
 service degradation.
+
+
+## V2-E02 dynamic clock drift pilot
+
+The next stage uses 30 preregistered scenarios:
+
+- 6 static controls
+- 24 dynamic-drift cells
+- 4 dynamic profiles
+- drift spans of 5, 10 and 20 ms
+- visual dropout of 0% and 10%
+- two deterministic executions per scenario
+
+Total planned estimator executions: 60.
+
+The primary result is profile-level dynamic degradation. A secondary
+result is whether trajectory error degrades while final residual and
+service diagnostics remain nominal.

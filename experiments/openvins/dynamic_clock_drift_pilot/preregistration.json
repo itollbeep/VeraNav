@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "dynamic_cell_support": {
+      "global_additive_threshold_m": 0.02,
+      "global_ratio_threshold": 1.5,
+      "local_additive_threshold_m": 0.05,
+      "local_ratio_threshold": 1.5,
+      "minimum_supported_metric_groups": 2,
+      "tracking_lag_threshold_s": 0.5,
+      "tracking_rmse_threshold_ms": 1.0
+    },
+    "early_warning_gap": {
+      "final_abs_residual_threshold_ms": 0.5,
+      "minimum_one_metre_availability": 1.0,
+      "requires_dynamic_cell_support": true,
+      "sustained_failure_count_must_equal": 0
+    },
+    "pilot_support": {
+      "minimum_supported_amplitude_count_within_profile": 2,
+      "requires_global_rmse_nondecreasing_with_span": true
+    },
+    "visual_interaction_is_exploratory": true
+  },
+  "design": {
+    "canonical_dropout_seed": 20260801,
+    "drift_profile_seed": 20260802,
+    "drift_spans_ms": [
+      5.0,
+      10.0,
+      20.0
+    ],
+    "dynamic_profiles": [
+      "linear-positive",
+      "linear-negative",
+      "sinusoidal-slow",
+      "piecewise-random-walk"
+    ],
+    "estimator_execution_count": 60,
+    "repeat_count_per_scenario": 2,
+    "scenario_count": 30,
+    "static_controls_ms": [
+      -10.0,
+      0.0,
+      10.0
+    ],
+    "visual_dropout_fractions": [
+      0.0,
+      0.1
+    ]
+  },
+  "experiment": "openvins-dynamic-clock-drift-pilot",
+  "hypotheses": {
+    "disconfirming_result": "No dynamic profile has at least two amplitudes satisfying the preregistered multi-metric degradation criterion, or degradation does not increase with drift span.",
+    "primary": "Time-varying camera-to-IMU clock drift produces trajectory degradation that is not represented by a constant-offset control with the same bounded range.",
+    "secondary": "A trajectory-error warning gap can occur while final temporal residual, one-metre availability and sustained-failure diagnostics remain nominal.",
+    "tertiary_exploratory": "Ten-percent visual dropout may amplify dynamic-drift degradation, but this single-seed comparison is not confirmatory."
+  },
+  "parent_evidence": {
+    "commit": "92ba1942801f1c8dcfbb0fe71225712e334e70d5",
+    "replication_status": "replicated_supported",
+    "strongest_cell": {
+      "dropout_fraction": 0.1,
+      "global_ratio_mean": 1.5635469979882581,
+      "local_ratio_mean": 1.880451699042355,
+      "offset_ms": -10.0,
+      "seed_support_count": 5
+    },
+    "supported_cell_count": 4,
+    "verified_negative_controls": {
+      "maximum_convergence_time_s": 2.69999742508,
+      "maximum_final_abs_residual_ms": 0.0116646905521,
+      "minimum_one_metre_availability": 1.0,
+      "sustained_failure_scenario_count": 0
+    }
+  },
+  "profile_definitions": {
+    "linear-negative": "offset(u)=span_ms*(0.5-u), u in [0,1]",
+    "linear-positive": "offset(u)=span_ms*(u-0.5), u in [0,1]",
+    "piecewise-random-walk": "twelve equal-duration deterministic cumulative-increment knots, mean-centered and scaled to [-span_ms/2,+span_ms/2], linearly interpolated",
+    "sinusoidal-slow": "offset(u)=(span_ms/2)*sin(2*pi*u), one cycle over the trajectory"
+  },
+  "progress": {
+    "pre_registration_does_not_change_progress": true,
+    "v1_overall_percent": 100.0,
+    "v2_overall_percent": 35.0,
+    "v2_stage_2_percent": 100,
+    "v2_stage_3_percent": 0
+  },
+  "schema_version": 1
+}

@@ -388,3 +388,13 @@ scenarios and 134 estimator executions.
 
 Results are in
 `experiments/openvins/temporal_visual_interaction_replication/`.
+
+
+## V2-E02 dynamic clock drift
+
+VeraNav v2 preregisters a 30-scenario pilot for bounded time-varying
+camera-to-IMU clock drift. Four dynamic profiles are evaluated at 5, 10
+and 20 ms spans under clean vision and 10% visual dropout.
+
+The machine-readable design is in
+`experiments/openvins/dynamic_clock_drift_pilot/`.
