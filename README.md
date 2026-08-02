@@ -340,3 +340,19 @@ The synthesis protocol is documented in
 `docs/openvins_reliability_synthesis_protocol.md`. The completed v1
 project status is recorded in
 `docs/openvins_reliability_final_status.md`.
+
+## VeraNav v2 research program
+
+VeraNav v1 remains complete and immutable as the first reproducible
+research baseline. VeraNav v2 now focuses on cross-factor degradation
+interactions, dynamic clock drift, early warning, adaptive mitigation
+and multi-trajectory validation.
+
+Verified conclusions and candidate paper contributions are separated in
+`docs/veranav_research_novelty_ledger.md`. The machine-readable claim
+registry and experiment ranking are stored in
+`experiments/openvins/research_registry/`.
+
+The first preregistered experiment is `V2-E01`, a 12-scenario factorial
+pilot studying the interaction between online temporal calibration and
+random visual dropout.

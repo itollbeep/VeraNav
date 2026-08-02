@@ -1,0 +1,110 @@
+{
+  "claims": [
+    {
+      "claim_id": "V1-C01",
+      "evidence_level": "cross_experiment",
+      "evidence_paths": [
+        "experiments/openvins/camera_time_offset_fixed/results.json",
+        "experiments/openvins/time_divergence_diagnostics/results.json",
+        "experiments/openvins/reliability_synthesis/results.json"
+      ],
+      "falsification_next_step": "Repeat the signed offset sweep across multiple official and real trajectories with independent seeds.",
+      "scope": "OpenVINS v2.7, one deterministic official simulation trajectory, fixed offsets from minus 50 ms to plus 50 ms.",
+      "statement": "Disabling online temporal calibration caused broad catastrophic trajectory divergence in all eight tested nonzero offsets; the worst maximum error was 506181.948762 m.",
+      "status": "verified_single_trajectory",
+      "title": "Fixed camera-to-IMU timing mismatch is the strongest tested failure mode"
+    },
+    {
+      "claim_id": "V1-C02",
+      "evidence_level": "paired_experiment",
+      "evidence_paths": [
+        "experiments/openvins/camera_time_offset/results.json",
+        "experiments/openvins/camera_time_offset_fixed/results.json"
+      ],
+      "falsification_next_step": "Test whether convergence remains stable when visual information is sparse, bursty or weakly exciting.",
+      "scope": "Same trajectory and measurement realization as the paired fixed-calibration experiment.",
+      "statement": "Online temporal calibration prevented catastrophic failure across all tested signed offsets, but the worst calibration-aware RMSE remained 0.321499900 m.",
+      "status": "verified_single_trajectory",
+      "title": "Online temporal calibration is protective but not cost-free"
+    },
+    {
+      "claim_id": "V1-C03",
+      "evidence_level": "trace_level",
+      "evidence_paths": [
+        "experiments/openvins/visual_dropout/results.json",
+        "experiments/openvins/reliability_synthesis/results.json"
+      ],
+      "falsification_next_step": "Estimate the breakpoint with denser dropout fractions, multiple seeds and different trajectories.",
+      "scope": "Random visual frame dropout on one deterministic official trajectory.",
+      "statement": "Random visual dropout showed a sharp tested degradation region near 30 percent, where the nearest scenario had an RMSE ratio of 3.724768304; the worst tested ratio was 4.080727788.",
+      "status": "verified_single_trajectory",
+      "title": "Random visual dropout has a practical degradation breakpoint"
+    },
+    {
+      "claim_id": "V1-C04",
+      "evidence_level": "trace_level",
+      "evidence_paths": [
+        "experiments/openvins/visual_burst_sweep/results.json",
+        "experiments/openvins/reliability_synthesis/results.json"
+      ],
+      "falsification_next_step": "Repeat burst timing sweeps with multiple outage lengths and motion-excitation conditions.",
+      "scope": "One deterministic trajectory, selected burst start times and one-second or three-second outages.",
+      "statement": "Visual burst impact depended strongly on outage timing; the worst local RMSE ratio reached 3.065839800, showing that full-run RMSE can hide severe local failure.",
+      "status": "verified_single_trajectory",
+      "title": "Local outage metrics reveal failures hidden by global RMSE"
+    },
+    {
+      "claim_id": "V1-C05",
+      "evidence_level": "paired_experiment",
+      "evidence_paths": [
+        "experiments/openvins/imu_noise_degradation/results.json",
+        "experiments/openvins/reliability_synthesis/results.json"
+      ],
+      "falsification_next_step": "Compare nominal and matched degraded estimator noise models, then repeat across independent seeds.",
+      "scope": "Unmodelled white-noise and random-walk increases up to ten times nominal on one trajectory.",
+      "statement": "Severe IMU noise-model mismatch increased RMSE and NEES without producing sustained one-metre service failure; the all-10x mean position NEES was 10.350944254.",
+      "status": "verified_single_trajectory",
+      "title": "IMU noise mismatch degrades consistency before service collapse"
+    },
+    {
+      "claim_id": "V1-C06",
+      "evidence_level": "cross_experiment",
+      "evidence_paths": [
+        "experiments/openvins/reliability_synthesis/report.md",
+        "experiments/openvins/reliability_synthesis/results.json"
+      ],
+      "falsification_next_step": "Re-estimate the risk ordering on real datasets and multi-trajectory simulation ensembles.",
+      "scope": "Only the degradation ranges and deterministic trajectory included in VeraNav v1.",
+      "statement": "The tested risk ordering was fixed temporal mismatch, high random visual dropout, adverse visual burst timing, then severe unmodelled IMU noise.",
+      "status": "verified_single_trajectory",
+      "title": "Cross-factor reliability risk is strongly nonuniform"
+    },
+    {
+      "claim_id": "V1-C07",
+      "evidence_level": "trace_level",
+      "evidence_paths": [
+        "experiments/openvins/imu_noise_degradation/results.json",
+        "experiments/openvins/camera_time_offset/results.json"
+      ],
+      "falsification_next_step": "Use multi-seed confidence intervals to determine whether small apparent improvements persist.",
+      "scope": "Single deterministic measurement realization and one trajectory.",
+      "statement": "Several low-severity perturbations produced nonmonotonic RMSE changes. These observations are not evidence that added noise or timing error improves localization.",
+      "status": "verified_single_trajectory",
+      "title": "Single-run nonmonotonicity must not be overinterpreted"
+    },
+    {
+      "claim_id": "V1-C08",
+      "evidence_level": "cross_experiment",
+      "evidence_paths": [
+        "experiments/openvins/reliability_synthesis/manifest.json",
+        "experiments/openvins/reliability_synthesis/report.md"
+      ],
+      "falsification_next_step": "Build multi-seed and multi-trajectory ensembles with predefined confidence intervals and effect-size models.",
+      "scope": "Methodological conclusion about the present evidence base, not a sensor-performance claim.",
+      "statement": "The v1 evidence is internally deterministic and strongly traceable, but population-level reliability and formal statistical consistency remain unproven.",
+      "status": "verified_single_trajectory",
+      "title": "Deterministic reproducibility is not population-level validation"
+    }
+  ],
+  "schema_version": 1
+}

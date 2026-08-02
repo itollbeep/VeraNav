@@ -117,3 +117,14 @@ This milestone is a synthetic verification framework. It is not a real-world ben
   calibration, divergence onset and IMU-noise consistency.
 - Added the final VeraNav v1 progress and completion record.
 - Marked all six fixed project stages complete.
+
+## VeraNav v2 research registry
+
+- Preserved eight evidence-bound VeraNav v1 conclusions.
+- Added six preregistered v2 research hypotheses with explicit
+  disconfirming criteria.
+- Ranked the v2 experiments by novelty potential, information gain,
+  practical relevance and feasibility.
+- Preregistered a 12-scenario temporal-calibration and visual-dropout
+  interaction pilot.
+- Added fixed VeraNav v2 stage weights and progress tracking.

@@ -1,0 +1,32 @@
+{
+  "analysis_only": true,
+  "experiment": "veranav-v2-research-registry",
+  "measurement_realization": {
+    "camera_fingerprint": "d597653de692ad1e",
+    "imu_fingerprint": "ccb4ebaa091921ef"
+  },
+  "official_source_modified": false,
+  "project_progress": {
+    "v1_overall_percent": 100.0,
+    "v2_overall_percent": 10.0,
+    "v2_stage_1_percent": 100,
+    "v2_stage_2_percent": 0,
+    "v2_stage_3_percent": 0,
+    "v2_stage_4_percent": 0,
+    "v2_stage_5_percent": 0,
+    "v2_stage_6_percent": 0
+  },
+  "registry_config_sha256": "1c0ca831314aa251d8a255ea66c511caa167d0e656677300ef4f54bf2d63eb73",
+  "schema_version": 1,
+  "source_inputs": {
+    "synthesis_manifest_sha256": "07c81bffb420caadc0fe117b9cb8a1db03ebe1a71eb0b58664f5429251f77581",
+    "synthesis_results_sha256": "3bbe49f6974e3d78539205362883f47e3cf083e8bcc82507d15712b19b9f90c2"
+  },
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "verification": {
+    "claim_boundaries_recorded": true,
+    "generated_twice_byte_identical": true,
+    "no_new_estimator_execution": true,
+    "source_synthesis_hashes_verified": true
+  }
+}

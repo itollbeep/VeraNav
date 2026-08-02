@@ -1,0 +1,57 @@
+{
+  "claim_status_values": [
+    "verified_single_trajectory",
+    "candidate_hypothesis",
+    "rejected_or_overclaim"
+  ],
+  "experiment": "veranav-v2-research-registry",
+  "hypothesis_priority_weights": {
+    "expected_information_gain": 0.3,
+    "novelty_potential": 0.3,
+    "practical_relevance": 0.25,
+    "implementation_feasibility": 0.15
+  },
+  "next_experiment": {
+    "experiment_id": "V2-E01",
+    "name": "temporal-calibration-visual-degradation-interaction",
+    "pilot_random_dropout_fractions": [
+      0.0,
+      0.1,
+      0.3,
+      0.5
+    ],
+    "pilot_time_offsets_ms": [
+      -20.0,
+      0.0,
+      20.0
+    ],
+    "primary_outcomes": [
+      "calibration convergence time",
+      "final temporal residual",
+      "position RMSE",
+      "local RMSE",
+      "sustained failure onset",
+      "one-metre service availability"
+    ],
+    "scenario_count": 12
+  },
+  "schema_version": 1,
+  "upstream_commit": "93adc241390d13e99232652cf05cbe18a93c7bea",
+  "v1_status": {
+    "stage_1_percent": 100,
+    "stage_2_percent": 100,
+    "stage_3_percent": 100,
+    "stage_4_percent": 100,
+    "stage_5_percent": 100,
+    "stage_6_percent": 100,
+    "weighted_overall_percent": 100.0
+  },
+  "v2_stage_weights": {
+    "stage_1_registry_and_preregistration": 10,
+    "stage_2_cross_factor_interactions": 25,
+    "stage_3_dynamic_clock_drift": 20,
+    "stage_4_monitoring_and_adaptive_mitigation": 25,
+    "stage_5_multi_seed_multi_trajectory_validation": 15,
+    "stage_6_paper_and_benchmark_packaging": 5
+  }
+}

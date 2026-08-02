@@ -1,0 +1,89 @@
+{
+  "hypotheses": [
+    {
+      "disconfirming_result": "Calibration convergence, residual and trajectory error remain additive and stable across all dropout levels.",
+      "expected_information_gain": 5.0,
+      "experiment_id": "V2-E01",
+      "hypothesis": "Online camera-to-IMU temporal calibration depends on visual information availability; random visual dropout interacts super-additively with nonzero temporal offset and creates an observability-conditioned failure boundary.",
+      "hypothesis_id": "V2-H01",
+      "implementation_feasibility": 4.5,
+      "novelty_potential": 5.0,
+      "practical_relevance": 5.0,
+      "priority_score": 4.925,
+      "status": "candidate_hypothesis",
+      "success_criterion": "A statistically and practically meaningful interaction changes convergence time, final residual, RMSE or service availability beyond the sum of single-factor effects.",
+      "title": "Temporal calibration and visual degradation interact"
+    },
+    {
+      "disconfirming_result": "A constant-offset state tracks all tested drift rates without persistent residual or accuracy loss.",
+      "expected_information_gain": 4.8,
+      "experiment_id": "V2-E02",
+      "hypothesis": "A constant temporal-offset state has a finite tracking bandwidth; time-varying clock drift creates a drift-rate boundary that constant-offset tests cannot reveal.",
+      "hypothesis_id": "V2-H02",
+      "implementation_feasibility": 4.0,
+      "novelty_potential": 5.0,
+      "practical_relevance": 5.0,
+      "priority_score": 4.789999999999999,
+      "status": "candidate_hypothesis",
+      "success_criterion": "Identify reproducible drift-rate regions for stable tracking, delayed tracking and sustained failure.",
+      "title": "Dynamic clock drift exposes temporal-model limits"
+    },
+    {
+      "disconfirming_result": "Matched degraded process-noise parameters do not improve NEES, coverage or RMSE relative to the nominal model.",
+      "expected_information_gain": 4.5,
+      "experiment_id": "V2-E03",
+      "hypothesis": "Most severe-IMU NEES inflation is caused by process-noise model mismatch; matched estimator noise should improve consistency even when physical measurement error remains.",
+      "hypothesis_id": "V2-H03",
+      "implementation_feasibility": 4.5,
+      "novelty_potential": 4.0,
+      "practical_relevance": 4.5,
+      "priority_score": 4.35,
+      "status": "candidate_hypothesis",
+      "success_criterion": "Matched models improve NEES coverage and reduce overconfidence without introducing sustained service loss.",
+      "title": "Matched IMU noise models recover estimator consistency"
+    },
+    {
+      "disconfirming_result": "Innovation, covariance and calibration statistics provide no usable warning before service failure.",
+      "expected_information_gain": 5.0,
+      "experiment_id": "V2-E04",
+      "hypothesis": "A compact reliability monitor using temporal residuals, innovation statistics, covariance growth and local RMSE proxies can warn before catastrophic localization failure.",
+      "hypothesis_id": "V2-H04",
+      "implementation_feasibility": 3.5,
+      "novelty_potential": 5.0,
+      "practical_relevance": 5.0,
+      "priority_score": 4.775,
+      "status": "candidate_hypothesis",
+      "success_criterion": "Achieve reproducible early-warning lead time with bounded false alarms across multiple degradation families.",
+      "title": "Estimator-internal statistics can provide early warning"
+    },
+    {
+      "disconfirming_result": "Adaptive mitigation does not improve service availability or increases failure risk across paired scenarios.",
+      "expected_information_gain": 4.5,
+      "experiment_id": "V2-E05",
+      "hypothesis": "Reliability-triggered covariance inflation, measurement gating or calibration-state freezing can convert abrupt failure into graceful degradation.",
+      "hypothesis_id": "V2-H05",
+      "implementation_feasibility": 3.0,
+      "novelty_potential": 5.0,
+      "practical_relevance": 5.0,
+      "priority_score": 4.55,
+      "status": "candidate_hypothesis",
+      "success_criterion": "Mitigation increases one-metre service availability and reduces catastrophic-failure frequency without damaging nominal performance beyond a predefined tolerance.",
+      "title": "Reliability-aware mitigation can create graceful degradation"
+    },
+    {
+      "disconfirming_result": "Effects and rankings collapse or reverse across seeds and trajectories with no stable confidence intervals.",
+      "expected_information_gain": 5.0,
+      "experiment_id": "V2-E06",
+      "hypothesis": "The strongest v1 effects, especially fixed-time failure and high visual-dropout sensitivity, remain dominant under multi-seed and multi-trajectory validation.",
+      "hypothesis_id": "V2-H06",
+      "implementation_feasibility": 3.5,
+      "novelty_potential": 3.5,
+      "practical_relevance": 5.0,
+      "priority_score": 4.325,
+      "status": "candidate_hypothesis",
+      "success_criterion": "Estimate stable effect sizes, confidence intervals and risk ordering across a preregistered evaluation ensemble.",
+      "title": "The v1 risk hierarchy generalizes beyond one trajectory"
+    }
+  ],
+  "schema_version": 1
+}
